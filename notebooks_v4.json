@@ -1,0 +1,854 @@
+{
+    "01/04": {
+        "words": [
+            {
+                "hz": "爱",
+                "py": "ài",
+                "vn": "yêu",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "八",
+                "py": "bā",
+                "vn": "tám",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "爸爸",
+                "py": "bàba",
+                "vn": "bố",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "杯子",
+                "py": "bēizi",
+                "vn": "cốc",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "北京",
+                "py": "Běijīng",
+                "vn": "Bắc Kinh",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "本",
+                "py": "běn",
+                "vn": "cuốn (dùng cho sách)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "不客气",
+                "py": "bú kèqì",
+                "vn": "không có gì (đáp lại lời cảm ơn)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "不",
+                "py": "bù",
+                "vn": "không",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "菜",
+                "py": "cài",
+                "vn": "món ăn, rau củ",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "茶",
+                "py": "chá",
+                "vn": "trà",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "吃",
+                "py": "chī",
+                "vn": "ăn",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "出租车",
+                "py": "chūzūchē",
+                "vn": "taxi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "打电话",
+                "py": "dǎ diànhuà",
+                "vn": "gọi điện thoại",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "大",
+                "py": "dà",
+                "vn": "lớn, to",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "的",
+                "py": "de",
+                "vn": "của (thuộc tính)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "点",
+                "py": "diǎn",
+                "vn": "giờ (trong thời gian)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "电脑",
+                "py": "diànnǎo",
+                "vn": "máy tính",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "电视",
+                "py": "diànshì",
+                "vn": "ti vi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "电影",
+                "py": "diànyǐng",
+                "vn": "phim",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "东西",
+                "py": "dōngxī",
+                "vn": "đồ vật, thứ",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "都",
+                "py": "dōu",
+                "vn": "đều",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "读",
+                "py": "dú",
+                "vn": "đọc",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "对不起",
+                "py": "duìbùqǐ",
+                "vn": "xin lỗi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "多",
+                "py": "duō",
+                "vn": "nhiều",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "多少",
+                "py": "duōshǎo",
+                "vn": "bao nhiêu",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "儿子",
+                "py": "érzi",
+                "vn": "con trai",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "二",
+                "py": "èr",
+                "vn": "hai",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "饭馆",
+                "py": "fànguǎn",
+                "vn": "nhà hàng",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "飞机",
+                "py": "fēijī",
+                "vn": "máy bay",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "分钟",
+                "py": "fēnzhōng",
+                "vn": "phút",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "高兴",
+                "py": "gāoxìng",
+                "vn": "vui",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "个",
+                "py": "gè",
+                "vn": "cái (đơn vị lượng từ)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "工作",
+                "py": "gōngzuò",
+                "vn": "công việc",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "狗",
+                "py": "gǒu",
+                "vn": "chó",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "汉语",
+                "py": "Hànyǔ",
+                "vn": "tiếng Hán",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "好",
+                "py": "hǎo",
+                "vn": "tốt, khỏe",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "喝",
+                "py": "hē",
+                "vn": "uống",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "和",
+                "py": "hé",
+                "vn": "và",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "很",
+                "py": "hěn",
+                "vn": "rất",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "后面",
+                "py": "hòumiàn",
+                "vn": "phía sau",
+                "score": -2,
+                "attempts": 2
+            },
+            {
+                "hz": "号",
+                "py": "hào",
+                "vn": "số (như số điện thoại, số nhà)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "黑",
+                "py": "hēi",
+                "vn": "đen",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "红",
+                "py": "hóng",
+                "vn": "đỏ",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "欢迎",
+                "py": "huānyíng",
+                "vn": "hoan nghênh, chào mừng",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "回答",
+                "py": "huídá",
+                "vn": "trả lời",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "机场",
+                "py": "jīchǎng",
+                "vn": "sân bay",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "鸡蛋",
+                "py": "jīdàn",
+                "vn": "trứng gà",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "件",
+                "py": "jiàn",
+                "vn": "cái (dùng cho sự việc, quần áo)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "教室",
+                "py": "jiàoshì",
+                "vn": "lớp học",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "姐姐",
+                "py": "jiějie",
+                "vn": "chị gái",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "介绍",
+                "py": "jièshào",
+                "vn": "giới thiệu",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "进",
+                "py": "jìn",
+                "vn": "vào",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "近",
+                "py": "jìn",
+                "vn": "gần",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "就",
+                "py": "jiù",
+                "vn": "thì, ngay",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "觉得",
+                "py": "juéde",
+                "vn": "cảm thấy",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "咖啡",
+                "py": "kāfēi",
+                "vn": "cà phê",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "开始",
+                "py": "kāishǐ",
+                "vn": "bắt đầu",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "考试",
+                "py": "kǎoshì",
+                "vn": "thi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "可能",
+                "py": "kěnéng",
+                "vn": "có thể",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "可以",
+                "py": "kěyǐ",
+                "vn": "có thể",
+                "score": 0,
+                "attempts": 0
+            }
+        ],
+        "fav": false,
+        "updated_at": "2026-04-01T01:02:49.703133"
+    },
+    "02/04": {
+        "words": [
+            {
+                "hz": "吗",
+                "py": "ma",
+                "vn": "không (dùng trong câu hỏi)",
+                "score": 0,
+                "attempts": 2
+            },
+            {
+                "hz": "买",
+                "py": "mǎi",
+                "vn": "mua",
+                "score": 0,
+                "attempts": 2
+            },
+            {
+                "hz": "猫",
+                "py": "māo",
+                "vn": "mèo",
+                "score": -1,
+                "attempts": 1
+            },
+            {
+                "hz": "没",
+                "py": "méi",
+                "vn": "không có, chưa",
+                "score": 1,
+                "attempts": 1
+            },
+            {
+                "hz": "没关系",
+                "py": "méi guānxi",
+                "vn": "không sao, không có gì",
+                "score": 0,
+                "attempts": 2
+            },
+            {
+                "hz": "米饭",
+                "py": "mǐfàn",
+                "vn": "cơm",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "明天",
+                "py": "míngtiān",
+                "vn": "ngày mai",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "名字",
+                "py": "míngzi",
+                "vn": "tên",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "哪里 (哪儿)",
+                "py": "nǎlǐ (nǎr)",
+                "vn": "đâu, chỗ nào",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "那",
+                "py": "nà",
+                "vn": "đó, kia",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "呢",
+                "py": "ne",
+                "vn": "thì sao? (dùng để hỏi thêm)",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "能",
+                "py": "néng",
+                "vn": "có thể",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "你",
+                "py": "nǐ",
+                "vn": "bạn",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "年",
+                "py": "nián",
+                "vn": "năm",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "女儿",
+                "py": "nǚ'ér",
+                "vn": "con gái",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "朋友",
+                "py": "péngyou",
+                "vn": "bạn",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "漂亮",
+                "py": "piàoliang",
+                "vn": "đẹp",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "苹果",
+                "py": "píngguǒ",
+                "vn": "táo",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "七",
+                "py": "qī",
+                "vn": "bảy",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "钱",
+                "py": "qián",
+                "vn": "tiền",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "前面",
+                "py": "qiánmiàn",
+                "vn": "phía trước",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "请",
+                "py": "qǐng",
+                "vn": "xin vui lòng, mời",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "去",
+                "py": "qù",
+                "vn": "đi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "热",
+                "py": "rè",
+                "vn": "nóng",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "人",
+                "py": "rén",
+                "vn": "người",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "认识",
+                "py": "rènshi",
+                "vn": "quen biết",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "日",
+                "py": "rì",
+                "vn": "ngày",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "三",
+                "py": "sān",
+                "vn": "ba",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "商店",
+                "py": "shāngdiàn",
+                "vn": "cửa hàng",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "上",
+                "py": "shàng",
+                "vn": "lên",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "上午",
+                "py": "shàngwǔ",
+                "vn": "buổi sáng",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "少",
+                "py": "shǎo",
+                "vn": "ít",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "谁",
+                "py": "shuí/ shéi",
+                "vn": "ai",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "什么",
+                "py": "shénme",
+                "vn": "cái gì",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "十",
+                "py": "shí",
+                "vn": "mười",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "时候",
+                "py": "shíhòu",
+                "vn": "lúc, khi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "是",
+                "py": "shì",
+                "vn": "là, thì",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "书",
+                "py": "shū",
+                "vn": "sách",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "水",
+                "py": "shuǐ",
+                "vn": "nước",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "水果",
+                "py": "shuǐguǒ",
+                "vn": "trái cây",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "睡觉",
+                "py": "shuìjiào",
+                "vn": "ngủ",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "说话",
+                "py": "shuōhuà",
+                "vn": "nói chuyện",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "四",
+                "py": "sì",
+                "vn": "bốn",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "岁",
+                "py": "suì",
+                "vn": "tuổi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "他",
+                "py": "tā",
+                "vn": "anh ấy, ông ấy",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "她",
+                "py": "tā",
+                "vn": "cô ấy, bà ấy",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "太",
+                "py": "tài",
+                "vn": "quá",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "天气",
+                "py": "tiānqì",
+                "vn": "thời tiết",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "听",
+                "py": "tīng",
+                "vn": "nghe",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "同学",
+                "py": "tóngxué",
+                "vn": "bạn học",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "喂",
+                "py": "wèi",
+                "vn": "alo",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "我",
+                "py": "wǒ",
+                "vn": "tôi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "我们",
+                "py": "wǒmen",
+                "vn": "chúng tôi",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "五",
+                "py": "wǔ",
+                "vn": "năm",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "喜欢",
+                "py": "xǐhuān",
+                "vn": "thích",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "下",
+                "py": "xià",
+                "vn": "xuống",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "下午",
+                "py": "xiàwǔ",
+                "vn": "buổi chiều",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "下雨",
+                "py": "xià yǔ",
+                "vn": "mưa",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "先生",
+                "py": "xiānshēng",
+                "vn": "ông, ngài",
+                "score": 0,
+                "attempts": 0
+            },
+            {
+                "hz": "现在",
+                "py": "xiànzài",
+                "vn": "bây giờ",
+                "score": 0,
+                "attempts": 0
+            }
+        ],
+        "fav": null,
+        "updated_at": "2026-04-01T01:02:56.048920"
+    }
+}
