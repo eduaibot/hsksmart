@@ -318,10 +318,27 @@ if st.session_state.mode == "manage":
                     c3.button("⚙️ Sửa", key=f"ed_btn_{name}", use_container_width=True, 
                               on_click=lambda n=name: st.session_state.update({"editing_nb": n if st.session_state.get("editing_nb") != n else None}))
                     
-                    if c4.button("🗑️ Xóa", key=f"dl_{name}", use_container_width=True):
-                        del st.session_state.notebooks[name]
-                        save_json(DB_FILE, st.session_state.notebooks)
-                        st.rerun()
+                    # Khởi tạo trạng thái xác nhận nếu chưa có
+                    confirm_key = f"conf_del_{name}"
+                    if confirm_key not in st.session_state:
+                        st.session_state[confirm_key] = False
+
+                    # Kiểm tra xem có đang trong trạng thái chờ xóa không
+                    if not st.session_state[confirm_key]:
+                        if c4.button("🗑️ Xóa", key=f"dl_{name}", use_container_width=True):
+                            st.session_state[confirm_key] = True
+                            st.rerun()
+                    else:
+                        # Hiện 2 nút xác nhận nhỏ gọn
+                        c_yes, c_no = c4.columns(2)
+                        if c_yes.button("✅", key=f"y_{name}", help="Chốt xóa"):
+                            del st.session_state.notebooks[name]
+                            save_json(DB_FILE, st.session_state.notebooks)
+                            st.session_state[confirm_key] = False
+                            st.rerun()
+                        if c_no.button("❌", key=f"n_{name}", help="Hủy"):
+                            st.session_state[confirm_key] = False
+                            st.rerun()
 
                 # --- FORM CHỈNH SỬA (CHỈ HIỆN KHI BẤM NÚT SỬA) ---
                 if st.session_state.get("editing_nb") == name:
@@ -376,76 +393,66 @@ if st.session_state.mode == "manage":
                 # --- CHỨC NĂNG CHIA SET NÂNG CAO (MÀU SẮC THEO TIẾN ĐỘ) ---
                 with st.expander("🧩 Chia nhỏ bài học (Smart Sets)"):
                     total_words = len(words)
-                    # Lấy danh sách các lựa chọn bước nhảy (5, 10, 15...)
                     step_options = get_step_options(total_words)
+                    chunk = st.select_slider(f"Số từ mỗi Set:", options=step_options, key=f"slider_{name}")
                     
-                    chunk = st.select_slider(
-                        f"Số từ mỗi Set (Tổng {total_words} từ):", 
-                        options=step_options, 
-                        key=f"slider_{name}"
-                    )
-                    
-                    grid_cols = st.columns(3) 
                     num_sets = (total_words + chunk - 1) // chunk 
                     
-                    for set_idx_zero in range(num_sets):
-                        # Tính toán chỉ số bắt đầu và kết thúc (STT thực tế)
-                        start_num = set_idx_zero * chunk + 1
-                        end_num = min((set_idx_zero + 1) * chunk, total_words)
-                        
-                        # Lấy dữ liệu từ thực tế để tính tiến độ
-                        start_idx = set_idx_zero * chunk
-                        end_idx = min(start_idx + chunk, total_words)
-                        subset = words[start_idx : end_idx]
-                        
-                        # --- LOGIC TÍNH TIẾN ĐỘ ---
-                        mastered_count = sum(1 for sw in subset if st.session_state.progress["words"].get(sw['hz'], 0) >= 3)
-                        rate = mastered_count / len(subset) if len(subset) > 0 else 0
-                        
-                        # --- ĐỊNH DẠNG MÀU SẮC ---
-                        if rate >= 0.8: bg_color = "#22c55e" # Xanh lá (Hoàn thành tốt)
-                        elif rate >= 0.4: bg_color = t['main'] # Màu chủ đạo (Đang học)
-                        else: bg_color = "#475569" # Xám (Mới bắt đầu)
-
-                        btn_key = f"btn_{name}_{start_idx}"
-                        
-                        # CSS cho từng nút dựa trên màu đã tính
-                        st.markdown(f"""
-                            <style>
-                            button[key="{btn_key}"] {{
-                                background-color: {bg_color} !important;
-                                border: 1px solid rgba(255,255,255,0.2) !important;
-                                height: 4rem !important; /* Tăng chiều cao một chút để chứa 2 dòng chữ */
-                                margin-bottom: 8px !important;
-                                line-height: 1.2 !important;
-                            }}
-                            </style>
-                        """, unsafe_allow_html=True)
-
-                        with grid_cols[set_idx_zero % 3]:
-                            # ĐẶT TÊN NHÃN CÓ STT DẢI CÂU HỎI
-                            # Ví dụ: Set 1 (1-30)
-                            set_label = f"Set {set_idx_zero + 1}\n({start_num}-{end_num})"
-                            
-                            if st.button(set_label, key=btn_key, use_container_width=True):
-                                # Tạo danh sách câu hỏi (X2 vì có cả Hán->Việt và Việt->Hán)
-                                set_quiz = []
-                                for w_sub in subset:
-                                    set_quiz.extend([
-                                        {'q': w_sub['vn'].capitalize(), 'a': w_sub['hz'], 'f': w_sub},
-                                        {'q': w_sub['hz'], 'a': w_sub['vn'].capitalize(), 'f': w_sub}
-                                    ])
-                                random.shuffle(set_quiz)
+                    # CHÌA KHÓA: Lặp qua từng hàng (mỗi hàng 3 set)
+                    for row_idx in range(0, num_sets, 3):
+                        cols = st.columns(3) # Tạo 1 hàng có 3 cột
+                        for col_idx in range(3):
+                            set_idx_zero = row_idx + col_idx
+                            if set_idx_zero < num_sets:
+                                # Tính toán STT và dữ liệu
+                                start_num = set_idx_zero * chunk + 1
+                                end_num = min((set_idx_zero + 1) * chunk, total_words)
+                                start_idx = set_idx_zero * chunk
+                                end_idx = min(start_idx + chunk, total_words)
+                                subset = words[start_idx : end_idx]
                                 
-                                st.session_state.update({
-                                    "qs": set_quiz, 
-                                    "curr_nb": f"{name} (Từ {start_num}-{end_num})", 
-                                    "mode": "study", 
-                                    "idx": 0, 
-                                    "answered": False
-                                })
-                                save_resume_state()
-                                st.rerun()
+                                # Tính số từ đã thuộc (mastered >= 3)
+                                mastered_in_set = sum(1 for sw in subset if st.session_state.progress["words"].get(sw['hz'], 0) >= 3)
+                                total_in_set = len(subset)
+                                rate = mastered_in_set / total_in_set if total_in_set > 0 else 0
+                                
+                                # Màu sắc
+                                bg_color = "#22c55e" if rate >= 0.8 else (t['main'] if rate >= 0.4 else "#475569")
+                                btn_key = f"btn_{name}_{start_idx}"
+                                
+                                st.markdown(f"""
+                                    <style>
+                                    button[key="{btn_key}"] {{
+                                        background-color: {bg_color} !important;
+                                        height: 4.5rem !important;
+                                        margin-bottom: 10px !important;
+                                        line-height: 1.2 !important;
+                                        white-space: pre-wrap !important; /* Cho phép xuống dòng trong nút */
+                                    }}
+                                    </style>
+                                """, unsafe_allow_html=True)
+
+                                with cols[col_idx]:
+                                    # Label hiển thị: Set X (1-30) \n Đã thuộc: 15/30
+                                    label = f"Set {set_idx_zero + 1}\n({start_num}-{end_num})\n✅ {mastered_in_set}/{total_in_set}"
+                                    
+                                    if st.button(label, key=btn_key, use_container_width=True):
+                                        # Logic bắt đầu học... (giữ nguyên phần tạo set_quiz của Hải)
+                                        set_quiz = []
+                                        for w_sub in subset:
+                                            set_quiz.extend([
+                                                {'q': w_sub['vn'].capitalize(), 'a': w_sub['hz'], 'f': w_sub},
+                                                {'q': w_sub['hz'], 'a': w_sub['vn'].capitalize(), 'f': w_sub}
+                                            ])
+                                        random.shuffle(set_quiz)
+                                        st.session_state.update({
+                                            "qs": set_quiz, 
+                                            "curr_nb": f"{name} ({start_num}-{end_num})", 
+                                            "mode": "study", "idx": 0, "answered": False
+                                        })
+                                        save_resume_state()
+                                        st.rerun()
+                  
                         
 # --- UI ÔN TẬP (MOBI-OPTIMIZED) ---
 elif st.session_state.mode == "study":
@@ -499,34 +506,60 @@ elif st.session_state.mode == "study":
         
         # --- 3. INPUT & NÚT KIỂM TRA (Nút nằm bên trái) ---
         # Tỷ lệ [1, 4] để nút Check nhỏ và nằm bên trái, nếu màn hình quá hẹp sẽ tự xuống dòng
-        c_check, c_input = st.columns([1, 4])
-        
-        with c_check:
-            check_clicked = st.button("✅", key=f"btn_ck_{curr_idx}", use_container_width=True)
+        st.markdown(f"""
+            <style>
+            /* Ép nút Primary có nền màu chủ đạo, chữ trắng, không bị nền trắng */
+            .stButton > button[data-testid="baseButton-primary"] {{
+                background-color: {t['main']} !important;
+                color: white !important;
+                border: none !important;
+                width: 100% !important;
+                height: 3rem !important;
+            }}
+            /* Hiệu ứng khi di chuột */
+            .stButton > button[data-testid="baseButton-primary"]:hover {{
+                opacity: 0.9;
+                color: white !important;
+            }}
+            </style>
+        """, unsafe_allow_html=True)
+        with st.form(key=f"study_form_{curr_idx}", border=False):
+            c_btn, c_input = st.columns([1, 4])
             
-        with c_input:
-            u_ans = st.text_input("Nhập đáp án:", key=f"ans_{curr_idx}", label_visibility="collapsed", placeholder="Gõ câu trả lời...").strip()
+            with c_input:
+                u_ans = st.text_input(
+                    "Nhập đáp án:", 
+                    key=f"ans_{curr_idx}", 
+                    label_visibility="collapsed", 
+                    placeholder="Gõ câu trả lời..."
+                ).strip()
 
-        # Nút phụ "Xem đáp án" nằm dưới nếu chưa trả lời
-        if not st.session_state.get('answered'):
-            if st.button("Xem đáp án 👁️", use_container_width=True):
+            with c_btn:
+                if not st.session_state.get('answered'):
+                    # Dùng form_submit_button để click 1 phát ăn ngay
+                    # type="primary" sẽ làm nút có màu nền (không bị nền trắng viền xanh)
+                    check_clicked = st.form_submit_button("✅", type="primary")
+                else:
+                    # Sau khi trả lời, nút Tiếp theo thế chỗ
+                    if st.form_submit_button("➡️", type="primary"):
+                        st.session_state.idx += 1
+                        st.session_state.answered = False
+                        save_resume_state()
+                        st.rerun()
+
+        # --- LOGIC XỬ LÝ (Nằm ngoài Form hoặc check biến check_clicked) ---
+        if not st.session_state.get('answered') and check_clicked:
+            if not u_ans:
+                st.warning("Hải ơi, nhập từ đã nhé!")
+            else:
                 st.session_state.answered = True
-                st.session_state.is_correct = False
+                is_ok = (q['a'].lower() in u_ans.lower()) or (u_ans.lower() in q['a'].lower() and len(u_ans) > 0)
+                st.session_state.is_correct = is_ok
+                
                 hz = q['f']['hz']
-                st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) - 1
+                st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) + (1 if is_ok else -1)
                 save_resume_state()
                 st.rerun()
-
-        # Logic xử lý khi bấm nút ✅ hoặc Enter
-        if check_clicked and not st.session_state.answered:
-            st.session_state.answered = True
-            is_ok = (q['a'].lower() in u_ans.lower()) or (u_ans.lower() in q['a'].lower() and len(u_ans) > 0)
-            st.session_state.is_correct = is_ok
-            
-            hz = q['f']['hz']
-            st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) + (1 if is_ok else -1)
-            save_resume_state()
-            st.rerun()
 
         # --- 4. CONTAINER ĐÁP ÁN (CHIA 2 PHẦN) ---
         if st.session_state.get('answered'):
@@ -535,7 +568,7 @@ elif st.session_state.mode == "study":
             else: 
                 st.error(f"Sai rồi! Đáp án: **{q['a']}**")
             
-            # Xây dựng nội dung ví dụ (bên phải)
+            # Nội dung ví dụ bên phải
             ex_content = f"""
                 <div class="ans-right">
                     <b style="color: {t['main']}">Ví dụ:</b><br>
@@ -545,7 +578,7 @@ elif st.session_state.mode == "study":
                 </div>
             """ if q['f']['ex_hz'] else '<div class="ans-right"><i>(Không có ví dụ)</i></div>'
 
-            # Hiển thị Card chi tiết 2 phần
+            # Card hiển thị chi tiết (Không còn nút Tiếp theo ở dưới này nữa)
             st.markdown(f"""
                 <div class="glass-box answer-card">
                     <div class="ans-left">
