@@ -1,0 +1,12 @@
+{
+    "akaide": {
+        "password": "Astroxbay7pro!",
+        "is_admin": true,
+        "theme": "Glacier (G)"
+    },
+    "hungvtn": {
+        "password": "1234",
+        "is_admin": false,
+        "theme": "Ocean Blue (G)"
+    }
+}
