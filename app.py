@@ -17,7 +17,7 @@ if not os.path.exists(DATA_DIR): os.makedirs(DATA_DIR)
 # --- 15 THEMES MODERN TECH ---
 THEMES = {
     "Ocean Blue (G)": {"bg": "#f0f9ff", "main": "#0ea5e9", "text": "#0c4a6e", "border": "#bae6fd", "grad": "linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 100%)", "neon": "0 0 10px #0ea5e9"},
-    "Sakura Pink (G)": {"bg": "#fff0f6", "main": "#ec4899", "text": "#831843", "border": "#fbcfe8", "grad": "linear-gradient(135deg, #fce7f3 0%, #f9a8d4 100%)", "neon": "0 0 10px #ec4899"},
+    "Sakura Pink (G)": {"bg": "#fff0f6", "main": "#f55eb1ff", "text": "#831843", "border": "#fbcfe8", "grad": "linear-gradient(135deg, #fce7f3 0%, #f9a8d4 100%)", "neon": "0 0 10px #ec4899"},
     "Cyberpunk (G)": {"bg": "#0f172a", "main": "#fde047", "text": "#e2e8f0", "border": "#334155", "grad": "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", "neon": "0 0 15px #fde047"},
     "Neon Matrix (G)": {"bg": "#020617", "main": "#22c55e", "text": "#f8fafc", "border": "#064e3b", "grad": "linear-gradient(135deg, #065f46 0%, #022c22 100%)", "neon": "0 0 15px #22c55e"},
     "Sunset Glow (G)": {"bg": "#fff7ed", "main": "#f97316", "text": "#7c2d12", "border": "#fed7aa", "grad": "linear-gradient(135deg, #ffedd5 0%, #fdba74 100%)", "neon": "0 0 10px #f97316"},
@@ -160,7 +160,11 @@ def save_resume_state():
 
 # --- CSS TECH UI ---
 t = THEMES[st.session_state.theme_name]
-st.set_page_config(page_title="HSK Smart Drill", layout="centered")
+st.set_page_config(
+    page_title="HSK Smart 2.0", 
+    page_icon="logo.png",
+    layout="wide"
+)
 
 st.markdown(f"""
     <style>
@@ -183,7 +187,7 @@ st.markdown(f"""
         border-radius: 8px !important; border: none; font-weight: bold; transition: 0.3s;
     }}
     .stButton > button:hover {{ box-shadow: {t['neon']}; opacity: 0.9; }}
-    .stTextInput input {{ text-align: center; border-radius: 10px !important; }}
+    .stTextInput input {{ text-align: center; border-radius: 10px !important; font-size: 20px;}}
     
     /* Responsive Table */
     .dataframe {{ width: 100% !important; }}
@@ -315,7 +319,7 @@ if st.session_state.mode == "manage":
 
                 # --- PHẦN NÀY DÀNH CHO ADMIN: NÚT SỬA & XÓA ---
                 if is_admin:
-                    c3.button("⚙️ Sửa", key=f"ed_btn_{name}", use_container_width=True, 
+                    c3.button("🤕 Sửa", key=f"ed_btn_{name}", use_container_width=True, 
                               on_click=lambda n=name: st.session_state.update({"editing_nb": n if st.session_state.get("editing_nb") != n else None}))
                     
                     # Khởi tạo trạng thái xác nhận nếu chưa có
@@ -325,7 +329,7 @@ if st.session_state.mode == "manage":
 
                     # Kiểm tra xem có đang trong trạng thái chờ xóa không
                     if not st.session_state[confirm_key]:
-                        if c4.button("🗑️ Xóa", key=f"dl_{name}", use_container_width=True):
+                        if c4.button("😵 Xóa", key=f"dl_{name}", use_container_width=True):
                             st.session_state[confirm_key] = True
                             st.rerun()
                     else:
@@ -375,7 +379,9 @@ if st.session_state.mode == "manage":
                 if st.session_state.get('view_nb') == name:
                     st.markdown("<div class='glass-box'>", unsafe_allow_html=True)
                     df_data = []
+                    idx = 0
                     for w in words:
+                        idx += 1
                         hz = w['hz']
                         status_val = st.session_state.progress["words"].get(hz, 0)
                         status = "🟢 Thuộc" if status_val >= 3 else ("🔴 Yếu" if status_val < 0 else "⚪ Mới")
@@ -387,7 +393,7 @@ if st.session_state.mode == "manage":
                             "Trạng thái": status
                         })
                     
-                    st.dataframe(pd.DataFrame(df_data), use_container_width=True, hide_index=True)
+                    st.dataframe(pd.DataFrame(df_data), use_container_width=True, hide_index=False)
                     st.markdown("</div>", unsafe_allow_html=True)
                     
                 # --- CHỨC NĂNG CHIA SET NÂNG CAO (MÀU SẮC THEO TIẾN ĐỘ) ---
@@ -502,7 +508,7 @@ elif st.session_state.mode == "study":
         st.progress((curr_idx) / total)
         
         # Câu hỏi to, rõ ràng
-        st.markdown(f'<div class="question-container"><h1 style="margin:0; font-size:1.8rem; text-align:center;">{q["q"]}</h1></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="question-container"><h3 style="margin:0; font-size:1.8rem; text-align:center; font-weight: 600">{q["q"]}</h3></div>', unsafe_allow_html=True)
         
         # --- 3. INPUT & NÚT KIỂM TRA (Nút nằm bên trái) ---
         # Tỷ lệ [1, 4] để nút Check nhỏ và nằm bên trái, nếu màn hình quá hẹp sẽ tự xuống dòng
@@ -550,7 +556,7 @@ elif st.session_state.mode == "study":
         # --- LOGIC XỬ LÝ (Nằm ngoài Form hoặc check biến check_clicked) ---
         if not st.session_state.get('answered') and check_clicked:
             if not u_ans:
-                st.warning("Hải ơi, nhập từ đã nhé!")
+                st.warning("Nhập từ đã nhé!")
             else:
                 st.session_state.answered = True
                 is_ok = (q['a'].lower() in u_ans.lower()) or (u_ans.lower() in q['a'].lower() and len(u_ans) > 0)
@@ -589,12 +595,6 @@ elif st.session_state.mode == "study":
                     {ex_content}
                 </div>
             """, unsafe_allow_html=True)
-            
-            if st.button("Tiếp theo ➡️", use_container_width=True):
-                st.session_state.idx += 1
-                st.session_state.answered = False
-                save_resume_state()
-                st.rerun()
 
         auto_focus()
     else:
