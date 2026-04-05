@@ -573,6 +573,7 @@ elif st.session_state.mode == "study":
                 st.success("🎉 Chính xác!")
             else: 
                 st.error(f"Sai rồi! Đáp án: **{q['a']}**")
+                st.session_state.qs.append(st.session_state.qs[curr_idx])
             
             # Nội dung ví dụ bên phải
             ex_content = f"""
