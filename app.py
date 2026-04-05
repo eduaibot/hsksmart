@@ -302,7 +302,7 @@ if st.session_state.mode == "manage":
                     quiz = []
                     for w in words:
                         forms = [
-                            {'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w},
+                            {'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w},
                         ]
                         forms += forms
                         quiz.extend(forms)
@@ -447,8 +447,8 @@ if st.session_state.mode == "manage":
                                         set_quiz = []
                                         for w_sub in subset:
                                             set_quiz.extend([
-                                                {'q': w_sub['vn'].capitalize(), 'a': w_sub['hz'], 'f': w_sub},
-                                                {'q': w_sub['vn'].capitalize(), 'a': w_sub['hz'], 'f': w_sub},
+                                                {'q': w_sub['hz'].capitalize(), 'a': w_sub['vn'], 'f': w_sub},
+                                                {'q': w_sub['hz'].capitalize(), 'a': w_sub['vn'], 'f': w_sub},
                                             ])
                                         random.shuffle(set_quiz)
                                         st.session_state.update({
