@@ -6405,9 +6405,9 @@
                 "hz": "树",
                 "py": "shù",
                 "vn": "cây",
-                "ex_hz": "树上的鸟 zài chànggē.",
+                "ex_hz": "树上的鸟 trong singing.",
                 "ex_py": "Shù shàng de niǎo zài chànggē.",
-                "ex_vn": "Chim trên cây đang hót."
+                "ex_vn": "Con chim trên cây đang hót."
             },
             {
                 "hz": "数学",
@@ -6423,7 +6423,7 @@
                 "vn": "đánh răng",
                 "ex_hz": "我每天刷两次牙。",
                 "ex_py": "Wǒ měitiān shuā liǎng cì yá.",
-                "ex_vn": "Tôi đánh răng 2 lần mỗi ngày."
+                "ex_vn": "Tôi đánh răng hai lần mỗi ngày."
             },
             {
                 "hz": "双",
@@ -6437,15 +6437,15 @@
                 "hz": "水平",
                 "py": "shuǐpíng",
                 "vn": "trình độ",
-                "ex_hz": "游泳水平很高。",
-                "ex_py": "Yóuyǒng shuǐpíng hěn gāo.",
-                "ex_vn": "Trình độ bơi rất cao."
+                "ex_hz": "他的游泳水平很高。",
+                "ex_py": "Tā de yóuyǒng shuǐpíng hěn gāo.",
+                "ex_vn": "Trình độ bơi của anh ấy rất cao."
             },
             {
                 "hz": "司机",
                 "py": "sījī",
-                "vn": "tài xế",
-                "ex_hz": "他是我们的司机。",
+                "vn": "lái xe, tài xế",
+                "ex_hz": "他 là tài xế của chúng tôi.",
                 "ex_py": "Tā shì wǒmen de sījī.",
                 "ex_vn": "Anh ấy là tài xế của chúng tôi."
             },
@@ -6453,9 +6453,9 @@
                 "hz": "虽然",
                 "py": "suīrán",
                 "vn": "tuy rằng",
-                "ex_hz": "虽然他很忙。",
-                "ex_py": "Suīrán tā hěn máng.",
-                "ex_vn": "Mặc dù anh ấy rất bận."
+                "ex_hz": "虽然他很忙，但他还是来了。",
+                "ex_py": "Suīrán tā hěn máng, dàn tā háishì lái le.",
+                "ex_vn": "Mặc dù anh ấy rất bận, nhưng anh ấy vẫn đến."
             },
             {
                 "hz": "太阳",
@@ -6463,12 +6463,12 @@
                 "vn": "mặt trời",
                 "ex_hz": "太阳出来了。",
                 "ex_py": "Tàiyáng chū lái le.",
-                "ex_vn": "Mặt trời đã mọc rồi."
+                "ex_vn": "Mặt trời đã mọc."
             },
             {
                 "hz": "糖",
                 "py": "táng",
-                "vn": "kẹo/đường",
+                "vn": "kẹo, đường",
                 "ex_hz": "我不喜欢吃糖。",
                 "ex_py": "Wǒ bù xǐhuān chī táng.",
                 "ex_vn": "Tôi không thích ăn kẹo."
@@ -6493,17 +6493,17 @@
                 "hz": "提高",
                 "py": "tígāo",
                 "vn": "nâng cao",
-                "ex_hz": "提高汉语水平。",
-                "ex_py": "Tígāo hànyǔ shuǐpíng.",
-                "ex_vn": "Nâng cao trình độ tiếng Trung."
+                "ex_hz": "我们要提高汉语水平。",
+                "ex_py": "Wǒmen yào tígāo hànyǔ shuǐpíng.",
+                "ex_vn": "Chúng ta cần nâng cao trình độ tiếng Trung."
             },
             {
                 "hz": "体育",
                 "py": "tǐyù",
-                "vn": "thể thao",
+                "vn": "thể dục, thể thao",
                 "ex_hz": "我喜欢体育运动。",
                 "ex_py": "Wǒ xǐhuān tǐyù yùndòng.",
-                "ex_vn": "Tôi thích vận động thể thao."
+                "ex_vn": "Tôi thích các hoạt động thể thao."
             },
             {
                 "hz": "甜",
@@ -6516,10 +6516,10 @@
             {
                 "hz": "条",
                 "py": "tiáo",
-                "vn": "sợi/cái",
-                "ex_hz": "买了一条裤子。",
-                "ex_py": "Mǎi le yī tiáo kùzi.",
-                "ex_vn": "Đã mua một chiếc quần."
+                "vn": "sợi, cái",
+                "ex_hz": "他买了一条裤子。",
+                "ex_py": "Tā mǎi le yī tiáo kùzi.",
+                "ex_vn": "Anh ấy đã mua một chiếc quần."
             },
             {
                 "hz": "同事",
@@ -6543,7 +6543,7 @@
                 "vn": "tóc",
                 "ex_hz": "她的头发很长。",
                 "ex_py": "Tā de tóufa hěn cháng.",
-                "ex_vn": "Tóc cô ấy rất dài."
+                "ex_vn": "Tóc của cô ấy rất dài."
             },
             {
                 "hz": "突然",
@@ -6557,9 +6557,9 @@
                 "hz": "图书馆",
                 "py": "túshūguǎn",
                 "vn": "thư viện",
-                "ex_hz": "去图书馆看书吧。",
-                "ex_py": "Qù túshūguǎn kànshū ba.",
-                "ex_vn": "Đến thư viện đọc sách đi."
+                "ex_hz": "我们去图书馆看书吧。",
+                "ex_py": "Wǒmen qù túshūguǎn kànshū ba.",
+                "ex_vn": "Chúng ta đến thư viện đọc sách nhé."
             },
             {
                 "hz": "腿",
@@ -6583,31 +6583,31 @@
                 "vn": "bát",
                 "ex_hz": "他吃了三碗饭。",
                 "ex_py": "Tā chī le sān wǎn fàn.",
-                "ex_vn": "Anh ấy ăn 3 bát cơm."
+                "ex_vn": "Anh ấy đã ăn ba bát cơm."
             },
             {
                 "hz": "万",
                 "py": "wàn",
-                "vn": "vạn (10k)",
-                "ex_hz": "一万个人参加比赛。",
-                "ex_py": "Yī wàn gè rén cānjiā bǐsài.",
-                "ex_vn": "10k người tham gia cuộc thi."
+                "vn": "vạn, mười nghìn",
+                "ex_hz": "一万个人参加了比赛。",
+                "ex_py": "Yī wàn gè rén cānjiā le bǐsài.",
+                "ex_vn": "Mười nghìn người đã tham gia cuộc thi."
             },
             {
                 "hz": "忘记",
                 "py": "wàngjì",
                 "vn": "quên",
-                "ex_hz": "不要忘记带书。",
-                "ex_py": "Bùyào wàngjì dài shū.",
-                "ex_vn": "Đừng quên mang sách nhé."
+                "ex_hz": "请不要忘记带书。",
+                "ex_py": "Qǐng bùyào wàngjì dài shū.",
+                "ex_vn": "Vui lòng đừng quên mang sách."
             },
             {
                 "hz": "位",
                 "py": "wèi",
-                "vn": "vị/ngài",
-                "ex_hz": "坐在这位先生旁边。",
-                "ex_py": "Zuò zài zhè wèi xiānshēng pángbiān.",
-                "ex_vn": "Ngồi cạnh vị tiên sinh này."
+                "vn": "vị, ngài",
+                "ex_hz": "请坐在这位先生旁边。",
+                "ex_py": "Qǐng zuò zài zhè wèi xiānshēng pángbiān.",
+                "ex_vn": "Xin ngồi bên cạnh ông này."
             },
             {
                 "hz": "为",
@@ -6620,18 +6620,18 @@
             {
                 "hz": "为了",
                 "py": "wèile",
-                "vn": "để/vì",
-                "ex_hz": "为了学习汉语。",
-                "ex_py": "Wèile xuéxí hànyǔ.",
-                "ex_vn": "Để học tiếng Trung."
+                "vn": "để, vì",
+                "ex_hz": "我来中国是为了学习汉语。",
+                "ex_py": "Wǒ lái Zhōngguó shì wèile xuéxí hànyǔ.",
+                "ex_vn": "Tôi đến Trung Quốc để học tiếng Trung."
             },
             {
                 "hz": "文化",
                 "py": "wénhuà",
                 "vn": "văn hóa",
-                "ex_hz": "对中国文化感兴趣。",
-                "ex_py": "Duì Zhōngguó wénhuà gǎn xìngqù.",
-                "ex_vn": "Hứng thú với văn hóa Trung Quốc."
+                "ex_hz": "他对中国文化很感兴趣。",
+                "ex_py": "Tā duì Zhōngguó wénhuà hěn gǎn xìngqù.",
+                "ex_vn": "Anh ấy rất quan tâm đến văn hóa Trung Quốc."
             },
             {
                 "hz": "西",
@@ -6647,7 +6647,7 @@
                 "vn": "thói quen",
                 "ex_hz": "他习惯早起。",
                 "ex_py": "Tā xíguàn zǎoqǐ.",
-                "ex_vn": "Anh ấy có thói quen dậy sớm."
+                "ex_vn": "Anh ấy quen dậy sớm."
             },
             {
                 "hz": "洗手间",
@@ -6661,9 +6661,9 @@
                 "hz": "洗澡",
                 "py": "xǐzǎo",
                 "vn": "tắm",
-                "ex_hz": "我每天早上洗澡。",
-                "ex_py": "Wǒ měitiān zǎoshang xǐzǎo.",
-                "ex_vn": "Sáng nào tôi cũng tắm."
+                "ex_hz": "我每天早上都洗澡。",
+                "ex_py": "Wǒ měitiān zǎoshang dōu xǐzǎo.",
+                "ex_vn": "Tôi đều tắm vào mỗi buổi sáng."
             },
             {
                 "hz": "喜欢",
@@ -6676,10 +6676,10 @@
             {
                 "hz": "现在",
                 "py": "xiànzài",
-                "vn": "hiện tại",
+                "vn": "hiện",
                 "ex_hz": "现在是八点。",
                 "ex_py": "Xiànzài shì bā diǎn.",
-                "ex_vn": "Bây giờ là 8 giờ."
+                "ex_vn": "Bây giờ là tám giờ."
             },
             {
                 "hz": "香蕉",
@@ -6695,7 +6695,7 @@
                 "vn": "giống nhau",
                 "ex_hz": "我们的看法相同。",
                 "ex_py": "Wǒmen de kànfǎ xiāngtóng.",
-                "ex_vn": "Quan điểm chúng tôi giống nhau."
+                "ex_vn": "Quan điểm của chúng tôi giống nhau."
             },
             {
                 "hz": "相信",
@@ -6703,15 +6703,15 @@
                 "vn": "tin tưởng",
                 "ex_hz": "我相信他的话。",
                 "ex_py": "Wǒ xiāngxìn tā de huà.",
-                "ex_vn": "Tôi tin lời anh ấy nói."
+                "ex_vn": "Tôi tin lời anh ấy."
             },
             {
                 "hz": "像",
                 "py": "xiàng",
                 "vn": "giống",
-                "ex_hz": "他像爸爸一样高。",
-                "ex_py": "Tā xiàng bàba yīyàng gāo.",
-                "ex_vn": "Anh ấy cao giống bố."
+                "ex_hz": "他像他爸爸一样高。",
+                "ex_py": "Tā xiàng tā bàba yīyàng gāo.",
+                "ex_vn": "Anh ấy cao giống như bố của mình."
             },
             {
                 "hz": "小心",
@@ -6719,71 +6719,71 @@
                 "vn": "cẩn thận",
                 "ex_hz": "请小心地走路。",
                 "ex_py": "Qǐng xiǎoxīn de zǒulù.",
-                "ex_vn": "Hãy đi đứng cẩn thận."
+                "ex_vn": "Vui lòng đi bộ cẩn thận."
             },
             {
                 "hz": "校长",
                 "py": "xiàozhǎng",
                 "vn": "hiệu trưởng",
-                "ex_hz": "校长在办公室。",
-                "ex_py": "Xiàozhǎng zài bàngōngshì.",
-                "ex_vn": "Hiệu trưởng ở văn phòng."
+                "ex_hz": "校长在办公室工作。",
+                "ex_py": "Xiàozhǎng zài bàngōngshì gōngzuò.",
+                "ex_vn": "Hiệu trưởng làm việc trong văn phòng."
             },
             {
                 "hz": "鞋",
                 "py": "xié",
                 "vn": "giày",
-                "ex_hz": "买了一双新鞋。",
-                "ex_py": "Mǎi le yī shuāng xīn xié.",
-                "ex_vn": "Đã mua một đôi giày mới."
+                "ex_hz": "我买了一双新鞋。",
+                "ex_py": "Wǒ mǎi le yī shuāng xīn xié.",
+                "ex_vn": "Tôi đã mua một đôi giày mới."
             },
             {
                 "hz": "新闻",
                 "py": "xīnwén",
                 "vn": "tin tức",
-                "ex_hz": "我每天看新闻。",
-                "ex_py": "Wǒ měitiān kàn xīnwén.",
+                "ex_hz": "我每天都看新闻。",
+                "ex_py": "Wǒ měitiān dōu kàn xīnwén.",
                 "ex_vn": "Tôi xem tin tức mỗi ngày."
             },
             {
                 "hz": "新鲜",
                 "py": "xīnxiān",
                 "vn": "tươi mới",
-                "ex_hz": "水果很新鲜。",
-                "ex_py": "Shuǐguǒ hěn xīnxiān.",
-                "ex_vn": "Trái cây rất tươi."
+                "ex_hz": "这些水果很新鲜。",
+                "ex_py": "Zhèxiē shuǐguǒ hěn xīnxiān.",
+                "ex_vn": "Những loại trái cây này rất tươi."
             },
             {
                 "hz": "信",
                 "py": "xìn",
-                "vn": "thư",
-                "ex_hz": "我写了一封信。",
-                "ex_py": "Wǒ xiě le yī fēng xìn.",
-                "ex_vn": "Tôi đã viết một bức thư."
+                "vn": "thư, tin tưởng",
+                "ex_hz": "我给你写了一封信。",
+                "ex_py": "Wǒ gěi nǐ xiě le yī fēng xìn.",
+                "ex_vn": "Tôi đã viết cho bạn một bức thư."
             },
             {
                 "hz": "行李箱",
                 "py": "xínglǐxiāng",
                 "vn": "vali",
-                "ex_hz": "行李箱很重。",
-                "ex_py": "Xínglǐxiāng hěn zhòng.",
-                "ex_vn": "Vali rất nặng."
+                "ex_hz": "我的行李箱很重。",
+                "ex_py": "Wǒ de xínglǐxiāng hěn zhòng.",
+                "ex_vn": "Vali của tôi rất nặng."
             },
             {
                 "hz": "兴趣",
                 "py": "xìngqù",
                 "vn": "hứng thú",
-                "ex_hz": "对文化有兴趣。",
-                "ex_py": "Duì wénhuà yǒu xìngqù.",
-                "ex_vn": "Có hứng thú với văn hóa."
+                "ex_hz": "我对中国文化有兴趣。",
+                "ex_py": "Wǒ duì Zhōngguó wénhuà yǒu xìngqù.",
+                "ex_vn": "Tôi có hứng thú với văn hóa Trung Quốc."
             },
             {
                 "hz": "熊猫",
                 "py": "xióngmāo",
                 "vn": "gấu trúc",
-                "ex_hz": "熊猫是国宝。",
-                "ex_py": "Xióngmāo shì guóbǎo.",
-                "ex_vn": "Gấu trúc là quốc bảo."
+                "ex_hz": "熊猫是中国的国宝。",
+                "ex_py": "Xióngmāo shì Zhōngguó de guóbǎo.",
+                "ex_vn": "Gấu trúc là báu vật quốc gia của Trung Quốc."
             },
             {
                 "hz": "需要",
@@ -6797,49 +6797,49 @@
                 "hz": "选择",
                 "py": "xuǎnzé",
                 "vn": "lựa chọn",
-                "ex_hz": "你可以选择礼物。",
-                "ex_py": "Nǐ kěyǐ xuǎnzé lǐwù.",
-                "ex_vn": "Bạn có thể chọn quà."
+                "ex_hz": "你可以选择一个礼物。",
+                "ex_py": "Nǐ kěyǐ xuǎnzé yī gè lǐwù.",
+                "ex_vn": "Bạn có thể chọn một món quà."
             },
             {
                 "hz": "眼镜",
                 "py": "yǎnjìng",
                 "vn": "kính",
-                "ex_hz": "他戴着眼镜。",
-                "ex_py": "Tā dài zhe yǎnjìng.",
-                "ex_vn": "Anh ấy đang đeo kính."
+                "ex_hz": "他戴着一副眼镜。",
+                "ex_py": "Tā dài zhe yī fù yǎnjìng.",
+                "ex_vn": "Anh ấy đang đeo một chiếc kính."
             },
             {
                 "hz": "要求",
                 "py": "yāoqiú",
                 "vn": "yêu cầu",
-                "ex_hz": "老师要求很高。",
-                "ex_py": "Lǎoshī yāoqiú hěn gāo.",
-                "ex_vn": "Thầy giáo yêu cầu rất cao."
+                "ex_hz": "老师对学生有很高的要求。",
+                "ex_py": "Lǎoshī duì xuéshēng yǒu hěn gāo de yāoqiú.",
+                "ex_vn": "Giáo viên có yêu cầu rất cao đối với học sinh."
             },
             {
                 "hz": "爷爷",
                 "py": "yéye",
                 "vn": "ông nội",
-                "ex_hz": "爷爷喜欢看书。",
-                "ex_py": "Yéye xǐhuān kàn shū.",
-                "ex_vn": "Ông nội thích đọc sách."
+                "ex_hz": "我爷爷很喜欢看书。",
+                "ex_py": "Wǒ yéye hěn xǐhuān kàn shū.",
+                "ex_vn": "Ông của tôi rất thích đọc sách."
             },
             {
                 "hz": "一定",
                 "py": "yīdìng",
                 "vn": "nhất định",
-                "ex_hz": "一定努力学习。",
-                "ex_py": "Yídìng nǔlì xuéxí.",
-                "ex_vn": "Nhất định nỗ lực học tập."
+                "ex_hz": "我一定会努力学习。",
+                "ex_py": "Wǒ yídìng huì nǔlì xuéxí.",
+                "ex_vn": "Tôi chắc chắn sẽ học chăm chỉ."
             },
             {
                 "hz": "一共",
                 "py": "yīgòng",
                 "vn": "tổng cộng",
-                "ex_hz": "一共有五个人。",
-                "ex_py": "Yígòng yǒu wǔ gè rén.",
-                "ex_vn": "Tổng cộng có 5 người."
+                "ex_hz": "我们一共有五个人。",
+                "ex_py": "Wǒmen yígòng yǒu wǔ gè rén.",
+                "ex_vn": "Chúng tôi có tổng cộng năm người."
             },
             {
                 "hz": "一会儿",
@@ -6847,15 +6847,15 @@
                 "vn": "một lát",
                 "ex_hz": "请等我一会儿。",
                 "ex_py": "Qǐng děng wǒ yíhuìr.",
-                "ex_vn": "Xin đợi tôi một lát."
+                "ex_vn": "Xin hãy đợi tôi một lát."
             },
             {
                 "hz": "一样",
                 "py": "yīyàng",
                 "vn": "giống nhau",
-                "ex_hz": "他们和我们一样。",
-                "ex_py": "Tāmen hé wǒmen yīyàng.",
-                "ex_vn": "Họ giống như chúng tôi."
+                "ex_hz": "他们和我们一样高。",
+                "ex_py": "Tāmen hé wǒmen yīyàng gāo.",
+                "ex_vn": "Họ cao bằng chúng tôi."
             },
             {
                 "hz": "以后",
@@ -6863,39 +6863,39 @@
                 "vn": "sau này",
                 "ex_hz": "我以后再来。",
                 "ex_py": "Wǒ yǐhòu zài lái.",
-                "ex_vn": "Tôi sẽ quay lại sau."
+                "ex_vn": "Tôi sẽ đến sau."
             },
             {
                 "hz": "以前",
                 "py": "yǐqián",
                 "vn": "trước đây",
-                "ex_hz": "以前住在北京。",
-                "ex_py": "Yǐqián zhù zài Běijīng.",
-                "ex_vn": "Trước đây sống ở Bắc Kinh."
+                "ex_hz": "我以前住在北京。",
+                "ex_py": "Wǒ yǐqián zhù zài Běijīng.",
+                "ex_vn": "Tôi đã từng sống ở Bắc Kinh."
             },
             {
                 "hz": "以为",
                 "py": "yǐwéi",
-                "vn": "tưởng là",
-                "ex_hz": "我以为你不来。",
-                "ex_py": "Wǒ yǐwéi nǐ bù lái.",
-                "ex_vn": "Tôi tưởng bạn không đến."
+                "vn": "cho rằng",
+                "ex_hz": "我以为你不来了。",
+                "ex_py": "Wǒ yǐwéi nǐ bù lái le.",
+                "ex_vn": "Tôi tưởng rằng bạn không đến."
             },
             {
                 "hz": "一般",
                 "py": "yībān",
-                "vn": "bình thường",
-                "ex_hz": "饭馆很一般。",
-                "ex_py": "Fànguǎn hěn yībān.",
-                "ex_vn": "Nhà hàng rất bình thường."
+                "vn": "thông thường",
+                "ex_hz": "这个饭馆很一般。",
+                "ex_py": "Zhège fànguǎn hěn yībān.",
+                "ex_vn": "Nhà hàng này rất bình thường."
             },
             {
                 "hz": "一边",
                 "py": "yībiān",
-                "vn": "vừa... vừa",
-                "ex_hz": "一边吃饭一边看。",
-                "ex_py": "Yìbiān chīfàn yìbiān kàn.",
-                "ex_vn": "Vừa ăn vừa xem."
+                "vn": "vừa ... vừa ...",
+                "ex_hz": "他一边吃饭一边看电视。",
+                "ex_py": "Tā yìbiān chīfàn yìbiān kàn diànshì.",
+                "ex_vn": "Anh ấy vừa ăn vừa xem TV."
             },
             {
                 "hz": "一直",
@@ -6917,9 +6917,9 @@
                 "hz": "银行",
                 "py": "yínháng",
                 "vn": "ngân hàng",
-                "ex_hz": "去银行取钱。",
-                "ex_py": "Qù yínháng qǔ qián.",
-                "ex_vn": "Đi ngân hàng rút tiền."
+                "ex_hz": "我去银行取钱。",
+                "ex_py": "Wǒ qù yínháng qǔ qián.",
+                "ex_vn": "Tôi đến ngân hàng rút tiền."
             },
             {
                 "hz": "应该",
@@ -6933,17 +6933,17 @@
                 "hz": "影响",
                 "py": "yǐngxiǎng",
                 "vn": "ảnh hưởng",
-                "ex_hz": "电影影响很大。",
-                "ex_py": "Diànyǐng yǐngxiǎng hěn dà.",
-                "ex_vn": "Bộ phim ảnh hưởng rất lớn."
+                "ex_hz": "这个电影对我影响很大。",
+                "ex_py": "Zhège diànyǐng duì wǒ yǐngxiǎng hěn dà.",
+                "ex_vn": "Bộ phim này có ảnh hưởng lớn đối với tôi."
             },
             {
                 "hz": "用",
                 "py": "yòng",
                 "vn": "dùng",
-                "ex_hz": "不要用手机。",
-                "ex_py": "Bùyào yòng shǒujī.",
-                "ex_vn": "Đừng dùng điện thoại."
+                "ex_hz": "请不要用手机。",
+                "ex_py": "Qǐng bùyào yòng shǒujī.",
+                "ex_vn": "Vui lòng không sử dụng điện thoại."
             },
             {
                 "hz": "游戏",
@@ -6951,39 +6951,39 @@
                 "vn": "trò chơi",
                 "ex_hz": "我喜欢玩游戏。",
                 "ex_py": "Wǒ xǐhuān wán yóuxì.",
-                "ex_vn": "Tôi thích chơi game."
+                "ex_vn": "Tôi thích chơi trò chơi."
             },
             {
                 "hz": "又",
                 "py": "yòu",
-                "vn": "lại/vừa",
+                "vn": "lại, vừa",
                 "ex_hz": "他又来了。",
                 "ex_py": "Tā yòu lái le.",
-                "ex_vn": "Anh ấy lại đến rồi."
+                "ex_vn": "Anh ấy lại đến."
             },
             {
                 "hz": "有名",
                 "py": "yǒumíng",
                 "vn": "nổi tiếng",
-                "ex_hz": "有名的歌手。",
-                "ex_py": "Yǒumíng de gēshǒu.",
-                "ex_vn": "Ca sĩ nổi tiếng."
+                "ex_hz": "他是一个有名的歌手。",
+                "ex_py": "Tā shì yī gè yǒumíng de gēshǒu.",
+                "ex_vn": "Anh ấy là một ca sĩ nổi tiếng."
             },
             {
                 "hz": "遇到",
                 "py": "yùdào",
                 "vn": "gặp phải",
-                "ex_hz": "路上遇到他。",
-                "ex_py": "Lùshàng yùdào tā.",
-                "ex_vn": "Gặp anh ấy trên đường."
+                "ex_hz": "我在路上遇到他了。",
+                "ex_py": "Wǒ zài lùshàng yùdào tā le.",
+                "ex_vn": "Tôi đã gặp anh ấy trên đường."
             },
             {
                 "hz": "月亮",
                 "py": "yuèliàng",
                 "vn": "mặt trăng",
-                "ex_hz": "月亮很圆。",
-                "ex_py": "Yuèliàng hěn yuán.",
-                "ex_vn": "Trăng rất tròn."
+                "ex_hz": "今天晚上的月亮很圆。",
+                "ex_py": "Jīntiān wǎnshang de yuèliàng hěn yuán.",
+                "ex_vn": "Trăng tối nay rất tròn."
             },
             {
                 "hz": "云",
@@ -6996,18 +6996,18 @@
             {
                 "hz": "站",
                 "py": "zhàn",
-                "vn": "đứng/trạm",
+                "vn": "đứng, trạm",
                 "ex_hz": "请站在这儿。",
                 "ex_py": "Qǐng zhàn zài zhèr.",
-                "ex_vn": "Hãy đứng ở đây."
+                "ex_vn": "Xin hãy đứng ở đây."
             },
             {
                 "hz": "长",
                 "py": "zhǎng",
-                "vn": "lớn lên",
+                "vn": "dài",
                 "ex_hz": "他长得很高。",
                 "ex_py": "Tā zhǎng de hěn gāo.",
-                "ex_vn": "Anh ấy cao lớn."
+                "ex_vn": "Anh ấy cao."
             },
             {
                 "hz": "着急",
@@ -7029,73 +7029,73 @@
                 "hz": "照片",
                 "py": "zhàopiàn",
                 "vn": "bức ảnh",
-                "ex_hz": "照片很好看。",
-                "ex_py": "Zhàopiàn hěn hǎokàn.",
-                "ex_vn": "Bức ảnh rất đẹp."
+                "ex_hz": "这张照片很好看。",
+                "ex_py": "Zhè zhāng zhàopiàn hěn hǎokàn.",
+                "ex_vn": "Bức ảnh này rất đẹp."
             },
             {
                 "hz": "照相机",
                 "py": "zhàoxiàngjī",
                 "vn": "máy ảnh",
-                "ex_hz": "有台新照相机。",
-                "ex_py": "Yǒu tái xīn zhàoxiàngjī.",
-                "ex_vn": "Có chiếc máy ảnh mới."
+                "ex_hz": "我有一台新的照相机。",
+                "ex_py": "Wǒ yǒu yī tái xīn de zhàoxiàngjī.",
+                "ex_vn": "Tôi có một chiếc máy ảnh mới."
             },
             {
                 "hz": "只",
                 "py": "zhǐ",
                 "vn": "chỉ",
-                "ex_hz": "我只吃了一点。",
-                "ex_py": "Wǒ zhǐ chī le yīdiǎn.",
+                "ex_hz": "我只吃了一点儿。",
+                "ex_py": "Wǒ zhǐ chī le yīdiǎnr.",
                 "ex_vn": "Tôi chỉ ăn một chút."
             },
             {
                 "hz": "中间",
                 "py": "zhōngjiān",
                 "vn": "ở giữa",
-                "ex_hz": "站在房间中间。",
-                "ex_py": "Zhàn zài fángjiān zhōngjiān.",
-                "ex_vn": "Đứng giữa phòng."
+                "ex_hz": "他站在房间的中间。",
+                "ex_py": "Tā zhàn zài fángjiān de zhōngjiān.",
+                "ex_vn": "Anh ấy đứng ở giữa phòng."
             },
             {
                 "hz": "终于",
                 "py": "zhōngyú",
                 "vn": "cuối cùng",
-                "ex_hz": "终于完成了。",
-                "ex_py": "Zhōngyú wánchéng le.",
-                "ex_vn": "Cuối cùng đã hoàn thành."
+                "ex_hz": "我终于完成了作业。",
+                "ex_py": "Wǒ zhōngyú wánchéng le zuòyè.",
+                "ex_vn": "Cuối cùng tôi đã hoàn thành bài tập."
             },
             {
                 "hz": "种",
                 "py": "zhǒng",
-                "vn": "loại",
-                "ex_hz": "喜欢这种花。",
-                "ex_py": "Xǐhuān zhè zhǒng huā.",
-                "ex_vn": "Thích loại hoa này."
+                "vn": "loại, hạt giống",
+                "ex_hz": "他喜欢这种花。",
+                "ex_py": "Tā xǐhuān zhè zhǒng huā.",
+                "ex_vn": "Anh ấy thích loại hoa này."
             },
             {
                 "hz": "重要",
                 "py": "zhòngyào",
                 "vn": "quan trọng",
-                "ex_hz": "这事很重要。",
-                "ex_py": "Zhè shì hěn zhòngyào.",
+                "ex_hz": "这件事很重要。",
+                "ex_py": "Zhè jiàn shì hěn zhòngyào.",
                 "ex_vn": "Việc này rất quan trọng."
             },
             {
                 "hz": "主要",
                 "py": "zhǔyào",
                 "vn": "chủ yếu",
-                "ex_hz": "主要问题是时间。",
-                "ex_py": "Zhǔyào wèntí shì shíjiān.",
-                "ex_vn": "Vấn đề chính là thời gian."
+                "ex_hz": "主要问题是时间不够。",
+                "ex_py": "Zhǔyào wèntí shì shíjiān bù gòu.",
+                "ex_vn": "Vấn đề chính là không đủ thời gian."
             },
             {
                 "hz": "周末",
                 "py": "zhōumò",
                 "vn": "cuối tuần",
-                "ex_hz": "周末去公园。",
-                "ex_py": "Zhōumò qù gōngyuán.",
-                "ex_vn": "Cuối tuần đi công viên."
+                "ex_hz": "周末我去公园玩。",
+                "ex_py": "Zhōumò wǒ qù gōngyuán wán.",
+                "ex_vn": "Cuối tuần tôi đi công viên chơi."
             },
             {
                 "hz": "祝",
@@ -7111,23 +7111,23 @@
                 "vn": "chú ý",
                 "ex_hz": "请注意安全。",
                 "ex_py": "Qǐng zhùyì ānquán.",
-                "ex_vn": "Hãy chú ý an toàn."
+                "ex_vn": "Vui lòng chú ý an toàn."
             },
             {
                 "hz": "字典",
                 "py": "zìdiǎn",
                 "vn": "từ điển",
-                "ex_hz": "需要一本字典。",
-                "ex_py": "Xūyào yī běn zìdiǎn.",
-                "ex_vn": "Cần một quyển từ điển."
+                "ex_hz": "我 cần một cuốn từ điển.",
+                "ex_py": "Wǒ xūyào yī běn zìdiǎn.",
+                "ex_vn": "Tôi cần một quyển từ điển."
             },
             {
                 "hz": "自己",
                 "py": "zìjǐ",
                 "vn": "bản thân",
-                "ex_hz": "自己的问题。",
-                "ex_py": "Zìjǐ de wèntí.",
-                "ex_vn": "Vấn đề của chính mình."
+                "ex_hz": "这是 me của chính tôi.",
+                "ex_py": "Zhè shì wǒ zìjǐ de wèntí.",
+                "ex_vn": "Đây là vấn đề của chính tôi."
             },
             {
                 "hz": "总是",
@@ -7135,7 +7135,7 @@
                 "vn": "luôn luôn",
                 "ex_hz": "他总是很忙。",
                 "ex_py": "Tā zǒngshì hěn máng.",
-                "ex_vn": "Anh ấy luôn bận rộn."
+                "ex_vn": "Anh ấy luôn luôn bận rộn."
             },
             {
                 "hz": "最近",
@@ -7143,83 +7143,35 @@
                 "vn": "gần đây",
                 "ex_hz": "最近我很忙。",
                 "ex_py": "Zuìjìn wǒ hěn máng.",
-                "ex_vn": "Dạo này tôi rất bận."
+                "ex_vn": "Gần đây tôi rất bận."
             },
             {
                 "hz": "作业",
                 "py": "zuòyè",
-                "vn": "bài tập",
-                "ex_hz": "做完作业了。",
-                "ex_py": "Zuò wán zuòyè le.",
-                "ex_vn": "Đã làm xong bài tập."
+                "vn": "bài tập về nhà",
+                "ex_hz": "我已经做完作业了。",
+                "ex_py": "Wǒ yǐjīng zuò wán zuòyè le.",
+                "ex_vn": "Tôi đã làm xong bài tập."
             },
             {
                 "hz": "作用",
                 "py": "zuòyòng",
                 "vn": "tác dụng",
-                "ex_hz": "词的作用。",
-                "ex_py": "Cí de zuòyòng.",
-                "ex_vn": "Tác dụng của từ."
+                "ex_hz": "这个词的作用是什么？",
+                "ex_py": "Zhège cí de zuòyòng shì shénme?",
+                "ex_vn": "Tác dụng của từ này là gì?"
             }
         ],
-        "updated_at": "2026-04-05T07:57:31.811050",
-        "last_accessed": "2026-04-06T22:29:36.733660",
+        "updated_at": "2026-04-06T22:49:07.591647",
+        "last_accessed": "2026-04-06T22:49:07.591656",
         "fixed_word_order": [
             {
-                "hz": "表演",
-                "py": "biǎoyǎn",
-                "vn": "biểu diễn",
-                "ex_hz": "她在表演节目。",
-                "ex_py": "Tā zài biǎoyǎn jiémù.",
-                "ex_vn": "Cô ấy đang biểu diễn chương trình."
-            },
-            {
-                "hz": "地",
-                "py": "de",
-                "vn": "(trợ từ)",
-                "ex_hz": "请慢慢地说。",
-                "ex_py": "Qǐng mànmàn de shuō.",
-                "ex_vn": "Xin hãy nói chậm lại."
-            },
-            {
-                "hz": "菜单",
-                "py": "càidān",
-                "vn": "thực đơn",
-                "ex_hz": "菜单上有很多菜。",
-                "ex_py": "Càidān shàng yǒu hěn duō cài.",
-                "ex_vn": "Trên thực đơn có nhiều món."
-            },
-            {
-                "hz": "草",
-                "py": "cǎo",
-                "vn": "cỏ",
-                "ex_hz": "草地上有很多花。",
-                "ex_py": "Cǎodì shàng yǒu hěn duō huā.",
-                "ex_vn": "Trên bãi cỏ có nhiều hoa."
-            },
-            {
-                "hz": "地铁",
-                "py": "dìtiě",
-                "vn": "tàu điện ngầm",
-                "ex_hz": "我坐地铁上班。",
-                "ex_py": "Wǒ zuò dìtiě shàngbān.",
-                "ex_vn": "Tôi đi làm bằng tàu điện ngầm."
-            },
-            {
-                "hz": "词语",
-                "py": "cíyǔ",
-                "vn": "từ ngữ",
-                "ex_hz": "我喜欢学习新词语。",
-                "ex_py": "Wǒ xǐhuān xuéxí xīn cíyǔ.",
-                "ex_vn": "Tôi thích học từ mới."
-            },
-            {
-                "hz": "当然",
-                "py": "dāngrán",
-                "vn": "đương nhiên",
-                "ex_hz": "你当然可以去。",
-                "ex_py": "Nǐ dāngrán kěyǐ qù.",
-                "ex_vn": "Đương nhiên bạn có thể đi."
+                "hz": "东",
+                "py": "dōng",
+                "vn": "hướng đông",
+                "ex_hz": "东边有一座山。",
+                "ex_py": "Dōngbiān yǒu yī zuò shān.",
+                "ex_vn": "Phía đông có ngọn núi."
             },
             {
                 "hz": "打算",
@@ -7230,124 +7182,20 @@
                 "ex_vn": "Tôi dự định đi du lịch."
             },
             {
-                "hz": "出现",
-                "py": "chūxiàn",
-                "vn": "xuất hiện",
-                "ex_hz": "我们出现了问题。",
-                "ex_py": "Wǒmen chūxiàn le wèntí.",
-                "ex_vn": "Chúng tôi gặp vấn đề rồi."
+                "hz": "春",
+                "py": "chūn",
+                "vn": "mùa xuân",
+                "ex_hz": "春天来了，花开了。",
+                "ex_py": "Chūntiān lái le, huā kāi le.",
+                "ex_vn": "Xuân đến rồi, hoa nở rồi."
             },
             {
-                "hz": "参加",
-                "py": "cānjiā",
-                "vn": "tham gia",
-                "ex_hz": "我参加了这个活动。",
-                "ex_py": "Wǒ cānjiā le zhège huódòng.",
-                "ex_vn": "Tôi đã tham gia hoạt động này."
-            },
-            {
-                "hz": "包",
-                "py": "bāo",
-                "vn": "túi/bao",
-                "ex_hz": "我的包丢了。",
-                "ex_py": "Wǒ de bāo diū le.",
-                "ex_vn": "Cái túi của tôi bị mất rồi."
-            },
-            {
-                "hz": "低",
-                "py": "dī",
-                "vn": "thấp",
-                "ex_hz": "他的声音很低。",
-                "ex_py": "Tā de shēngyīn hěn dī.",
-                "ex_vn": "Giọng anh ấy rất thấp."
-            },
-            {
-                "hz": "变化",
-                "py": "biànhuà",
-                "vn": "thay đổi",
-                "ex_hz": "这里的天气变化很大。",
-                "ex_py": "Zhèlǐ de tiānqì biànhuà hěn dà.",
-                "ex_vn": "Thời tiết ở đây thay đổi nhiều."
-            },
-            {
-                "hz": "成绩",
-                "py": "chéngjì",
-                "vn": "thành tích",
-                "ex_hz": "他的成绩很好。",
-                "ex_py": "Tā de chéngjī hěn hǎo.",
-                "ex_vn": "Thành tích của anh ấy rất tốt."
-            },
-            {
-                "hz": "被",
-                "py": "bèi",
-                "vn": "bị/được",
-                "ex_hz": "他被老师表扬了。",
-                "ex_py": "Tā bèi lǎoshī biǎoyáng le.",
-                "ex_vn": "Anh ấy được thầy giáo khen."
-            },
-            {
-                "hz": "冰箱",
-                "py": "bīngxiāng",
-                "vn": "tủ lạnh",
-                "ex_hz": "冰箱里有很多食物。",
-                "ex_py": "Bīngxiāng lǐ yǒu hěn duō shíwù.",
-                "ex_vn": "Trong tủ lạnh có nhiều thức ăn."
-            },
-            {
-                "hz": "啊",
-                "py": "a",
-                "vn": "à/ơ",
-                "ex_hz": "啊，我忘记了！",
-                "ex_py": "A, wǒ wàngjì le!",
-                "ex_vn": "À, tôi quên rồi!"
-            },
-            {
-                "hz": "动物",
-                "py": "dòngwù",
-                "vn": "động vật",
-                "ex_hz": "我喜欢动物。",
-                "ex_py": "Wǒ xǐhuān dòngwù.",
-                "ex_vn": "Tôi thích động vật."
-            },
-            {
-                "hz": "矮",
-                "py": "ǎi",
-                "vn": "thấp/lùn",
-                "ex_hz": "他比我矮。",
-                "ex_py": "Tā bǐ wǒ ǎi.",
-                "ex_vn": "Anh ấy thấp hơn tôi."
-            },
-            {
-                "hz": "才",
-                "py": "cái",
-                "vn": "mới",
-                "ex_hz": "为什么你现在才来。",
-                "ex_py": "Wèi shénme nǐ xiànzài cái lái?",
-                "ex_vn": "Tại sao giờ bạn mới tới?"
-            },
-            {
-                "hz": "阿姨",
-                "py": "āyí",
-                "vn": "dì/cô",
-                "ex_hz": "阿姨非常喜欢我们。",
-                "ex_py": "Āyí fēicháng xǐhuān wǒmen.",
-                "ex_vn": "Dì rất thích chúng tôi."
-            },
-            {
-                "hz": "比较",
-                "py": "bǐjiào",
-                "vn": "khá/tương đối",
-                "ex_hz": "她比较高。",
-                "ex_py": "Tā bǐjiào gāo.",
-                "ex_vn": "Cô ấy khá cao."
-            },
-            {
-                "hz": "搬",
-                "py": "bān",
-                "vn": "chuyển/dời",
-                "ex_hz": "他搬家到北京了。",
-                "ex_py": "Tā bānjiā dào Běijīng le.",
-                "ex_vn": "Anh ấy đã chuyển nhà đến Bắc Kinh."
+                "hz": "必须",
+                "py": "bìxū",
+                "vn": "phải",
+                "ex_hz": "你必须按时到。",
+                "ex_py": "Nǐ bìxū ànshí dào.",
+                "ex_vn": "Bạn phải đến đúng giờ."
             },
             {
                 "hz": "爱好",
@@ -7358,20 +7206,12 @@
                 "ex_vn": "Sở thích của tôi là vẽ tranh."
             },
             {
-                "hz": "办法",
-                "py": "bànfǎ",
-                "vn": "cách/biện pháp",
-                "ex_hz": "我有一个好办法。",
-                "ex_py": "Wǒ yǒu yīgè hǎo bànfǎ.",
-                "ex_vn": "Tôi có một cách hay."
-            },
-            {
-                "hz": "超市",
-                "py": "chāoshì",
-                "vn": "siêu thị",
-                "ex_hz": "我去超市买东西。",
-                "ex_py": "Wǒ qù chāoshì mǎi dōngxi.",
-                "ex_vn": "Tôi đi siêu thị mua đồ."
+                "hz": "低",
+                "py": "dī",
+                "vn": "thấp",
+                "ex_hz": "他的声音很低。",
+                "ex_py": "Tā de shēngyīn hěn dī.",
+                "ex_vn": "Giọng anh ấy rất thấp."
             },
             {
                 "hz": "冬",
@@ -7382,124 +7222,12 @@
                 "ex_vn": "Mùa đông rất lạnh."
             },
             {
-                "hz": "灯",
-                "py": "dēng",
-                "vn": "đèn",
-                "ex_hz": "请开灯。",
-                "ex_py": "Qǐng kāi dēng.",
-                "ex_vn": "Vui lòng bật đèn."
-            },
-            {
-                "hz": "除了",
-                "py": "chúle",
-                "vn": "ngoài ra",
-                "ex_hz": "除了他，大家都来了。",
-                "ex_py": "Chúle tā, dàjiā dōu lái le.",
-                "ex_vn": "Ngoài anh ấy, ai cũng đến."
-            },
-            {
-                "hz": "聪明",
-                "py": "cōngmíng",
-                "vn": "thông minh",
-                "ex_hz": "她很聪明。",
-                "ex_py": "Tā hěn cōngmíng.",
-                "ex_vn": "Cô ấy rất thông minh."
-            },
-            {
-                "hz": "别人",
-                "py": "biérén",
-                "vn": "người khác",
-                "ex_hz": "别人的意见很重要。",
-                "ex_py": "Biérén de yìjiàn hěn zhòngyào.",
-                "ex_vn": "Ý kiến người khác rất quan trọng."
-            },
-            {
-                "hz": "表示",
-                "py": "biǎoshì",
-                "vn": "biểu thị",
-                "ex_hz": "他表示同意这个计划。",
-                "ex_py": "Tā biǎoshì tóngyì zhège jìhuà.",
-                "ex_vn": "Anh ấy đồng ý với kế hoạch."
-            },
-            {
-                "hz": "班",
-                "py": "bān",
-                "vn": "lớp/ca",
-                "ex_hz": "我们班有二十个学生。",
-                "ex_py": "Wǒmen bān yǒu èrshí gè xuéshēng.",
-                "ex_vn": "Lớp chúng tôi có 20 học sinh."
-            },
-            {
-                "hz": "层",
-                "py": "céng",
-                "vn": "tầng",
-                "ex_hz": "我住在三层。",
-                "ex_py": "Wǒ zhù zài sān céng.",
-                "ex_vn": "Tôi sống ở tầng 3."
-            },
-            {
-                "hz": "饱",
-                "py": "bǎo",
-                "vn": "no",
-                "ex_hz": "我吃饱了。",
-                "ex_py": "Wǒ chī bǎo le.",
-                "ex_vn": "Tôi ăn no rồi."
-            },
-            {
-                "hz": "把",
-                "py": "bǎ",
-                "vn": "đem/lấy",
-                "ex_hz": "把书给我。",
-                "ex_py": "Bǎ shū gěi wǒ.",
-                "ex_vn": "Đưa cuốn sách cho tôi."
-            },
-            {
-                "hz": "蛋糕",
-                "py": "dàngāo",
-                "vn": "bánh ngọt",
-                "ex_hz": "给你蛋糕。",
-                "ex_py": "Gěi nǐ dàngāo.",
-                "ex_vn": "Tặng bạn bánh ngọt."
-            },
-            {
-                "hz": "办公室",
-                "py": "bàngōngshì",
-                "vn": "văn phòng",
-                "ex_hz": "他在办公室工作。",
-                "ex_py": "Tā zài bàngōngshì gōngzuò.",
-                "ex_vn": "Anh ấy làm việc ở văn phòng."
-            },
-            {
-                "hz": "担心",
-                "py": "dānxīn",
-                "vn": "lo lắng",
-                "ex_hz": "我担心他的健康。",
-                "ex_py": "Wǒ dānxīn tā de jiànkāng.",
-                "ex_vn": "Tôi lo cho sức khỏe của anh ấy."
-            },
-            {
-                "hz": "东",
-                "py": "dōng",
-                "vn": "hướng đông",
-                "ex_hz": "东边有一座山。",
-                "ex_py": "Dōngbiān yǒu yī zuò shān.",
-                "ex_vn": "Phía đông có ngọn núi."
-            },
-            {
-                "hz": "差",
-                "py": "chà",
-                "vn": "kém/tệ",
-                "ex_hz": "今天的天气很差。",
-                "ex_py": "Jīntiān de tiānqì hěn chà.",
-                "ex_vn": "Thời tiết hôm nay rất tệ."
-            },
-            {
-                "hz": "电子邮箱",
-                "py": "diànzǐ yóuxiāng",
-                "vn": "email",
-                "ex_hz": "请发邮件给我。",
-                "ex_py": "Qǐng fā yóujiàn gěi wǒ.",
-                "ex_vn": "Hãy gửi email cho tôi."
+                "hz": "地图",
+                "py": "dìtú",
+                "vn": "bản đồ",
+                "ex_hz": "你有地图吗？",
+                "ex_py": "Nǐ yǒu dìtú ma?",
+                "ex_vn": "Bạn có bản đồ không?"
             },
             {
                 "hz": "半",
@@ -7510,20 +7238,12 @@
                 "ex_vn": "Chúng ta gặp nhau sau nửa giờ."
             },
             {
-                "hz": "短",
-                "py": "duǎn",
-                "vn": "ngắn",
-                "ex_hz": "这条裙子太短了。",
-                "ex_py": "Zhè tiáo qúnzi tài duǎn le.",
-                "ex_vn": "Chiếc váy này quá ngắn."
-            },
-            {
-                "hz": "地图",
-                "py": "dìtú",
-                "vn": "bản đồ",
-                "ex_hz": "你有地图吗？",
-                "ex_py": "Nǐ yǒu dìtú ma?",
-                "ex_vn": "Bạn có bản đồ không?"
+                "hz": "表演",
+                "py": "biǎoyǎn",
+                "vn": "biểu diễn",
+                "ex_hz": "她在表演节目。",
+                "ex_py": "Tā zài biǎoyǎn jiémù.",
+                "ex_vn": "Cô ấy đang biểu diễn chương trình."
             },
             {
                 "hz": "宾馆",
@@ -7534,20 +7254,28 @@
                 "ex_vn": "Phòng khách sạn rất sạch."
             },
             {
-                "hz": "春",
-                "py": "chūn",
-                "vn": "mùa xuân",
-                "ex_hz": "春天来了，花开了。",
-                "ex_py": "Chūntiān lái le, huā kāi le.",
-                "ex_vn": "Xuân đến rồi, hoa nở rồi."
+                "hz": "才",
+                "py": "cái",
+                "vn": "mới",
+                "ex_hz": "为什么你现在才来。",
+                "ex_py": "Wèi shénme nǐ xiànzài cái lái?",
+                "ex_vn": "Tại sao giờ bạn mới tới?"
             },
             {
-                "hz": "电梯",
-                "py": "diàntī",
-                "vn": "thang máy",
-                "ex_hz": "我们坐电梯上楼。",
-                "ex_py": "Wǒmen zuò diàntī shàng lóu.",
-                "ex_vn": "Chúng tôi đi thang máy lên lầu."
+                "hz": "电子邮箱",
+                "py": "diànzǐ yóuxiāng",
+                "vn": "email",
+                "ex_hz": "请发邮件给我。",
+                "ex_py": "Qǐng fā yóujiàn gěi wǒ.",
+                "ex_vn": "Hãy gửi email cho tôi."
+            },
+            {
+                "hz": "超市",
+                "py": "chāoshì",
+                "vn": "siêu thị",
+                "ex_hz": "我去超市买东西。",
+                "ex_py": "Wǒ qù chāoshì mǎi dōngxi.",
+                "ex_vn": "Tôi đi siêu thị mua đồ."
             },
             {
                 "hz": "带",
@@ -7558,20 +7286,20 @@
                 "ex_vn": "Đừng quên mang theo ô."
             },
             {
-                "hz": "城市",
-                "py": "chéngshì",
-                "vn": "thành phố",
-                "ex_hz": "这座城市很大。",
-                "ex_py": "Zhè zuò chéngshì hěn dà.",
-                "ex_vn": "Thành phố này rất lớn."
+                "hz": "冰箱",
+                "py": "bīngxiāng",
+                "vn": "tủ lạnh",
+                "ex_hz": "冰箱里有很多食物。",
+                "ex_py": "Bīngxiāng lǐ yǒu hěn duō shíwù.",
+                "ex_vn": "Trong tủ lạnh có nhiều thức ăn."
             },
             {
-                "hz": "衬衫",
-                "py": "chènshān",
-                "vn": "sơ mi",
-                "ex_hz": "他穿了一件白衬衫。",
-                "ex_py": "Tā chuān le yī jiàn bái chènshān.",
-                "ex_vn": "Anh ấy mặc sơ mi trắng."
+                "hz": "阿姨",
+                "py": "āyí",
+                "vn": "dì/cô",
+                "ex_hz": "阿姨非常喜欢我们。",
+                "ex_py": "Āyí fēicháng xǐhuān wǒmen.",
+                "ex_vn": "Dì rất thích chúng tôi."
             },
             {
                 "hz": "厨房",
@@ -7582,20 +7310,52 @@
                 "ex_vn": "Nhà bếp rất sạch."
             },
             {
-                "hz": "地方",
-                "py": "dìfāng",
-                "vn": "nơi/chỗ",
-                "ex_hz": "这个地方很好玩。",
-                "ex_py": "Zhège dìfāng hěn hǎowán.",
-                "ex_vn": "Nơi này rất vui."
+                "hz": "办公室",
+                "py": "bàngōngshì",
+                "vn": "văn phòng",
+                "ex_hz": "他在办公室工作。",
+                "ex_py": "Tā zài bàngōngshì gōngzuò.",
+                "ex_vn": "Anh ấy làm việc ở văn phòng."
             },
             {
-                "hz": "比赛",
-                "py": "bǐsài",
-                "vn": "cuộc thi",
-                "ex_hz": "他们在参加比赛。",
-                "ex_py": "Tāmen zài cānjiā bǐsài.",
-                "ex_vn": "Họ đang tham gia thi đấu."
+                "hz": "把",
+                "py": "bǎ",
+                "vn": "đem/lấy",
+                "ex_hz": "把书给我。",
+                "ex_py": "Bǎ shū gěi wǒ.",
+                "ex_vn": "Đưa cuốn sách cho tôi."
+            },
+            {
+                "hz": "灯",
+                "py": "dēng",
+                "vn": "đèn",
+                "ex_hz": "请开灯。",
+                "ex_py": "Qǐng kāi dēng.",
+                "ex_vn": "Vui lòng bật đèn."
+            },
+            {
+                "hz": "别人",
+                "py": "biérén",
+                "vn": "người khác",
+                "ex_hz": "别人的意见很重要。",
+                "ex_py": "Biérén de yìjiàn hěn zhòngyào.",
+                "ex_vn": "Ý kiến người khác rất quan trọng."
+            },
+            {
+                "hz": "比较",
+                "py": "bǐjiào",
+                "vn": "khá/tương đối",
+                "ex_hz": "她比较高。",
+                "ex_py": "Tā bǐjiào gāo.",
+                "ex_vn": "Cô ấy khá cao."
+            },
+            {
+                "hz": "层",
+                "py": "céng",
+                "vn": "tầng",
+                "ex_hz": "我住在三层。",
+                "ex_py": "Wǒ zhù zài sān céng.",
+                "ex_vn": "Tôi sống ở tầng 3."
             },
             {
                 "hz": "帮忙",
@@ -7606,12 +7366,68 @@
                 "ex_vn": "Có bạn giúp tôi mới yên tâm."
             },
             {
-                "hz": "打扫",
-                "py": "dǎsǎo",
-                "vn": "quét dọn",
-                "ex_hz": "我们一起打扫房间吧。",
-                "ex_py": "Wǒmen yīqǐ dǎsǎo fángjiān ba.",
-                "ex_vn": "Chúng ta cùng dọn phòng nhé."
+                "hz": "地铁",
+                "py": "dìtiě",
+                "vn": "tàu điện ngầm",
+                "ex_hz": "我坐地铁上班。",
+                "ex_py": "Wǒ zuò dìtiě shàngbān.",
+                "ex_vn": "Tôi đi làm bằng tàu điện ngầm."
+            },
+            {
+                "hz": "成绩",
+                "py": "chéngjì",
+                "vn": "thành tích",
+                "ex_hz": "他的成绩很好。",
+                "ex_py": "Tā de chéngjī hěn hǎo.",
+                "ex_vn": "Thành tích của anh ấy rất tốt."
+            },
+            {
+                "hz": "参加",
+                "py": "cānjiā",
+                "vn": "tham gia",
+                "ex_hz": "我参加了这个活动。",
+                "ex_py": "Wǒ cānjiā le zhège huódòng.",
+                "ex_vn": "Tôi đã tham gia hoạt động này."
+            },
+            {
+                "hz": "被",
+                "py": "bèi",
+                "vn": "bị/được",
+                "ex_hz": "他被老师表扬了。",
+                "ex_py": "Tā bèi lǎoshī biǎoyáng le.",
+                "ex_vn": "Anh ấy được thầy giáo khen."
+            },
+            {
+                "hz": "班",
+                "py": "bān",
+                "vn": "lớp/ca",
+                "ex_hz": "我们班有二十个学生。",
+                "ex_py": "Wǒmen bān yǒu èrshí gè xuéshēng.",
+                "ex_vn": "Lớp chúng tôi có 20 học sinh."
+            },
+            {
+                "hz": "出现",
+                "py": "chūxiàn",
+                "vn": "xuất hiện",
+                "ex_hz": "我们出现了问题。",
+                "ex_py": "Wǒmen chūxiàn le wèntí.",
+                "ex_vn": "Chúng tôi gặp vấn đề rồi."
+            },
+            {
+                "hz": "衬衫",
+                "py": "chènshān",
+                "vn": "sơ mi",
+                "ex_hz": "他穿了一件白衬衫。",
+                "ex_py": "Tā chuān le yī jiàn bái chènshān.",
+                "ex_vn": "Anh ấy mặc sơ mi trắng."
+            },
+            {
+                "hz": "草",
+                "py": "cǎo",
+                "vn": "cỏ",
+                "ex_hz": "草地上有很多花。",
+                "ex_py": "Cǎodì shàng yǒu hěn duō huā.",
+                "ex_vn": "Trên bãi cỏ có nhiều hoa."
             },
             {
                 "hz": "安静",
@@ -7630,12 +7446,148 @@
                 "ex_vn": "Hôm nay anh ấy đến muộn."
             },
             {
-                "hz": "必须",
-                "py": "bìxū",
-                "vn": "phải",
-                "ex_hz": "你必须按时到。",
-                "ex_py": "Nǐ bìxū ànshí dào.",
-                "ex_vn": "Bạn phải đến đúng giờ."
+                "hz": "菜单",
+                "py": "càidān",
+                "vn": "thực đơn",
+                "ex_hz": "菜单上有很多菜。",
+                "ex_py": "Càidān shàng yǒu hěn duō cài.",
+                "ex_vn": "Trên thực đơn có nhiều món."
+            },
+            {
+                "hz": "矮",
+                "py": "ǎi",
+                "vn": "thấp/lùn",
+                "ex_hz": "他比我矮。",
+                "ex_py": "Tā bǐ wǒ ǎi.",
+                "ex_vn": "Anh ấy thấp hơn tôi."
+            },
+            {
+                "hz": "词语",
+                "py": "cíyǔ",
+                "vn": "từ ngữ",
+                "ex_hz": "我喜欢学习新词语。",
+                "ex_py": "Wǒ xǐhuān xuéxí xīn cíyǔ.",
+                "ex_vn": "Tôi thích học từ mới."
+            },
+            {
+                "hz": "城市",
+                "py": "chéngshì",
+                "vn": "thành phố",
+                "ex_hz": "这座城市很大。",
+                "ex_py": "Zhè zuò chéngshì hěn dà.",
+                "ex_vn": "Thành phố này rất lớn."
+            },
+            {
+                "hz": "地方",
+                "py": "dìfāng",
+                "vn": "nơi/chỗ",
+                "ex_hz": "这个地方很好玩。",
+                "ex_py": "Zhège dìfāng hěn hǎowán.",
+                "ex_vn": "Nơi này rất vui."
+            },
+            {
+                "hz": "聪明",
+                "py": "cōngmíng",
+                "vn": "thông minh",
+                "ex_hz": "她很聪明。",
+                "ex_py": "Tā hěn cōngmíng.",
+                "ex_vn": "Cô ấy rất thông minh."
+            },
+            {
+                "hz": "担心",
+                "py": "dānxīn",
+                "vn": "lo lắng",
+                "ex_hz": "我担心他的健康。",
+                "ex_py": "Wǒ dānxīn tā de jiànkāng.",
+                "ex_vn": "Tôi lo cho sức khỏe của anh ấy."
+            },
+            {
+                "hz": "搬",
+                "py": "bān",
+                "vn": "chuyển/dời",
+                "ex_hz": "他搬家到北京了。",
+                "ex_py": "Tā bānjiā dào Běijīng le.",
+                "ex_vn": "Anh ấy đã chuyển nhà đến Bắc Kinh."
+            },
+            {
+                "hz": "啊",
+                "py": "a",
+                "vn": "à/ơ",
+                "ex_hz": "啊，我忘记了！",
+                "ex_py": "A, wǒ wàngjì le!",
+                "ex_vn": "À, tôi quên rồi!"
+            },
+            {
+                "hz": "电梯",
+                "py": "diàntī",
+                "vn": "thang máy",
+                "ex_hz": "我们坐电梯上楼。",
+                "ex_py": "Wǒmen zuò diàntī shàng lóu.",
+                "ex_vn": "Chúng tôi đi thang máy lên lầu."
+            },
+            {
+                "hz": "短",
+                "py": "duǎn",
+                "vn": "ngắn",
+                "ex_hz": "这条裙子太短了。",
+                "ex_py": "Zhè tiáo qúnzi tài duǎn le.",
+                "ex_vn": "Chiếc váy này quá ngắn."
+            },
+            {
+                "hz": "除了",
+                "py": "chúle",
+                "vn": "ngoài ra",
+                "ex_hz": "除了他，大家都来了。",
+                "ex_py": "Chúle tā, dàjiā dōu lái le.",
+                "ex_vn": "Ngoài anh ấy, ai cũng đến."
+            },
+            {
+                "hz": "动物",
+                "py": "dòngwù",
+                "vn": "động vật",
+                "ex_hz": "我喜欢动物。",
+                "ex_py": "Wǒ xǐhuān dòngwù.",
+                "ex_vn": "Tôi thích động vật."
+            },
+            {
+                "hz": "饱",
+                "py": "bǎo",
+                "vn": "no",
+                "ex_hz": "我吃饱了。",
+                "ex_py": "Wǒ chī bǎo le.",
+                "ex_vn": "Tôi ăn no rồi."
+            },
+            {
+                "hz": "打扫",
+                "py": "dǎsǎo",
+                "vn": "quét dọn",
+                "ex_hz": "我们一起打扫房间吧。",
+                "ex_py": "Wǒmen yīqǐ dǎsǎo fángjiān ba.",
+                "ex_vn": "Chúng ta cùng dọn phòng nhé."
+            },
+            {
+                "hz": "表示",
+                "py": "biǎoshì",
+                "vn": "biểu thị",
+                "ex_hz": "他表示同意这个计划。",
+                "ex_py": "Tā biǎoshì tóngyì zhège jìhuà.",
+                "ex_vn": "Anh ấy đồng ý với kế hoạch."
+            },
+            {
+                "hz": "变化",
+                "py": "biànhuà",
+                "vn": "thay đổi",
+                "ex_hz": "这里的天气变化很大。",
+                "ex_py": "Zhèlǐ de tiānqì biànhuà hěn dà.",
+                "ex_vn": "Thời tiết ở đây thay đổi nhiều."
+            },
+            {
+                "hz": "办法",
+                "py": "bànfǎ",
+                "vn": "cách/biện pháp",
+                "ex_hz": "我有一个好办法。",
+                "ex_py": "Wǒ yǒu yīgè hǎo bànfǎ.",
+                "ex_vn": "Tôi có một cách hay."
             },
             {
                 "hz": "北方",
@@ -7646,36 +7598,116 @@
                 "ex_vn": "Mùa đông miền Bắc rất lạnh."
             },
             {
-                "hz": "碗",
-                "py": "wǎn",
-                "vn": "bát",
-                "ex_hz": "他吃了三碗饭。",
-                "ex_py": "Tā chī le sān wǎn fàn.",
-                "ex_vn": "Anh ấy ăn 3 bát cơm."
+                "hz": "蛋糕",
+                "py": "dàngāo",
+                "vn": "bánh ngọt",
+                "ex_hz": "给你蛋糕。",
+                "ex_py": "Gěi nǐ dàngāo.",
+                "ex_vn": "Tặng bạn bánh ngọt."
             },
             {
-                "hz": "鞋",
-                "py": "xié",
-                "vn": "giày",
-                "ex_hz": "买了一双新鞋。",
-                "ex_py": "Mǎi le yī shuāng xīn xié.",
-                "ex_vn": "Đã mua một đôi giày mới."
+                "hz": "地",
+                "py": "de",
+                "vn": "(trợ từ)",
+                "ex_hz": "请慢慢地说。",
+                "ex_py": "Qǐng mànmàn de shuō.",
+                "ex_vn": "Xin hãy nói chậm lại."
             },
             {
-                "hz": "蓝",
-                "py": "lán",
-                "vn": "xanh da trời",
-                "ex_hz": "天空是蓝色的。",
-                "ex_py": "Tiānkōng shì lánsè de.",
-                "ex_vn": "Bầu trời màu xanh."
+                "hz": "比赛",
+                "py": "bǐsài",
+                "vn": "cuộc thi",
+                "ex_hz": "他们在参加比赛。",
+                "ex_py": "Tāmen zài cānjiā bǐsài.",
+                "ex_vn": "Họ đang tham gia thi đấu."
             },
             {
-                "hz": "爷爷",
-                "py": "yéye",
-                "vn": "ông nội",
-                "ex_hz": "爷爷喜欢看书。",
-                "ex_py": "Yéye xǐhuān kàn shū.",
-                "ex_vn": "Ông nội thích đọc sách."
+                "hz": "包",
+                "py": "bāo",
+                "vn": "túi/bao",
+                "ex_hz": "我的包丢了。",
+                "ex_py": "Wǒ de bāo diū le.",
+                "ex_vn": "Cái túi của tôi bị mất rồi."
+            },
+            {
+                "hz": "当然",
+                "py": "dāngrán",
+                "vn": "đương nhiên",
+                "ex_hz": "你当然可以去。",
+                "ex_py": "Nǐ dāngrán kěyǐ qù.",
+                "ex_vn": "Đương nhiên bạn có thể đi."
+            },
+            {
+                "hz": "差",
+                "py": "chà",
+                "vn": "kém/tệ",
+                "ex_hz": "今天的天气很差。",
+                "ex_py": "Jīntiān de tiānqì hěn chà.",
+                "ex_vn": "Thời tiết hôm nay rất tệ."
+            },
+            {
+                "hz": "一样",
+                "py": "yīyàng",
+                "vn": "giống nhau",
+                "ex_hz": "他们和我们一样高。",
+                "ex_py": "Tāmen hé wǒmen yīyàng gāo.",
+                "ex_vn": "Họ cao bằng chúng tôi."
+            },
+            {
+                "hz": "节日",
+                "py": "jiérì",
+                "vn": "ngày lễ",
+                "ex_hz": "春节是重要的节日。",
+                "ex_py": "Chūnjié shì zhòngyào de jiérì.",
+                "ex_vn": "Tết là ngày lễ quan trọng."
+            },
+            {
+                "hz": "一会儿",
+                "py": "yīhuìr",
+                "vn": "một lát",
+                "ex_hz": "请等我一会儿。",
+                "ex_py": "Qǐng děng wǒ yíhuìr.",
+                "ex_vn": "Xin hãy đợi tôi một lát."
+            },
+            {
+                "hz": "环境",
+                "py": "huánjìng",
+                "vn": "môi trường",
+                "ex_hz": "我喜欢安静的环境。",
+                "ex_py": "Wǒ xǐhuān ānjìng de huánjìng.",
+                "ex_vn": "Tôi thích môi trường yên tĩnh."
+            },
+            {
+                "hz": "疼",
+                "py": "téng",
+                "vn": "đau",
+                "ex_hz": "我的头很疼。",
+                "ex_py": "Wǒ de tóu hěn téng.",
+                "ex_vn": "Đầu tôi rất đau."
+            },
+            {
+                "hz": "照顾",
+                "py": "zhàogu",
+                "vn": "chăm sóc",
+                "ex_hz": "我会照顾你。",
+                "ex_py": "Wǒ huì zhàogù nǐ.",
+                "ex_vn": "Tôi sẽ chăm sóc bạn."
+            },
+            {
+                "hz": "位",
+                "py": "wèi",
+                "vn": "vị, ngài",
+                "ex_hz": "请坐在这位先生旁边。",
+                "ex_py": "Qǐng zuò zài zhè wèi xiānshēng pángbiān.",
+                "ex_vn": "Xin ngồi bên cạnh ông này."
+            },
+            {
+                "hz": "图书馆",
+                "py": "túshūguǎn",
+                "vn": "thư viện",
+                "ex_hz": "我们去图书馆看书吧。",
+                "ex_py": "Wǒmen qù túshūguǎn kànshū ba.",
+                "ex_vn": "Chúng ta đến thư viện đọc sách nhé."
             },
             {
                 "hz": "Moreover",
@@ -7686,428 +7718,12 @@
                 "ex_vn": "Anh ấy thông minh và chăm chỉ."
             },
             {
-                "hz": "西",
-                "py": "xī",
-                "vn": "phía tây",
-                "ex_hz": "我住在西边。",
-                "ex_py": "Wǒ zhù zài xībiān.",
-                "ex_vn": "Tôi sống ở phía tây."
-            },
-            {
-                "hz": "可爱",
-                "py": "kě'ài",
-                "vn": "đáng yêu",
-                "ex_hz": "这只猫很可爱。",
-                "ex_py": "Zhè zhǐ māo hěn kě'ài.",
-                "ex_vn": "Con mèo này rất đáng yêu."
-            },
-            {
-                "hz": "拿",
-                "py": "ná",
-                "vn": "cầm/lấy",
-                "ex_hz": "帮我拿一下书。",
-                "ex_py": "Bāng wǒ ná yīxià shū.",
-                "ex_vn": "Giúp tôi cầm quyển sách."
-            },
-            {
-                "hz": "眼镜",
-                "py": "yǎnjìng",
-                "vn": "kính",
-                "ex_hz": "他戴着眼镜。",
-                "ex_py": "Tā dài zhe yǎnjìng.",
-                "ex_vn": "Anh ấy đang đeo kính."
-            },
-            {
-                "hz": "脸",
-                "py": "liǎn",
-                "vn": "mặt",
-                "ex_hz": "她的脸很红。",
-                "ex_py": "Tā de liǎn hěn hóng.",
-                "ex_vn": "Mặt cô ấy rất đỏ."
-            },
-            {
-                "hz": "记得",
-                "py": "jìdé",
-                "vn": "nhớ",
-                "ex_hz": "请记得带钥匙。",
-                "ex_py": "Qǐng jìdé dài yàoshi.",
-                "ex_vn": "Hãy nhớ mang theo chìa khóa."
-            },
-            {
-                "hz": "遇到",
-                "py": "yùdào",
-                "vn": "gặp phải",
-                "ex_hz": "路上遇到他。",
-                "ex_py": "Lùshàng yùdào tā.",
-                "ex_vn": "Gặp anh ấy trên đường."
-            },
-            {
-                "hz": "黑板",
-                "py": "hēibǎn",
-                "vn": "bảng",
-                "ex_hz": "在黑板上写字。",
-                "ex_py": "Zài hēibǎn shàng xiězì.",
-                "ex_vn": "Viết chữ lên bảng."
-            },
-            {
-                "hz": "新闻",
-                "py": "xīnwén",
-                "vn": "tin tức",
-                "ex_hz": "我每天看新闻。",
-                "ex_py": "Wǒ měitiān kàn xīnwén.",
-                "ex_vn": "Tôi xem tin tức mỗi ngày."
-            },
-            {
-                "hz": "努力",
-                "py": "nǔlì",
-                "vn": "nỗ lực",
-                "ex_hz": "他学习很努力。",
-                "ex_py": "Tā xuéxí hěn nǔlì.",
-                "ex_vn": "Anh ấy học rất chăm chỉ."
-            },
-            {
-                "hz": "行李箱",
-                "py": "xínglǐxiāng",
-                "vn": "vali",
-                "ex_hz": "行李箱很重。",
-                "ex_py": "Xínglǐxiāng hěn zhòng.",
-                "ex_vn": "Vali rất nặng."
-            },
-            {
-                "hz": "句子",
-                "py": "jùzi",
-                "vn": "câu",
-                "ex_hz": "请造一个句子。",
-                "ex_py": "Qǐng zào yīgè jùzi.",
-                "ex_vn": "Hãy đặt một câu."
-            },
-            {
-                "hz": "其实",
-                "py": "qíshí",
-                "vn": "thực ra",
-                "ex_hz": "其实我不喜欢辣。",
-                "ex_py": "Qíshí wǒ bù xǐhuān là.",
-                "ex_vn": "Thực ra tôi không thích cay."
-            },
-            {
-                "hz": "发烧",
-                "py": "fāshāo",
-                "vn": "sốt",
-                "ex_hz": "他发烧了。",
-                "ex_py": "Tā fāshāo le.",
-                "ex_vn": "Anh ấy bị sốt rồi."
-            },
-            {
-                "hz": "楼",
-                "py": "lóu",
-                "vn": "tòa nhà",
-                "ex_hz": "住在三楼。",
-                "ex_py": "Zhù zài sān lóu.",
-                "ex_vn": "Sống ở tầng 3."
-            },
-            {
-                "hz": "教",
-                "py": "jiāo",
-                "vn": "dạy",
-                "ex_hz": "他教我们汉语。",
-                "ex_py": "Tā jiāo wǒmen Hànyǔ.",
-                "ex_vn": "Anh ấy dạy chúng tôi tiếng Trung."
-            },
-            {
-                "hz": "哭",
-                "py": "kū",
-                "vn": "khóc",
-                "ex_hz": "孩子们在哭。",
-                "ex_py": "Háizimen zài kū.",
-                "ex_vn": "Đám trẻ đang khóc."
-            },
-            {
-                "hz": "帽子",
-                "py": "màozi",
-                "vn": "mũ",
-                "ex_hz": "这顶帽子很美。",
-                "ex_py": "Zhè dǐng màozi hěn měi.",
-                "ex_vn": "Chiếc mũ này rất đẹp."
-            },
-            {
-                "hz": "跟",
-                "py": "gēn",
-                "vn": "cùng với",
-                "ex_hz": "我跟他一起去。",
-                "ex_py": "Wǒ gēn tā yīqǐ qù.",
-                "ex_vn": "Tôi đi cùng anh ấy."
-            },
-            {
-                "hz": "解决",
-                "py": "jiějué",
-                "vn": "giải quyết",
-                "ex_hz": "解决这个问题。",
-                "ex_py": "Jiějué zhège wèntí.",
-                "ex_vn": "Giải quyết vấn đề này."
-            },
-            {
-                "hz": "总是",
-                "py": "zǒngshì",
-                "vn": "luôn luôn",
-                "ex_hz": "他总是很忙。",
-                "ex_py": "Tā zǒngshì hěn máng.",
-                "ex_vn": "Anh ấy luôn bận rộn."
-            },
-            {
-                "hz": "附近",
-                "py": "fùjìn",
-                "vn": "gần đây",
-                "ex_hz": "我家附近有公园。",
-                "ex_py": "Wǒ jiā fùjìn yǒu gōngyuán.",
-                "ex_vn": "Gần nhà tôi có công viên."
-            },
-            {
-                "hz": "害怕",
-                "py": "hàipà",
-                "vn": "sợ",
-                "ex_hz": "我害怕黑暗。",
-                "ex_py": "Wǒ hàipà hēi'àn.",
-                "ex_vn": "Tôi sợ bóng tối."
-            },
-            {
-                "hz": "旧",
-                "py": "jiù",
-                "vn": "cũ",
-                "ex_hz": "这本书很旧。",
-                "ex_py": "Zhè běn shū hěn jiù.",
-                "ex_vn": "Cuốn sách này rất cũ."
-            },
-            {
-                "hz": "经过",
-                "py": "jīngguò",
-                "vn": "đi qua",
-                "ex_hz": "他经过我家。",
-                "ex_py": "Tā jīngguò wǒ jiā.",
-                "ex_vn": "Anh ấy đi ngang qua nhà tôi."
-            },
-            {
-                "hz": "检查",
-                "py": "jiǎnchá",
-                "vn": "kiểm tra",
-                "ex_hz": "检查我们的作业。",
-                "ex_py": "Jiǎnchá wǒmen de zuòyè.",
-                "ex_vn": "Kiểm tra bài tập của chúng tôi."
-            },
-            {
-                "hz": "放心",
-                "py": "fàngxīn",
-                "vn": "yên tâm",
-                "ex_hz": "请你放心。",
-                "ex_py": "Qǐng nǐ fàngxīn.",
-                "ex_vn": "Xin bạn yên tâm."
-            },
-            {
-                "hz": "一共",
-                "py": "yīgòng",
-                "vn": "tổng cộng",
-                "ex_hz": "一共有五个人。",
-                "ex_py": "Yígòng yǒu wǔ gè rén.",
-                "ex_vn": "Tổng cộng có 5 người."
-            },
-            {
-                "hz": "小心",
-                "py": "xiǎoxīn",
-                "vn": "cẩn thận",
-                "ex_hz": "请小心地走路。",
-                "ex_py": "Qǐng xiǎoxīn de zǒulù.",
-                "ex_vn": "Hãy đi đứng cẩn thận."
-            },
-            {
-                "hz": "铅笔",
-                "py": "qiānbǐ",
-                "vn": "bút chì",
-                "ex_hz": "我需要铅笔。",
-                "ex_py": "Wǒ xūyào qiānbǐ.",
-                "ex_vn": "Tôi cần bút chì."
-            },
-            {
-                "hz": "画",
-                "py": "huà",
-                "vn": "vẽ/tranh",
-                "ex_hz": "他喜欢画画儿。",
-                "ex_py": "Tā xǐhuān huà huàr.",
-                "ex_vn": "Anh ấy thích vẽ tranh."
-            },
-            {
-                "hz": "锻炼",
-                "py": "duànliàn",
-                "vn": "luyện tập",
-                "ex_hz": "我每天锻炼身体。",
-                "ex_py": "Wǒ měitiān duànliàn shēntǐ.",
-                "ex_vn": "Tôi tập thể dục mỗi ngày."
-            },
-            {
-                "hz": "花园",
-                "py": "huāyuán",
-                "vn": "vườn hoa",
-                "ex_hz": "在花园里玩。",
-                "ex_py": "Zài huāyuán lǐ wán.",
-                "ex_vn": "Chơi trong vườn hoa."
-            },
-            {
-                "hz": "甜",
-                "py": "tián",
-                "vn": "ngọt",
-                "ex_hz": "这个蛋糕很甜。",
-                "ex_py": "Zhège dàngāo hěn tián.",
-                "ex_vn": "Cái bánh này rất ngọt."
-            },
-            {
-                "hz": "结婚",
-                "py": "jiéhūn",
-                "vn": "kết hôn",
-                "ex_hz": "他们结婚了。",
-                "ex_py": "Tāmen jiéhūn le.",
-                "ex_vn": "Họ đã kết hôn rồi."
-            },
-            {
-                "hz": "忘记",
-                "py": "wàngjì",
-                "vn": "quên",
-                "ex_hz": "不要忘记带书。",
-                "ex_py": "Bùyào wàngjì dài shū.",
-                "ex_vn": "Đừng quên mang sách nhé."
-            },
-            {
-                "hz": "腿",
-                "py": "tuǐ",
-                "vn": "chân",
-                "ex_hz": "他的腿很长。",
-                "ex_py": "Tā de tuǐ hěn cháng.",
-                "ex_vn": "Chân của anh ấy rất dài."
-            },
-            {
-                "hz": "周末",
-                "py": "zhōumò",
-                "vn": "cuối tuần",
-                "ex_hz": "周末去公园。",
-                "ex_py": "Zhōumò qù gōngyuán.",
-                "ex_vn": "Cuối tuần đi công viên."
-            },
-            {
-                "hz": "段",
-                "py": "duàn",
-                "vn": "đoạn",
-                "ex_hz": "他讲了一段故事。",
-                "ex_py": "Tā jiǎng le yī duàn gùshì.",
-                "ex_vn": "Anh ấy kể một đoạn truyện."
-            },
-            {
-                "hz": "信",
-                "py": "xìn",
-                "vn": "thư",
-                "ex_hz": "我写了一封信。",
-                "ex_py": "Wǒ xiě le yī fēng xìn.",
-                "ex_vn": "Tôi đã viết một bức thư."
-            },
-            {
-                "hz": "祝",
-                "py": "zhù",
-                "vn": "chúc",
-                "ex_hz": "祝你生日快乐。",
-                "ex_py": "Zhù nǐ shēngrì kuàilè.",
-                "ex_vn": "Chúc bạn sinh nhật vui vẻ."
-            },
-            {
-                "hz": "作用",
-                "py": "zuòyòng",
-                "vn": "tác dụng",
-                "ex_hz": "词的作用。",
-                "ex_py": "Cí de zuòyòng.",
-                "ex_vn": "Tác dụng của từ."
-            },
-            {
-                "hz": "奶奶",
-                "py": "nǎinai",
-                "vn": "bà nội",
-                "ex_hz": "奶奶住在乡下。",
-                "ex_py": "Nǎinai zhù zài xiāngxià.",
-                "ex_vn": "Bà nội sống ở quê."
-            },
-            {
-                "hz": "年轻",
-                "py": "niánqīng",
-                "vn": "trẻ",
-                "ex_hz": "她很年轻。",
-                "ex_py": "Tā hěn niánqīng.",
-                "ex_vn": "Cô ấy rất trẻ."
-            },
-            {
-                "hz": "认为",
-                "py": "rènwéi",
-                "vn": "cho rằng",
-                "ex_hz": "认为他是对的。",
-                "ex_py": "Rènwéi tā shì duì de.",
-                "ex_vn": "Cho rằng anh ấy đúng."
-            },
-            {
-                "hz": "条",
-                "py": "tiáo",
-                "vn": "sợi/cái",
-                "ex_hz": "买了一条裤子。",
-                "ex_py": "Mǎi le yī tiáo kùzi.",
-                "ex_vn": "Đã mua một chiếc quần."
-            },
-            {
-                "hz": "感冒",
-                "py": "gǎnmào",
-                "vn": "cảm lạnh",
-                "ex_hz": "他感冒了。",
-                "ex_py": "Tā gǎnmào le.",
-                "ex_vn": "Anh ấy bị cảm rồi."
-            },
-            {
-                "hz": "上网",
-                "py": "shàngwǎng",
-                "vn": "lên mạng",
-                "ex_hz": "喜欢上网。",
-                "ex_py": "Xǐhuān shàngwǎng.",
-                "ex_vn": "Thích lên mạng."
-            },
-            {
-                "hz": "相同",
-                "py": "xiāngtóng",
-                "vn": "giống nhau",
-                "ex_hz": "我们的看法相同。",
-                "ex_py": "Wǒmen de kànfǎ xiāngtóng.",
-                "ex_vn": "Quan điểm chúng tôi giống nhau."
-            },
-            {
-                "hz": "方便",
-                "py": "fāngbiàn",
-                "vn": "thuận tiện",
-                "ex_hz": "这里很方便。",
-                "ex_py": "Zhèlǐ hěn fāngbiàn.",
-                "ex_vn": "Ở đây rất tiện lợi."
-            },
-            {
-                "hz": "像",
-                "py": "xiàng",
-                "vn": "giống",
-                "ex_hz": "他像爸爸一样高。",
-                "ex_py": "Tā xiàng bàba yīyàng gāo.",
-                "ex_vn": "Anh ấy cao giống bố."
-            },
-            {
-                "hz": "香蕉",
-                "py": "xiāngjiāo",
-                "vn": "chuối",
-                "ex_hz": "香蕉是黄色的。",
-                "ex_py": "Xiāngjiāo shì huángsè de.",
-                "ex_vn": "Chuối có màu vàng."
-            },
-            {
-                "hz": "决定",
-                "py": "juédìng",
-                "vn": "quyết định",
-                "ex_hz": "决定去旅行。",
-                "ex_py": "Juédìng qù lǚxíng.",
-                "ex_vn": "Quyết định đi du lịch."
+                "hz": "分",
+                "py": "fēn",
+                "vn": "phút",
+                "ex_hz": "八点十分出发。",
+                "ex_py": "Bā diǎn shí fēn chūfā.",
+                "ex_vn": "8 giờ 10 phút xuất phát."
             },
             {
                 "hz": "南",
@@ -8118,148 +7734,164 @@
                 "ex_vn": "Chúng ta đi về phía nam."
             },
             {
-                "hz": "简单",
-                "py": "jiǎndān",
-                "vn": "đơn giản",
-                "ex_hz": "这个问题很简单。",
-                "ex_py": "Zhège wèntí hěn jiǎndān.",
-                "ex_vn": "Câu hỏi này rất đơn giản."
+                "hz": "筷子",
+                "py": "kuàizi",
+                "vn": "đũa",
+                "ex_hz": "用筷子吃饭。",
+                "ex_py": "Yòng kuàizi chīfàn.",
+                "ex_vn": "Dùng đũa ăn cơm."
             },
             {
-                "hz": "热情",
-                "py": "rèqíng",
-                "vn": "nhiệt tình",
-                "ex_hz": "他对人很热情。",
-                "ex_py": "Tā duì rén hěn rèqíng.",
-                "ex_vn": "Anh ấy rất nhiệt tình."
+                "hz": "叔叔",
+                "py": "shūshu",
+                "vn": "chú",
+                "ex_hz": "叔叔很高。",
+                "ex_py": "Shūshu hěn gāo.",
+                "ex_vn": "Chú rất cao."
             },
             {
-                "hz": "要求",
-                "py": "yāoqiú",
-                "vn": "yêu cầu",
-                "ex_hz": "老师要求很高。",
-                "ex_py": "Lǎoshī yāoqiú hěn gāo.",
-                "ex_vn": "Thầy giáo yêu cầu rất cao."
+                "hz": "机会",
+                "py": "jīhuì",
+                "vn": "cơ hội",
+                "ex_hz": "这是一个好机会。",
+                "ex_py": "Zhè shì yīgè hǎo jīhuì.",
+                "ex_vn": "Đây là một cơ hội tốt."
             },
             {
-                "hz": "洗手间",
-                "py": "xǐshǒujiān",
-                "vn": "nhà vệ sinh",
-                "ex_hz": "洗手间在那边。",
-                "ex_py": "Xǐshǒujiān zài nà biān.",
-                "ex_vn": "Nhà vệ sinh ở đằng kia."
-            },
-            {
-                "hz": "黄",
-                "py": "huáng",
-                "vn": "vàng",
-                "ex_hz": "这条裙子是黄色的。",
-                "ex_py": "Zhè tiáo qúnzi shì huángsè de.",
-                "ex_vn": "Chiếc váy này màu vàng."
-            },
-            {
-                "hz": "经历",
-                "py": "jīnglì",
-                "vn": "trải nghiệm",
-                "ex_hz": "难忘的经历。",
-                "ex_py": "Nánwàng de jīnglì.",
-                "ex_vn": "Một trải nghiệm khó quên."
-            },
-            {
-                "hz": "照片",
-                "py": "zhàopiàn",
-                "vn": "bức ảnh",
-                "ex_hz": "照片很好看。",
-                "ex_py": "Zhàopiàn hěn hǎokàn.",
-                "ex_vn": "Bức ảnh rất đẹp."
-            },
-            {
-                "hz": "现在",
-                "py": "xiànzài",
-                "vn": "hiện tại",
-                "ex_hz": "现在是八点。",
-                "ex_py": "Xiànzài shì bā diǎn.",
-                "ex_vn": "Bây giờ là 8 giờ."
-            },
-            {
-                "hz": "马上",
-                "py": "mǎshàng",
-                "vn": "lập tức",
-                "ex_hz": "我马上就来。",
-                "ex_py": "Wǒ mǎshàng jiù lái.",
-                "ex_vn": "Tôi sẽ đến ngay."
-            },
-            {
-                "hz": "月亮",
-                "py": "yuèliàng",
-                "vn": "mặt trăng",
-                "ex_hz": "月亮很圆。",
-                "ex_py": "Yuèliàng hěn yuán.",
-                "ex_vn": "Trăng rất tròn."
+                "hz": "站",
+                "py": "zhàn",
+                "vn": "đứng, trạm",
+                "ex_hz": "请站在这儿。",
+                "ex_py": "Qǐng zhàn zài zhèr.",
+                "ex_vn": "Xin hãy đứng ở đây."
             },
             {
                 "hz": "长",
                 "py": "zhǎng",
-                "vn": "lớn lên",
+                "vn": "dài",
                 "ex_hz": "他长得很高。",
                 "ex_py": "Tā zhǎng de hěn gāo.",
-                "ex_vn": "Anh ấy cao lớn."
+                "ex_vn": "Anh ấy cao."
             },
             {
-                "hz": "根据",
-                "py": "gēnjù",
-                "vn": "căn cứ vào",
-                "ex_hz": "根据天气预报。",
-                "ex_py": "Gēnjù tiānqì yùbào.",
-                "ex_vn": "Theo dự báo thời tiết."
+                "hz": "关系",
+                "py": "guānxì",
+                "vn": "quan hệ",
+                "ex_hz": "我们的关系很好。",
+                "ex_py": "Wǒmen de guānxì hěn hǎo.",
+                "ex_vn": "Quan hệ chúng tôi rất tốt."
             },
             {
-                "hz": "接",
-                "py": "jiē",
-                "vn": "nhận/tiếp",
-                "ex_hz": "请接电话。",
-                "ex_py": "Qǐng jiē diànhuà.",
-                "ex_vn": "Vui lòng nghe điện thoại."
+                "hz": "如果",
+                "py": "rúguǒ",
+                "vn": "nếu như",
+                "ex_hz": "如果你有时间。",
+                "ex_py": "Rúguǒ nǐ yǒu shíjiān.",
+                "ex_vn": "Nếu bạn có thời gian."
             },
             {
-                "hz": "照相机",
-                "py": "zhàoxiàngjī",
-                "vn": "máy ảnh",
-                "ex_hz": "有台新照相机。",
-                "ex_py": "Yǒu tái xīn zhàoxiàngjī.",
-                "ex_vn": "Có chiếc máy ảnh mới."
+                "hz": "换",
+                "py": "huàn",
+                "vn": "đổi",
+                "ex_hz": "我想换工作。",
+                "ex_py": "Wǒ xiǎng huàn gōngzuò.",
+                "ex_vn": "Tôi muốn đổi công việc."
             },
             {
-                "hz": "护照",
-                "py": "hùzhào",
-                "vn": "hộ chiếu",
-                "ex_hz": "我需要护照。",
-                "ex_py": "Wǒ xūyào hùzhào.",
-                "ex_vn": "Tôi cần hộ chiếu."
+                "hz": "附近",
+                "py": "fùjìn",
+                "vn": "gần đây",
+                "ex_hz": "我家附近有公园。",
+                "ex_py": "Wǒ jiā fùjìn yǒu gōngyuán.",
+                "ex_vn": "Gần nhà tôi có công viên."
             },
             {
-                "hz": "重要",
-                "py": "zhòngyào",
-                "vn": "quan trọng",
-                "ex_hz": "这事很重要。",
-                "ex_py": "Zhè shì hěn zhòngyào.",
-                "ex_vn": "Việc này rất quan trọng."
+                "hz": "糖",
+                "py": "táng",
+                "vn": "kẹo, đường",
+                "ex_hz": "我不喜欢吃糖。",
+                "ex_py": "Wǒ bù xǐhuān chī táng.",
+                "ex_vn": "Tôi không thích ăn kẹo."
             },
             {
-                "hz": "头发",
-                "py": "tóufa",
-                "vn": "tóc",
-                "ex_hz": "她的头发很长。",
-                "ex_py": "Tā de tóufa hěn cháng.",
-                "ex_vn": "Tóc cô ấy rất dài."
+                "hz": "银行",
+                "py": "yínháng",
+                "vn": "ngân hàng",
+                "ex_hz": "我去银行取钱。",
+                "ex_py": "Wǒ qù yínháng qǔ qián.",
+                "ex_vn": "Tôi đến ngân hàng rút tiền."
             },
             {
-                "hz": "为",
-                "py": "wèi",
-                "vn": "vì",
-                "ex_hz": "我为你感到骄傲。",
-                "ex_py": "Wǒ wèi nǐ gǎndào jiāo'ào.",
-                "ex_vn": "Tôi tự hào về bạn."
+                "hz": "只",
+                "py": "zhǐ",
+                "vn": "chỉ",
+                "ex_hz": "我只吃了一点儿。",
+                "ex_py": "Wǒ zhǐ chī le yīdiǎnr.",
+                "ex_vn": "Tôi chỉ ăn một chút."
+            },
+            {
+                "hz": "邻居",
+                "py": "línjū",
+                "vn": "hàng xóm",
+                "ex_hz": "邻居很友好。",
+                "ex_py": "Línjū hěn yǒuhǎo.",
+                "ex_vn": "Hàng xóm rất thân thiện."
+            },
+            {
+                "hz": "提高",
+                "py": "tígāo",
+                "vn": "nâng cao",
+                "ex_hz": "我们要提高汉语水平。",
+                "ex_py": "Wǒmen yào tígāo hànyǔ shuǐpíng.",
+                "ex_vn": "Chúng ta cần nâng cao trình độ tiếng Trung."
+            },
+            {
+                "hz": "舒服",
+                "py": "shūfu",
+                "vn": "thoải mái",
+                "ex_hz": "椅子很舒服。",
+                "ex_py": "Yǐzi hěn shūfu.",
+                "ex_vn": "Cái ghế rất thoải mái."
+            },
+            {
+                "hz": "了解",
+                "py": "liǎojiě",
+                "vn": "hiểu rõ",
+                "ex_hz": "我了解你的意思。",
+                "ex_py": "Wǒ liǎojiě nǐ de yìsi.",
+                "ex_vn": "Tôi hiểu ý của bạn."
+            },
+            {
+                "hz": "选择",
+                "py": "xuǎnzé",
+                "vn": "lựa chọn",
+                "ex_hz": "你可以选择一个礼物。",
+                "ex_py": "Nǐ kěyǐ xuǎnzé yī gè lǐwù.",
+                "ex_vn": "Bạn có thể chọn một món quà."
+            },
+            {
+                "hz": "跟",
+                "py": "gēn",
+                "vn": "cùng với",
+                "ex_hz": "我跟他一起去。",
+                "ex_py": "Wǒ gēn tā yīqǐ qù.",
+                "ex_vn": "Tôi đi cùng anh ấy."
+            },
+            {
+                "hz": "啤酒",
+                "py": "píjiǔ",
+                "vn": "bia",
+                "ex_hz": "我不喝啤酒。",
+                "ex_py": "Wǒ bù hē píjiǔ.",
+                "ex_vn": "Tôi không uống bia."
+            },
+            {
+                "hz": "一边",
+                "py": "yībiān",
+                "vn": "vừa ... vừa ...",
+                "ex_hz": "他一边吃饭一边看电视。",
+                "ex_py": "Tā yìbiān chīfàn yìbiān kàn diànshì.",
+                "ex_vn": "Anh ấy vừa ăn vừa xem TV."
             },
             {
                 "hz": "突然",
@@ -8270,12 +7902,500 @@
                 "ex_vn": "Anh ấy đột nhiên rời đi."
             },
             {
-                "hz": "骑",
-                "py": "qí",
-                "vn": "đi (xe)/cưỡi",
-                "ex_hz": "骑自行车。",
-                "ex_py": "Qí zìxíngchē.",
-                "ex_vn": "Đi xe đạp."
+                "hz": "以为",
+                "py": "yǐwéi",
+                "vn": "cho rằng",
+                "ex_hz": "我以为你不来了。",
+                "ex_py": "Wǒ yǐwéi nǐ bù lái le.",
+                "ex_vn": "Tôi tưởng rằng bạn không đến."
+            },
+            {
+                "hz": "讲",
+                "py": "jiǎng",
+                "vn": "nói/giảng",
+                "ex_hz": "他喜欢讲故事。",
+                "ex_py": "Tā xǐhuān jiǎng gùshì.",
+                "ex_vn": "Anh ấy thích kể chuyện."
+            },
+            {
+                "hz": "一般",
+                "py": "yībān",
+                "vn": "thông thường",
+                "ex_hz": "这个饭馆很一般。",
+                "ex_py": "Zhège fànguǎn hěn yībān.",
+                "ex_vn": "Nhà hàng này rất bình thường."
+            },
+            {
+                "hz": "马",
+                "py": "mǎ",
+                "vn": "ngựa",
+                "ex_hz": "马跑得很快。",
+                "ex_py": "Mǎ pǎo de hěn kuài.",
+                "ex_vn": "Ngựa chạy rất nhanh."
+            },
+            {
+                "hz": "公园",
+                "py": "gōngyuán",
+                "vn": "công viên",
+                "ex_hz": "去公园散步。",
+                "ex_py": "Qù gōngyuán sànbù.",
+                "ex_vn": "Đi dạo công viên."
+            },
+            {
+                "hz": "经常",
+                "py": "jīngcháng",
+                "vn": "thường xuyên",
+                "ex_hz": "我经常去图书馆。",
+                "ex_py": "Wǒ jīngcháng qù túshūguǎn.",
+                "ex_vn": "Tôi thường xuyên đi thư viện."
+            },
+            {
+                "hz": "面包",
+                "py": "miànbāo",
+                "vn": "bánh mì",
+                "ex_hz": "早餐吃面包。",
+                "ex_py": "Zǎocān chī miànbāo.",
+                "ex_vn": "Ăn bánh mì vào bữa sáng."
+            },
+            {
+                "hz": "历史",
+                "py": "lìshǐ",
+                "vn": "lịch sử",
+                "ex_hz": "他喜欢学历史。",
+                "ex_py": "Tā xǐhuān xué lìshǐ.",
+                "ex_vn": "Anh ấy thích học lịch sử."
+            },
+            {
+                "hz": "离开",
+                "py": "líkāi",
+                "vn": "rời khỏi",
+                "ex_hz": "他已经离开了。",
+                "ex_py": "Tā yǐjīng líkāi le.",
+                "ex_vn": "Anh ấy đã rời đi rồi."
+            },
+            {
+                "hz": "普通话",
+                "py": "pǔtōnghuà",
+                "vn": "tiếng phổ thông",
+                "ex_hz": "说普通话。",
+                "ex_py": "Shuō Pǔtōnghuà.",
+                "ex_vn": "Nói tiếng phổ thông."
+            },
+            {
+                "hz": "还是",
+                "py": "háishì",
+                "vn": "vẫn/hay là",
+                "ex_hz": "你还是学生吗？",
+                "ex_py": "Nǐ háishì xuéshēng ma?",
+                "ex_vn": "Bạn vẫn là học sinh à?"
+            },
+            {
+                "hz": "喜欢",
+                "py": "xǐhuān",
+                "vn": "thích",
+                "ex_hz": "我喜欢这个颜色。",
+                "ex_py": "Wǒ xǐhuān zhège yánsè.",
+                "ex_vn": "Tôi thích màu này."
+            },
+            {
+                "hz": "发烧",
+                "py": "fāshāo",
+                "vn": "sốt",
+                "ex_hz": "他发烧了。",
+                "ex_py": "Tā fāshāo le.",
+                "ex_vn": "Anh ấy bị sốt rồi."
+            },
+            {
+                "hz": "明白",
+                "py": "míngbái",
+                "vn": "hiểu rõ",
+                "ex_hz": "我明白你的意思。",
+                "ex_py": "Wǒ míngbái nǐ de yìsi.",
+                "ex_vn": "Tôi hiểu ý của bạn."
+            },
+            {
+                "hz": "相同",
+                "py": "xiāngtóng",
+                "vn": "giống nhau",
+                "ex_hz": "我们的看法相同。",
+                "ex_py": "Wǒmen de kànfǎ xiāngtóng.",
+                "ex_vn": "Quan điểm của chúng tôi giống nhau."
+            },
+            {
+                "hz": "故事",
+                "py": "gùshì",
+                "vn": "câu chuyện",
+                "ex_hz": "这个故事很有趣。",
+                "ex_py": "Zhège gùshì hěn yǒuqù.",
+                "ex_vn": "Truyện này rất thú vị."
+            },
+            {
+                "hz": "过去",
+                "py": "guòqù",
+                "vn": "quá khứ",
+                "ex_hz": "我们过去是同学。",
+                "ex_py": "Wǒmen guòqù shì tóngxué.",
+                "ex_vn": "Chúng tôi từng là bạn học."
+            },
+            {
+                "hz": "用",
+                "py": "yòng",
+                "vn": "dùng",
+                "ex_hz": "请不要用手机。",
+                "ex_py": "Qǐng bùyào yòng shǒujī.",
+                "ex_vn": "Vui lòng không sử dụng điện thoại."
+            },
+            {
+                "hz": "相信",
+                "py": "xiāngxìn",
+                "vn": "tin tưởng",
+                "ex_hz": "我相信他的话。",
+                "ex_py": "Wǒ xiāngxìn tā de huà.",
+                "ex_vn": "Tôi tin lời anh ấy."
+            },
+            {
+                "hz": "甜",
+                "py": "tián",
+                "vn": "ngọt",
+                "ex_hz": "这个蛋糕很甜。",
+                "ex_py": "Zhège dàngāo hěn tián.",
+                "ex_vn": "Cái bánh này rất ngọt."
+            },
+            {
+                "hz": "句子",
+                "py": "jùzi",
+                "vn": "câu",
+                "ex_hz": "请造一个句子。",
+                "ex_py": "Qǐng zào yīgè jùzi.",
+                "ex_vn": "Hãy đặt một câu."
+            },
+            {
+                "hz": "国家",
+                "py": "guójiā",
+                "vn": "quốc gia",
+                "ex_hz": "我爱我的国家。",
+                "ex_py": "Wǒ ài wǒ de guójiā.",
+                "ex_vn": "Tôi yêu đất nước tôi."
+            },
+            {
+                "hz": "客人",
+                "py": "kèrén",
+                "vn": "khách",
+                "ex_hz": "客人已经来了。",
+                "ex_py": "Kèrén yǐjīng lái le.",
+                "ex_vn": "Khách đã đến rồi."
+            },
+            {
+                "hz": "影响",
+                "py": "yǐngxiǎng",
+                "vn": "ảnh hưởng",
+                "ex_hz": "这个电影对我影响很大。",
+                "ex_py": "Zhège diànyǐng duì wǒ yǐngxiǎng hěn dà.",
+                "ex_vn": "Bộ phim này có ảnh hưởng lớn đối với tôi."
+            },
+            {
+                "hz": "现在",
+                "py": "xiànzài",
+                "vn": "hiện",
+                "ex_hz": "现在是八点。",
+                "ex_py": "Xiànzài shì bā diǎn.",
+                "ex_vn": "Bây giờ là tám giờ."
+            },
+            {
+                "hz": "教",
+                "py": "jiāo",
+                "vn": "dạy",
+                "ex_hz": "他教我们汉语。",
+                "ex_py": "Tā jiāo wǒmen Hànyǔ.",
+                "ex_vn": "Anh ấy dạy chúng tôi tiếng Trung."
+            },
+            {
+                "hz": "决定",
+                "py": "juédìng",
+                "vn": "quyết định",
+                "ex_hz": "决定去旅行。",
+                "ex_py": "Juédìng qù lǚxíng.",
+                "ex_vn": "Quyết định đi du lịch."
+            },
+            {
+                "hz": "认真",
+                "py": "rènzhēn",
+                "vn": "nghiêm túc",
+                "ex_hz": "学习很认真。",
+                "ex_py": "Xuéxí hěn rènzhēn.",
+                "ex_vn": "Học hành rất nghiêm túc."
+            },
+            {
+                "hz": "饿",
+                "py": "è",
+                "vn": "đói",
+                "ex_hz": "我饿了，想吃饭。",
+                "ex_py": "Wǒ è le, xiǎng chī fàn.",
+                "ex_vn": "Tôi đói rồi, muốn ăn cơm."
+            },
+            {
+                "hz": "世界",
+                "py": "shìjiè",
+                "vn": "thế giới",
+                "ex_hz": "世界很大。",
+                "ex_py": "Shìjiè hěn dà.",
+                "ex_vn": "Thế giới rất rộng lớn."
+            },
+            {
+                "hz": "关心",
+                "py": "guānxīn",
+                "vn": "quan tâm",
+                "ex_hz": "她很关心我。",
+                "ex_py": "Tā hěn guānxīn wǒ.",
+                "ex_vn": "Cô ấy rất quan tâm tôi."
+            },
+            {
+                "hz": "蓝",
+                "py": "lán",
+                "vn": "xanh da trời",
+                "ex_hz": "天空是蓝色的。",
+                "ex_py": "Tiānkōng shì lánsè de.",
+                "ex_vn": "Bầu trời màu xanh."
+            },
+            {
+                "hz": "举行",
+                "py": "jǔxíng",
+                "vn": "tổ chức",
+                "ex_hz": "学校举行运动会。",
+                "ex_py": "Xuéxiào jǔxíng yùndònghuì.",
+                "ex_vn": "Trường tổ chức đại hội thể thao."
+            },
+            {
+                "hz": "记得",
+                "py": "jìdé",
+                "vn": "nhớ",
+                "ex_hz": "请记得带钥匙。",
+                "ex_py": "Qǐng jìdé dài yàoshi.",
+                "ex_vn": "Hãy nhớ mang theo chìa khóa."
+            },
+            {
+                "hz": "检查",
+                "py": "jiǎnchá",
+                "vn": "kiểm tra",
+                "ex_hz": "检查我们的作业。",
+                "ex_py": "Jiǎnchá wǒmen de zuòyè.",
+                "ex_vn": "Kiểm tra bài tập của chúng tôi."
+            },
+            {
+                "hz": "习惯",
+                "py": "xíguàn",
+                "vn": "thói quen",
+                "ex_hz": "他习惯早起。",
+                "ex_py": "Tā xíguàn zǎoqǐ.",
+                "ex_vn": "Anh ấy quen dậy sớm."
+            },
+            {
+                "hz": "为",
+                "py": "wèi",
+                "vn": "vì",
+                "ex_hz": "我为你感到骄傲。",
+                "ex_py": "Wǒ wèi nǐ gǎndào jiāo'ào.",
+                "ex_vn": "Tôi tự hào về bạn."
+            },
+            {
+                "hz": "难",
+                "py": "nán",
+                "vn": "khó",
+                "ex_hz": "这个问题很难。",
+                "ex_py": "Zhège wèntí hěn nán.",
+                "ex_vn": "Vấn đề này rất khó."
+            },
+            {
+                "hz": "然后",
+                "py": "ránhòu",
+                "vn": "sau đó",
+                "ex_hz": "吃饭然后看电影。",
+                "ex_py": "Chīfàn ránhòu kàn diànyǐng.",
+                "ex_vn": "Ăn cơm xong rồi xem phim."
+            },
+            {
+                "hz": "健康",
+                "py": "jiànkāng",
+                "vn": "khỏe mạnh",
+                "ex_hz": "健康最重要。",
+                "ex_py": "Jiànkāng zuì zhòngyào.",
+                "ex_vn": "Sức khỏe là quan trọng nhất."
+            },
+            {
+                "hz": "河",
+                "py": "hé",
+                "vn": "sông",
+                "ex_hz": "河边有很多花。",
+                "ex_py": "Hé biān yǒu hěn duō huā.",
+                "ex_vn": "Bờ sông có nhiều hoa."
+            },
+            {
+                "hz": "老",
+                "py": "lǎo",
+                "vn": "già/cũ",
+                "ex_hz": "他是老朋友。",
+                "ex_py": "Tā shì lǎo péngyǒu.",
+                "ex_vn": "Anh ấy là bạn cũ."
+            },
+            {
+                "hz": "西",
+                "py": "xī",
+                "vn": "phía tây",
+                "ex_hz": "我住在西边。",
+                "ex_py": "Wǒ zhù zài xībiān.",
+                "ex_vn": "Tôi sống ở phía tây."
+            },
+            {
+                "hz": "久",
+                "py": "jiǔ",
+                "vn": "lâu",
+                "ex_hz": "我等了很久。",
+                "ex_py": "Wǒ děng le hěn jiǔ.",
+                "ex_vn": "Tôi đã đợi rất lâu."
+            },
+            {
+                "hz": "洗澡",
+                "py": "xǐzǎo",
+                "vn": "tắm",
+                "ex_hz": "我每天早上都洗澡。",
+                "ex_py": "Wǒ měitiān zǎoshang dōu xǐzǎo.",
+                "ex_vn": "Tôi đều tắm vào mỗi buổi sáng."
+            },
+            {
+                "hz": "简单",
+                "py": "jiǎndān",
+                "vn": "đơn giản",
+                "ex_hz": "这个问题很简单。",
+                "ex_py": "Zhège wèntí hěn jiǎndān.",
+                "ex_vn": "Câu hỏi này rất đơn giản."
+            },
+            {
+                "hz": "伞",
+                "py": "sǎn",
+                "vn": "ô/dù",
+                "ex_hz": "带上伞吧。",
+                "ex_py": "Dài shàng sǎn ba.",
+                "ex_vn": "Mang ô theo đi."
+            },
+            {
+                "hz": "借",
+                "py": "jiè",
+                "vn": "mượn",
+                "ex_hz": "我可以借书吗？",
+                "ex_py": "Wǒ kěyǐ jiè shū ma?",
+                "ex_vn": "Tôi có thể mượn sách không?"
+            },
+            {
+                "hz": "礼物",
+                "py": "lǐwù",
+                "vn": "quà",
+                "ex_hz": "这是生日礼物。",
+                "ex_py": "Zhè shì shēngrì lǐwù.",
+                "ex_vn": "Đây là quà sinh nhật."
+            },
+            {
+                "hz": "花园",
+                "py": "huāyuán",
+                "vn": "vườn hoa",
+                "ex_hz": "在花园里玩。",
+                "ex_py": "Zài huāyuán lǐ wán.",
+                "ex_vn": "Chơi trong vườn hoa."
+            },
+            {
+                "hz": "行李箱",
+                "py": "xínglǐxiāng",
+                "vn": "vali",
+                "ex_hz": "我的行李箱很重。",
+                "ex_py": "Wǒ de xínglǐxiāng hěn zhòng.",
+                "ex_vn": "Vali của tôi rất nặng."
+            },
+            {
+                "hz": "年轻",
+                "py": "niánqīng",
+                "vn": "trẻ",
+                "ex_hz": "她很年轻。",
+                "ex_py": "Tā hěn niánqīng.",
+                "ex_vn": "Cô ấy rất trẻ."
+            },
+            {
+                "hz": "经历",
+                "py": "jīnglì",
+                "vn": "trải nghiệm",
+                "ex_hz": "难忘的经历。",
+                "ex_py": "Nánwàng de jīnglì.",
+                "ex_vn": "Một trải nghiệm khó quên."
+            },
+            {
+                "hz": "特别",
+                "py": "tèbié",
+                "vn": "đặc biệt",
+                "ex_hz": "他特别喜欢跑步。",
+                "ex_py": "Tā tèbié xǐhuān pǎobù.",
+                "ex_vn": "Anh ấy đặc biệt thích chạy bộ."
+            },
+            {
+                "hz": "同事",
+                "py": "tóngshì",
+                "vn": "đồng nghiệp",
+                "ex_hz": "他是我的同事。",
+                "ex_py": "Tā shì wǒ de tóngshì.",
+                "ex_vn": "Anh ấy là đồng nghiệp của tôi."
+            },
+            {
+                "hz": "一直",
+                "py": "yīzhí",
+                "vn": "luôn luôn",
+                "ex_hz": "他一直在学习。",
+                "ex_py": "Tā yìzhí zài xuéxí.",
+                "ex_vn": "Anh ấy luôn luôn học tập."
+            },
+            {
+                "hz": "头发",
+                "py": "tóufa",
+                "vn": "tóc",
+                "ex_hz": "她的头发很长。",
+                "ex_py": "Tā de tóufa hěn cháng.",
+                "ex_vn": "Tóc của cô ấy rất dài."
+            },
+            {
+                "hz": "上网",
+                "py": "shàngwǎng",
+                "vn": "lên mạng",
+                "ex_hz": "喜欢上网。",
+                "ex_py": "Xǐhuān shàngwǎng.",
+                "ex_vn": "Thích lên mạng."
+            },
+            {
+                "hz": "条",
+                "py": "tiáo",
+                "vn": "sợi, cái",
+                "ex_hz": "他买了一条裤子。",
+                "ex_py": "Tā mǎi le yī tiáo kùzi.",
+                "ex_vn": "Anh ấy đã mua một chiếc quần."
+            },
+            {
+                "hz": "着急",
+                "py": "zhāojí",
+                "vn": "lo lắng",
+                "ex_hz": "他很着急。",
+                "ex_py": "Tā hěn zhāojí.",
+                "ex_vn": "Anh ấy rất lo lắng."
+            },
+            {
+                "hz": "照相机",
+                "py": "zhàoxiàngjī",
+                "vn": "máy ảnh",
+                "ex_hz": "我有一台新的照相机。",
+                "ex_py": "Wǒ yǒu yī tái xīn de zhàoxiàngjī.",
+                "ex_vn": "Tôi có một chiếc máy ảnh mới."
+            },
+            {
+                "hz": "像",
+                "py": "xiàng",
+                "vn": "giống",
+                "ex_hz": "他像他爸爸一样高。",
+                "ex_py": "Tā xiàng tā bàba yīyàng gāo.",
+                "ex_vn": "Anh ấy cao giống như bố của mình."
             },
             {
                 "hz": "容易",
@@ -8286,20 +8406,172 @@
                 "ex_vn": "Rất dễ giải quyết."
             },
             {
-                "hz": "胖",
-                "py": "pàng",
-                "vn": "béo",
-                "ex_hz": "小孩有点儿胖。",
-                "ex_py": "Xiǎohái yǒudiǎnr pàng.",
-                "ex_vn": "Đứa trẻ hơi mập."
+                "hz": "果汁",
+                "py": "guǒzhī",
+                "vn": "nước ép",
+                "ex_hz": "给我一杯果汁。",
+                "ex_py": "Gěi wǒ yī bēi guǒzhī.",
+                "ex_vn": "Cho tôi ly nước ép."
             },
             {
-                "hz": "熊猫",
-                "py": "xióngmāo",
-                "vn": "gấu trúc",
-                "ex_hz": "熊猫是国宝。",
-                "ex_py": "Xióngmāo shì guóbǎo.",
-                "ex_vn": "Gấu trúc là quốc bảo."
+                "hz": "清楚",
+                "py": "qīngchǔ",
+                "vn": "rõ ràng",
+                "ex_hz": "我不清楚他的名字。",
+                "ex_py": "Wǒ bù qīngchǔ tā de míngzi.",
+                "ex_vn": "Tôi không rõ tên anh ấy."
+            },
+            {
+                "hz": "其实",
+                "py": "qíshí",
+                "vn": "thực ra",
+                "ex_hz": "其实我不喜欢辣。",
+                "ex_py": "Qíshí wǒ bù xǐhuān là.",
+                "ex_vn": "Thực ra tôi không thích cay."
+            },
+            {
+                "hz": "又",
+                "py": "yòu",
+                "vn": "lại, vừa",
+                "ex_hz": "他又来了。",
+                "ex_py": "Tā yòu lái le.",
+                "ex_vn": "Anh ấy lại đến."
+            },
+            {
+                "hz": "会议",
+                "py": "huìyì",
+                "vn": "cuộc họp",
+                "ex_hz": "会议三点开始。",
+                "ex_py": "Huìyì sān diǎn kāishǐ.",
+                "ex_vn": "Cuộc họp bắt đầu lúc 3 giờ."
+            },
+            {
+                "hz": "兴趣",
+                "py": "xìngqù",
+                "vn": "hứng thú",
+                "ex_hz": "我对中国文化有兴趣。",
+                "ex_py": "Wǒ duì Zhōngguó wénhuà yǒu xìngqù.",
+                "ex_vn": "Tôi có hứng thú với văn hóa Trung Quốc."
+            },
+            {
+                "hz": "中间",
+                "py": "zhōngjiān",
+                "vn": "ở giữa",
+                "ex_hz": "他站在房间的中间。",
+                "ex_py": "Tā zhàn zài fángjiān de zhōngjiān.",
+                "ex_vn": "Anh ấy đứng ở giữa phòng."
+            },
+            {
+                "hz": "耳朵",
+                "py": "ěrduo",
+                "vn": "tai",
+                "ex_hz": "我的耳朵很敏感。",
+                "ex_py": "Wǒ de ěrduo hěn mǐngǎn.",
+                "ex_vn": "Tai tôi rất nhạy cảm."
+            },
+            {
+                "hz": "新闻",
+                "py": "xīnwén",
+                "vn": "tin tức",
+                "ex_hz": "我每天都看新闻。",
+                "ex_py": "Wǒ měitiān dōu kàn xīnwén.",
+                "ex_vn": "Tôi xem tin tức mỗi ngày."
+            },
+            {
+                "hz": "画",
+                "py": "huà",
+                "vn": "vẽ/tranh",
+                "ex_hz": "他喜欢画画儿。",
+                "ex_py": "Tā xǐhuān huà huàr.",
+                "ex_vn": "Anh ấy thích vẽ tranh."
+            },
+            {
+                "hz": "云",
+                "py": "yún",
+                "vn": "mây",
+                "ex_hz": "天上的云很美。",
+                "ex_py": "Tiānshàng de yún hěn měi.",
+                "ex_vn": "Mây trên trời rất đẹp."
+            },
+            {
+                "hz": "结束",
+                "py": "jiéshù",
+                "vn": "kết thúc",
+                "ex_hz": "会议结束了。",
+                "ex_py": "Huìyì jiéshù le.",
+                "ex_vn": "Cuộc họp đã kết thúc."
+            },
+            {
+                "hz": "爬山",
+                "py": "páshān",
+                "vn": "leo núi",
+                "ex_hz": "周末去爬山。",
+                "ex_py": "Zhōumò qù páshān.",
+                "ex_vn": "Cuối tuần đi leo núi."
+            },
+            {
+                "hz": "节目",
+                "py": "jiémù",
+                "vn": "chương trình",
+                "ex_hz": "我喜欢这个节目。",
+                "ex_py": "Wǒ xǐhuān zhège jiémù.",
+                "ex_vn": "Tôi thích chương trình này."
+            },
+            {
+                "hz": "鸟",
+                "py": "niǎo",
+                "vn": "chim",
+                "ex_hz": "树上有很多鸟。",
+                "ex_py": "Shù shàng yǒu hěn duō niǎo.",
+                "ex_vn": "Trên cây có nhiều chim."
+            },
+            {
+                "hz": "哭",
+                "py": "kū",
+                "vn": "khóc",
+                "ex_hz": "孩子们在哭。",
+                "ex_py": "Háizimen zài kū.",
+                "ex_vn": "Đám trẻ đang khóc."
+            },
+            {
+                "hz": "洗手间",
+                "py": "xǐshǒujiān",
+                "vn": "nhà vệ sinh",
+                "ex_hz": "洗手间在那边。",
+                "ex_py": "Xǐshǒujiān zài nà biān.",
+                "ex_vn": "Nhà vệ sinh ở đằng kia."
+            },
+            {
+                "hz": "完成",
+                "py": "wánchéng",
+                "vn": "hoàn thành",
+                "ex_hz": "我完成了作业。",
+                "ex_py": "Wǒ wánchéng le zuòyè.",
+                "ex_vn": "Tôi đã hoàn thành bài tập."
+            },
+            {
+                "hz": "水平",
+                "py": "shuǐpíng",
+                "vn": "trình độ",
+                "ex_hz": "他的游泳水平很高。",
+                "ex_py": "Tā de yóuyǒng shuǐpíng hěn gāo.",
+                "ex_vn": "Trình độ bơi của anh ấy rất cao."
+            },
+            {
+                "hz": "结婚",
+                "py": "jiéhūn",
+                "vn": "kết hôn",
+                "ex_hz": "他们结婚了。",
+                "ex_py": "Tāmen jiéhūn le.",
+                "ex_vn": "Họ đã kết hôn rồi."
+            },
+            {
+                "hz": "辆",
+                "py": "liàng",
+                "vn": "chiếc (xe)",
+                "ex_hz": "他有一辆新车。",
+                "ex_py": "Tā yǒu yī liàng xīn chē.",
+                "ex_vn": "Anh ấy có một chiếc xe mới."
             },
             {
                 "hz": "应该",
@@ -8310,12 +8582,132 @@
                 "ex_vn": "Bạn nên nghỉ ngơi nhiều hơn."
             },
             {
-                "hz": "敢",
-                "py": "gǎn",
-                "vn": "dám",
-                "ex_hz": "我敢说你是对的。",
-                "ex_py": "Wǒ gǎn shuō nǐ shì duì de.",
-                "ex_vn": "Tôi dám nói bạn đúng."
+                "hz": "解决",
+                "py": "jiějué",
+                "vn": "giải quyết",
+                "ex_hz": "解决这个问题。",
+                "ex_py": "Jiějué zhège wèntí.",
+                "ex_vn": "Giải quyết vấn đề này."
+            },
+            {
+                "hz": "爷爷",
+                "py": "yéye",
+                "vn": "ông nội",
+                "ex_hz": "我爷爷很喜欢看书。",
+                "ex_py": "Wǒ yéye hěn xǐhuān kàn shū.",
+                "ex_vn": "Ông của tôi rất thích đọc sách."
+            },
+            {
+                "hz": "葡萄",
+                "py": "pútao",
+                "vn": "nho",
+                "ex_hz": "喜欢吃葡萄。",
+                "ex_py": "Xǐhuān chī pútáo.",
+                "ex_vn": "Thích ăn nho."
+            },
+            {
+                "hz": "新鲜",
+                "py": "xīnxiān",
+                "vn": "tươi mới",
+                "ex_hz": "这些水果很新鲜。",
+                "ex_py": "Zhèxiē shuǐguǒ hěn xīnxiān.",
+                "ex_vn": "Những loại trái cây này rất tươi."
+            },
+            {
+                "hz": "文化",
+                "py": "wénhuà",
+                "vn": "văn hóa",
+                "ex_hz": "他对中国文化很感兴趣。",
+                "ex_py": "Tā duì Zhōngguó wénhuà hěn gǎn xìngqù.",
+                "ex_vn": "Anh ấy rất quan tâm đến văn hóa Trung Quốc."
+            },
+            {
+                "hz": "熊猫",
+                "py": "xióngmāo",
+                "vn": "gấu trúc",
+                "ex_hz": "熊猫是中国的国宝。",
+                "ex_py": "Xióngmāo shì Zhōngguó de guóbǎo.",
+                "ex_vn": "Gấu trúc là báu vật quốc gia của Trung Quốc."
+            },
+            {
+                "hz": "几乎",
+                "py": "jīhū",
+                "vn": "hầu như",
+                "ex_hz": "他几乎每天都锻炼。",
+                "ex_py": "Tā jīhū měitiān dōu duànliàn.",
+                "ex_vn": "Anh ấy hầu như tập thể dục mỗi ngày."
+            },
+            {
+                "hz": "米",
+                "py": "mǐ",
+                "vn": "gạo/mét",
+                "ex_hz": "吃了一碗米饭。",
+                "ex_py": "Chī le yī wǎn mǐfàn.",
+                "ex_vn": "Ăn một bát cơm."
+            },
+            {
+                "hz": "空调",
+                "py": "kòngtiáo",
+                "vn": "máy lạnh",
+                "ex_hz": "房间里有空调。",
+                "ex_py": "Fángjiān lǐ yǒu kòngtiáo.",
+                "ex_vn": "Trong phòng có điều hòa."
+            },
+            {
+                "hz": "干净",
+                "py": "gānjìng",
+                "vn": "sạch sẽ",
+                "ex_hz": "房间很干净。",
+                "ex_py": "Fángjiān hěn gānjìng.",
+                "ex_vn": "Phòng rất sạch sẽ."
+            },
+            {
+                "hz": "其他",
+                "py": "qítā",
+                "vn": "khác",
+                "ex_hz": "其他人都走了。",
+                "ex_py": "Qítā rén dōu zǒu le.",
+                "ex_vn": "Những người khác đi hết rồi."
+            },
+            {
+                "hz": "小心",
+                "py": "xiǎoxīn",
+                "vn": "cẩn thận",
+                "ex_hz": "请小心地走路。",
+                "ex_py": "Qǐng xiǎoxīn de zǒulù.",
+                "ex_vn": "Vui lòng đi bộ cẩn thận."
+            },
+            {
+                "hz": "月亮",
+                "py": "yuèliàng",
+                "vn": "mặt trăng",
+                "ex_hz": "今天晚上的月亮很圆。",
+                "ex_py": "Jīntiān wǎnshang de yuèliàng hěn yuán.",
+                "ex_vn": "Trăng tối nay rất tròn."
+            },
+            {
+                "hz": "香蕉",
+                "py": "xiāngjiāo",
+                "vn": "chuối",
+                "ex_hz": "香蕉是黄色的。",
+                "ex_py": "Xiāngjiāo shì huángsè de.",
+                "ex_vn": "Chuối có màu vàng."
+            },
+            {
+                "hz": "万",
+                "py": "wàn",
+                "vn": "vạn, mười nghìn",
+                "ex_hz": "一万个人参加了比赛。",
+                "ex_py": "Yī wàn gè rén cānjiā le bǐsài.",
+                "ex_vn": "Mười nghìn người đã tham gia cuộc thi."
+            },
+            {
+                "hz": "自己",
+                "py": "zìjǐ",
+                "vn": "bản thân",
+                "ex_hz": "这是 me của chính tôi.",
+                "ex_py": "Zhè shì wǒ zìjǐ de wèntí.",
+                "ex_vn": "Đây là vấn đề của chính tôi."
             },
             {
                 "hz": "瘦",
@@ -8326,12 +8718,348 @@
                 "ex_vn": "Anh ấy ngày càng gầy."
             },
             {
-                "hz": "文化",
-                "py": "wénhuà",
-                "vn": "văn hóa",
-                "ex_hz": "对中国文化感兴趣。",
-                "ex_py": "Duì Zhōngguó wénhuà gǎn xìngqù.",
-                "ex_vn": "Hứng thú với văn hóa Trung Quốc."
+                "hz": "脸",
+                "py": "liǎn",
+                "vn": "mặt",
+                "ex_hz": "她的脸很红。",
+                "ex_py": "Tā de liǎn hěn hóng.",
+                "ex_vn": "Mặt cô ấy rất đỏ."
+            },
+            {
+                "hz": "还",
+                "py": "huán",
+                "vn": "trả lại",
+                "ex_hz": "你什么时候把钱还给我？",
+                "ex_py": "Nǐ shénme shíhòu bǎ qián huán gěi wǒ?",
+                "ex_vn": "Khi nào bạn trả tiền cho tôi?"
+            },
+            {
+                "hz": "刚才",
+                "py": "gāngcái",
+                "vn": "vừa mới",
+                "ex_hz": "刚才看见他了。",
+                "ex_py": "Gāngcái kànjiàn tā le.",
+                "ex_vn": "Vừa rồi thấy anh ấy."
+            },
+            {
+                "hz": "注意",
+                "py": "zhùyì",
+                "vn": "chú ý",
+                "ex_hz": "请注意安全。",
+                "ex_py": "Qǐng zhùyì ānquán.",
+                "ex_vn": "Vui lòng chú ý an toàn."
+            },
+            {
+                "hz": "太阳",
+                "py": "tàiyáng",
+                "vn": "mặt trời",
+                "ex_hz": "太阳出来了。",
+                "ex_py": "Tàiyáng chū lái le.",
+                "ex_vn": "Mặt trời đã mọc."
+            },
+            {
+                "hz": "黄",
+                "py": "huáng",
+                "vn": "vàng",
+                "ex_hz": "这条裙子是黄色的。",
+                "ex_py": "Zhè tiáo qúnzi shì huángsè de.",
+                "ex_vn": "Chiếc váy này màu vàng."
+            },
+            {
+                "hz": "音乐",
+                "py": "yīnyuè",
+                "vn": "âm nhạc",
+                "ex_hz": "我喜欢听音乐。",
+                "ex_py": "Wǒ xǐhuān tīng yīnyuè.",
+                "ex_vn": "Tôi thích nghe nhạc."
+            },
+            {
+                "hz": "可爱",
+                "py": "kě'ài",
+                "vn": "đáng yêu",
+                "ex_hz": "这只猫很可爱。",
+                "ex_py": "Zhè zhǐ māo hěn kě'ài.",
+                "ex_vn": "Con mèo này rất đáng yêu."
+            },
+            {
+                "hz": "接",
+                "py": "jiē",
+                "vn": "nhận/tiếp",
+                "ex_hz": "请接电话。",
+                "ex_py": "Qǐng jiē diànhuà.",
+                "ex_vn": "Vui lòng nghe điện thoại."
+            },
+            {
+                "hz": "或者",
+                "py": "huòzhě",
+                "vn": "hoặc là",
+                "ex_hz": "苹果或者香蕉。",
+                "ex_py": "Píngguǒ huòzhě xiāngjiāo.",
+                "ex_vn": "Táo hoặc là chuối."
+            },
+            {
+                "hz": "旧",
+                "py": "jiù",
+                "vn": "cũ",
+                "ex_hz": "这本书很旧。",
+                "ex_py": "Zhè běn shū hěn jiù.",
+                "ex_vn": "Cuốn sách này rất cũ."
+            },
+            {
+                "hz": "一定",
+                "py": "yīdìng",
+                "vn": "nhất định",
+                "ex_hz": "我一定会努力学习。",
+                "ex_py": "Wǒ yídìng huì nǔlì xuéxí.",
+                "ex_vn": "Tôi chắc chắn sẽ học chăm chỉ."
+            },
+            {
+                "hz": "坏",
+                "py": "huài",
+                "vn": "hỏng/xấu",
+                "ex_hz": "我的手机坏了。",
+                "ex_py": "Wǒ de shǒujī huài le.",
+                "ex_vn": "Điện thoại tôi hỏng rồi."
+            },
+            {
+                "hz": "游戏",
+                "py": "yóuxì",
+                "vn": "trò chơi",
+                "ex_hz": "我喜欢玩游戏。",
+                "ex_py": "Wǒ xǐhuān wán yóuxì.",
+                "ex_vn": "Tôi thích chơi trò chơi."
+            },
+            {
+                "hz": "花",
+                "py": "huā",
+                "vn": "hoa/tiêu",
+                "ex_hz": "这里的花很美。",
+                "ex_py": "Zhèlǐ de huā hěn měi.",
+                "ex_vn": "Hoa ở đây rất đẹp."
+            },
+            {
+                "hz": "遇到",
+                "py": "yùdào",
+                "vn": "gặp phải",
+                "ex_hz": "我在路上遇到他了。",
+                "ex_py": "Wǒ zài lùshàng yùdào tā le.",
+                "ex_vn": "Tôi đã gặp anh ấy trên đường."
+            },
+            {
+                "hz": "见面",
+                "py": "jiànmiàn",
+                "vn": "gặp mặt",
+                "ex_hz": "我们明天见面吧。",
+                "ex_py": "Wǒmen míngtiān jiànmiàn ba.",
+                "ex_vn": "Mai chúng mình gặp nhau nhé."
+            },
+            {
+                "hz": "同意",
+                "py": "tóngyì",
+                "vn": "đồng ý",
+                "ex_hz": "我同意你的看法。",
+                "ex_py": "Wǒ tóngyì nǐ de kànfǎ.",
+                "ex_vn": "Tôi đồng ý với quan điểm của bạn."
+            },
+            {
+                "hz": "生气",
+                "py": "shēngqì",
+                "vn": "tức giận",
+                "ex_hz": "她生气了。",
+                "ex_py": "Tā shēngqì le.",
+                "ex_vn": "Cô ấy giận rồi."
+            },
+            {
+                "hz": "种",
+                "py": "zhǒng",
+                "vn": "loại, hạt giống",
+                "ex_hz": "他喜欢这种花。",
+                "ex_py": "Tā xǐhuān zhè zhǒng huā.",
+                "ex_vn": "Anh ấy thích loại hoa này."
+            },
+            {
+                "hz": "角",
+                "py": "jiǎo",
+                "vn": "góc",
+                "ex_hz": "猫 ở góc bàn.",
+                "ex_py": "Māo zài zhuōzi de jiǎoluò lǐ.",
+                "ex_vn": "Con mèo ở góc bàn."
+            },
+            {
+                "hz": "根据",
+                "py": "gēnjù",
+                "vn": "căn cứ vào",
+                "ex_hz": "根据天气预报。",
+                "ex_py": "Gēnjù tiānqì yùbào.",
+                "ex_vn": "Theo dự báo thời tiết."
+            },
+            {
+                "hz": "体育",
+                "py": "tǐyù",
+                "vn": "thể dục, thể thao",
+                "ex_hz": "我喜欢体育运动。",
+                "ex_py": "Wǒ xǐhuān tǐyù yùndòng.",
+                "ex_vn": "Tôi thích các hoạt động thể thao."
+            },
+            {
+                "hz": "总是",
+                "py": "zǒngshì",
+                "vn": "luôn luôn",
+                "ex_hz": "他总是很忙。",
+                "ex_py": "Tā zǒngshì hěn máng.",
+                "ex_vn": "Anh ấy luôn luôn bận rộn."
+            },
+            {
+                "hz": "作业",
+                "py": "zuòyè",
+                "vn": "bài tập về nhà",
+                "ex_hz": "我已经做完作业了。",
+                "ex_py": "Wǒ yǐjīng zuò wán zuòyè le.",
+                "ex_vn": "Tôi đã làm xong bài tập."
+            },
+            {
+                "hz": "刻",
+                "py": "kè",
+                "vn": "khắc (15p)",
+                "ex_hz": "八点一刻来。",
+                "ex_py": "Bā diǎn yí kè lái.",
+                "ex_vn": "8 giờ 15 phút đến."
+            },
+            {
+                "hz": "满意",
+                "py": "mǎnyì",
+                "vn": "hài lòng",
+                "ex_hz": "对结果很满意。",
+                "ex_py": "Duì jiéguǒ hěn mǎnyì.",
+                "ex_vn": "Hài lòng với kết quả."
+            },
+            {
+                "hz": "面条",
+                "py": "miàntiáo",
+                "vn": "mì sợi",
+                "ex_hz": "他喜欢吃面条。",
+                "ex_py": "Tā xǐhuān chī miàntiáo.",
+                "ex_vn": "Anh ấy thích ăn mì."
+            },
+            {
+                "hz": "裤子",
+                "py": "kùzi",
+                "vn": "quần",
+                "ex_hz": "穿了一条新裤子。",
+                "ex_py": "Chuān le yī tiáo xīn kùzi.",
+                "ex_vn": "Mặc một chiếc quần mới."
+            },
+            {
+                "hz": "放",
+                "py": "fàng",
+                "vn": "đặt/để",
+                "ex_hz": "请把书放在桌上。",
+                "ex_py": "Qǐng bǎ shū fàng zài zhuō shàng.",
+                "ex_vn": "Hãy để sách lên bàn."
+            },
+            {
+                "hz": "作用",
+                "py": "zuòyòng",
+                "vn": "tác dụng",
+                "ex_hz": "这个词的作用是什么？",
+                "ex_py": "Zhège cí de zuòyòng shì shénme?",
+                "ex_vn": "Tác dụng của từ này là gì?"
+            },
+            {
+                "hz": "锻炼",
+                "py": "duànliàn",
+                "vn": "luyện tập",
+                "ex_hz": "我每天锻炼身体。",
+                "ex_py": "Wǒ měitiān duànliàn shēntǐ.",
+                "ex_vn": "Tôi tập thể dục mỗi ngày."
+            },
+            {
+                "hz": "刮风",
+                "py": "guā fēng",
+                "vn": "gió thổi",
+                "ex_hz": "今天刮风了。",
+                "ex_py": "Jīntiān guāfēng le.",
+                "ex_vn": "Hôm nay gió thổi."
+            },
+            {
+                "hz": "奇怪",
+                "py": "qíguài",
+                "vn": "lạ",
+                "ex_hz": "事情很奇怪。",
+                "ex_py": "Shìqíng hěn qíguài.",
+                "ex_vn": "Chuyện này rất lạ."
+            },
+            {
+                "hz": "校长",
+                "py": "xiàozhǎng",
+                "vn": "hiệu trưởng",
+                "ex_hz": "校长在办公室工作。",
+                "ex_py": "Xiàozhǎng zài bàngōngshì gōngzuò.",
+                "ex_vn": "Hiệu trưởng làm việc trong văn phòng."
+            },
+            {
+                "hz": "害怕",
+                "py": "hàipà",
+                "vn": "sợ",
+                "ex_hz": "我害怕黑暗。",
+                "ex_py": "Wǒ hàipà hēi'àn.",
+                "ex_vn": "Tôi sợ bóng tối."
+            },
+            {
+                "hz": "难过",
+                "py": "nánguò",
+                "vn": "buồn",
+                "ex_hz": "听到消息很难过。",
+                "ex_py": "Tīngdào xiāoxi hěn nánguò.",
+                "ex_vn": "Nghe tin xong rất buồn."
+            },
+            {
+                "hz": "方便",
+                "py": "fāngbiàn",
+                "vn": "thuận tiện",
+                "ex_hz": "这里很方便。",
+                "ex_py": "Zhèlǐ hěn fāngbiàn.",
+                "ex_vn": "Ở đây rất tiện lợi."
+            },
+            {
+                "hz": "帽子",
+                "py": "màozi",
+                "vn": "mũ",
+                "ex_hz": "这顶帽子很美。",
+                "ex_py": "Zhè dǐng màozi hěn měi.",
+                "ex_vn": "Chiếc mũ này rất đẹp."
+            },
+            {
+                "hz": "复习",
+                "py": "fùxí",
+                "vn": "ôn tập",
+                "ex_hz": "我需要复习功课。",
+                "ex_py": "Wǒ xūyào fùxí gōngkè.",
+                "ex_vn": "Tôi cần ôn bài."
+            },
+            {
+                "hz": "树",
+                "py": "shù",
+                "vn": "cây",
+                "ex_hz": "树上的鸟 trong singing.",
+                "ex_py": "Shù shàng de niǎo zài chànggē.",
+                "ex_vn": "Con chim trên cây đang hót."
+            },
+            {
+                "hz": "双",
+                "py": "shuāng",
+                "vn": "đôi",
+                "ex_hz": "我买了一双鞋。",
+                "ex_py": "Wǒ mǎi le yī shuāng xié.",
+                "ex_vn": "Tôi đã mua một đôi giày."
+            },
+            {
+                "hz": "黑板",
+                "py": "hēibǎn",
+                "vn": "bảng",
+                "ex_hz": "在黑板上写字。",
+                "ex_py": "Zài hēibǎn shàng xiězì.",
+                "ex_vn": "Viết chữ lên bảng."
             },
             {
                 "hz": "脚",
@@ -8350,110 +9078,6 @@
                 "ex_vn": "Tôi thích nhất mùa xuân."
             },
             {
-                "hz": "司机",
-                "py": "sījī",
-                "vn": "tài xế",
-                "ex_hz": "他是我们的司机。",
-                "ex_py": "Tā shì wǒmen de sījī.",
-                "ex_vn": "Anh ấy là tài xế của chúng tôi."
-            },
-            {
-                "hz": "作业",
-                "py": "zuòyè",
-                "vn": "bài tập",
-                "ex_hz": "做完作业了。",
-                "ex_py": "Zuò wán zuòyè le.",
-                "ex_vn": "Đã làm xong bài tập."
-            },
-            {
-                "hz": "选择",
-                "py": "xuǎnzé",
-                "vn": "lựa chọn",
-                "ex_hz": "你可以选择礼物。",
-                "ex_py": "Nǐ kěyǐ xuǎnzé lǐwù.",
-                "ex_vn": "Bạn có thể chọn quà."
-            },
-            {
-                "hz": "年级",
-                "py": "niánjí",
-                "vn": "lớp",
-                "ex_hz": "上三年级。",
-                "ex_py": "Shàng sān niánjí.",
-                "ex_vn": "Học lớp 3."
-            },
-            {
-                "hz": "故事",
-                "py": "gùshì",
-                "vn": "câu chuyện",
-                "ex_hz": "这个故事很有趣。",
-                "ex_py": "Zhège gùshì hěn yǒuqù.",
-                "ex_vn": "Truyện này rất thú vị."
-            },
-            {
-                "hz": "借",
-                "py": "jiè",
-                "vn": "mượn",
-                "ex_hz": "我可以借书吗？",
-                "ex_py": "Wǒ kěyǐ jiè shū ma?",
-                "ex_vn": "Tôi có thể mượn sách không?"
-            },
-            {
-                "hz": "发现",
-                "py": "fāxiàn",
-                "vn": "phát hiện",
-                "ex_hz": "我发现了一个秘密。",
-                "ex_py": "Wǒ fāxiàn le yīgè mìmì.",
-                "ex_vn": "Tôi phát hiện ra một bí mật."
-            },
-            {
-                "hz": "种",
-                "py": "zhǒng",
-                "vn": "loại",
-                "ex_hz": "喜欢这种花。",
-                "ex_py": "Xǐhuān zhè zhǒng huā.",
-                "ex_vn": "Thích loại hoa này."
-            },
-            {
-                "hz": "一直",
-                "py": "yīzhí",
-                "vn": "luôn luôn",
-                "ex_hz": "他一直在学习。",
-                "ex_py": "Tā yìzhí zài xuéxí.",
-                "ex_vn": "Anh ấy luôn luôn học tập."
-            },
-            {
-                "hz": "经常",
-                "py": "jīngcháng",
-                "vn": "thường xuyên",
-                "ex_hz": "我经常去图书馆。",
-                "ex_py": "Wǒ jīngcháng qù túshūguǎn.",
-                "ex_vn": "Tôi thường xuyên đi thư viện."
-            },
-            {
-                "hz": "水平",
-                "py": "shuǐpíng",
-                "vn": "trình độ",
-                "ex_hz": "游泳水平很高。",
-                "ex_py": "Yóuyǒng shuǐpíng hěn gāo.",
-                "ex_vn": "Trình độ bơi rất cao."
-            },
-            {
-                "hz": "如果",
-                "py": "rúguǒ",
-                "vn": "nếu như",
-                "ex_hz": "如果你有时间。",
-                "ex_py": "Rúguǒ nǐ yǒu shíjiān.",
-                "ex_vn": "Nếu bạn có thời gian."
-            },
-            {
-                "hz": "太阳",
-                "py": "tàiyáng",
-                "vn": "mặt trời",
-                "ex_hz": "太阳出来了。",
-                "ex_py": "Tàiyáng chū lái le.",
-                "ex_vn": "Mặt trời đã mọc rồi."
-            },
-            {
                 "hz": "使",
                 "py": "shǐ",
                 "vn": "khiến/làm cho",
@@ -8462,492 +9086,12 @@
                 "ex_vn": "Làm tôi rất giận."
             },
             {
-                "hz": "主要",
-                "py": "zhǔyào",
-                "vn": "chủ yếu",
-                "ex_hz": "主要问题是时间。",
-                "ex_py": "Zhǔyào wèntí shì shíjiān.",
-                "ex_vn": "Vấn đề chính là thời gian."
-            },
-            {
-                "hz": "会议",
-                "py": "huìyì",
-                "vn": "cuộc họp",
-                "ex_hz": "会议三点开始。",
-                "ex_py": "Huìyì sān diǎn kāishǐ.",
-                "ex_vn": "Cuộc họp bắt đầu lúc 3 giờ."
-            },
-            {
-                "hz": "面包",
-                "py": "miànbāo",
-                "vn": "bánh mì",
-                "ex_hz": "早餐吃面包。",
-                "ex_py": "Zǎocān chī miànbāo.",
-                "ex_vn": "Ăn bánh mì vào bữa sáng."
-            },
-            {
-                "hz": "一般",
-                "py": "yībān",
-                "vn": "bình thường",
-                "ex_hz": "饭馆很一般。",
-                "ex_py": "Fànguǎn hěn yībān.",
-                "ex_vn": "Nhà hàng rất bình thường."
-            },
-            {
-                "hz": "街道",
-                "py": "jiēdào",
-                "vn": "đường phố",
-                "ex_hz": "这条街道很宽。",
-                "ex_py": "Zhè tiáo jiēdào hěn kuān.",
-                "ex_vn": "Con đường này rất rộng."
-            },
-            {
-                "hz": "口",
-                "py": "kǒu",
-                "vn": "miệng",
-                "ex_hz": "瓶子口上有纸。",
-                "ex_py": "Píngzi kǒu shàng yǒu zhǐ.",
-                "ex_vn": "Trên miệng chai có tờ giấy."
-            },
-            {
-                "hz": "节日",
-                "py": "jiérì",
-                "vn": "ngày lễ",
-                "ex_hz": "春节是重要的节日。",
-                "ex_py": "Chūnjié shì zhòngyào de jiérì.",
-                "ex_vn": "Tết là ngày lễ quan trọng."
-            },
-            {
-                "hz": "过去",
-                "py": "guòqù",
-                "vn": "quá khứ",
-                "ex_hz": "我们过去是同学。",
-                "ex_py": "Wǒmen guòqù shì tóngxué.",
-                "ex_vn": "Chúng tôi từng là bạn học."
-            },
-            {
-                "hz": "叔叔",
-                "py": "shūshu",
-                "vn": "chú",
-                "ex_hz": "叔叔很高。",
-                "ex_py": "Shūshu hěn gāo.",
-                "ex_vn": "Chú rất cao."
-            },
-            {
-                "hz": "客人",
-                "py": "kèrén",
-                "vn": "khách",
-                "ex_hz": "客人已经来了。",
-                "ex_py": "Kèrén yǐjīng lái le.",
-                "ex_vn": "Khách đã đến rồi."
-            },
-            {
-                "hz": "完成",
-                "py": "wánchéng",
-                "vn": "hoàn thành",
-                "ex_hz": "我完成了作业。",
-                "ex_py": "Wǒ wánchéng le zuòyè.",
-                "ex_vn": "Tôi đã hoàn thành bài tập."
-            },
-            {
-                "hz": "位",
-                "py": "wèi",
-                "vn": "vị/ngài",
-                "ex_hz": "坐在这位先生旁边。",
-                "ex_py": "Zuò zài zhè wèi xiānshēng pángbiān.",
-                "ex_vn": "Ngồi cạnh vị tiên sinh này."
-            },
-            {
-                "hz": "注意",
-                "py": "zhùyì",
-                "vn": "chú ý",
-                "ex_hz": "请注意安全。",
-                "ex_py": "Qǐng zhùyì ānquán.",
-                "ex_vn": "Hãy chú ý an toàn."
-            },
-            {
-                "hz": "虽然",
-                "py": "suīrán",
-                "vn": "tuy rằng",
-                "ex_hz": "虽然他很忙。",
-                "ex_py": "Suīrán tā hěn máng.",
-                "ex_vn": "Mặc dù anh ấy rất bận."
-            },
-            {
-                "hz": "疼",
-                "py": "téng",
-                "vn": "đau",
-                "ex_hz": "我的头很疼。",
-                "ex_py": "Wǒ de tóu hěn téng.",
-                "ex_vn": "Đầu tôi rất đau."
-            },
-            {
-                "hz": "结束",
-                "py": "jiéshù",
-                "vn": "kết thúc",
-                "ex_hz": "会议结束了。",
-                "ex_py": "Huìyì jiéshù le.",
-                "ex_vn": "Cuộc họp đã kết thúc."
-            },
-            {
-                "hz": "果汁",
-                "py": "guǒzhī",
-                "vn": "nước ép",
-                "ex_hz": "给我一杯果汁。",
-                "ex_py": "Gěi wǒ yī bēi guǒzhī.",
-                "ex_vn": "Cho tôi ly nước ép."
-            },
-            {
-                "hz": "秋",
-                "py": "qiū",
-                "vn": "mùa thu",
-                "ex_hz": "秋天很凉快。",
-                "ex_py": "Qiūtiān hěn liángkuai.",
-                "ex_vn": "Mùa thu rất mát mẻ."
-            },
-            {
-                "hz": "还是",
-                "py": "háishì",
-                "vn": "vẫn/hay là",
-                "ex_hz": "你还是学生吗？",
-                "ex_py": "Nǐ háishì xuéshēng ma?",
-                "ex_vn": "Bạn vẫn là học sinh à?"
-            },
-            {
-                "hz": "面条",
-                "py": "miàntiáo",
-                "vn": "mì sợi",
-                "ex_hz": "他喜欢吃面条。",
-                "ex_py": "Tā xǐhuān chī miàntiáo.",
-                "ex_vn": "Anh ấy thích ăn mì."
-            },
-            {
-                "hz": "国家",
-                "py": "guójiā",
-                "vn": "quốc gia",
-                "ex_hz": "我爱我的国家。",
-                "ex_py": "Wǒ ài wǒ de guójiā.",
-                "ex_vn": "Tôi yêu đất nước tôi."
-            },
-            {
-                "hz": "历史",
-                "py": "lìshǐ",
-                "vn": "lịch sử",
-                "ex_hz": "他喜欢学历史。",
-                "ex_py": "Tā xǐhuān xué lìshǐ.",
-                "ex_vn": "Anh ấy thích học lịch sử."
-            },
-            {
-                "hz": "鸟",
-                "py": "niǎo",
-                "vn": "chim",
-                "ex_hz": "树上有很多鸟。",
-                "ex_py": "Shù shàng yǒu hěn duō niǎo.",
-                "ex_vn": "Trên cây có nhiều chim."
-            },
-            {
-                "hz": "舒服",
-                "py": "shūfu",
-                "vn": "thoải mái",
-                "ex_hz": "椅子很舒服。",
-                "ex_py": "Yǐzi hěn shūfu.",
-                "ex_vn": "Cái ghế rất thoải mái."
-            },
-            {
-                "hz": "一会儿",
-                "py": "yīhuìr",
-                "vn": "một lát",
-                "ex_hz": "请等我一会儿。",
-                "ex_py": "Qǐng děng wǒ yíhuìr.",
-                "ex_vn": "Xin đợi tôi một lát."
-            },
-            {
-                "hz": "公园",
-                "py": "gōngyuán",
-                "vn": "công viên",
-                "ex_hz": "去公园散步。",
-                "ex_py": "Qù gōngyuán sànbù.",
-                "ex_vn": "Đi dạo công viên."
-            },
-            {
-                "hz": "其他",
-                "py": "qítā",
-                "vn": "khác",
-                "ex_hz": "其他人都走了。",
-                "ex_py": "Qítā rén dōu zǒu le.",
-                "ex_vn": "Những người khác đi hết rồi."
-            },
-            {
-                "hz": "着急",
-                "py": "zhāojí",
-                "vn": "lo lắng",
-                "ex_hz": "他很着急。",
-                "ex_py": "Tā hěn zhāojí.",
-                "ex_vn": "Anh ấy rất lo lắng."
-            },
-            {
-                "hz": "难过",
-                "py": "nánguò",
-                "vn": "buồn",
-                "ex_hz": "听到消息很难过。",
-                "ex_py": "Tīngdào xiāoxi hěn nánguò.",
-                "ex_vn": "Nghe tin xong rất buồn."
-            },
-            {
-                "hz": "刷牙",
-                "py": "shuāyá",
-                "vn": "đánh răng",
-                "ex_hz": "我每天刷两次牙。",
-                "ex_py": "Wǒ měitiān shuā liǎng cì yá.",
-                "ex_vn": "Tôi đánh răng 2 lần mỗi ngày."
-            },
-            {
-                "hz": "满意",
-                "py": "mǎnyì",
-                "vn": "hài lòng",
-                "ex_hz": "对结果很满意。",
-                "ex_py": "Duì jiéguǒ hěn mǎnyì.",
-                "ex_vn": "Hài lòng với kết quả."
-            },
-            {
-                "hz": "生气",
-                "py": "shēngqì",
-                "vn": "tức giận",
-                "ex_hz": "她生气了。",
-                "ex_py": "Tā shēngqì le.",
-                "ex_vn": "Cô ấy giận rồi."
-            },
-            {
-                "hz": "一定",
-                "py": "yīdìng",
-                "vn": "nhất định",
-                "ex_hz": "一定努力学习。",
-                "ex_py": "Yídìng nǔlì xuéxí.",
-                "ex_vn": "Nhất định nỗ lực học tập."
-            },
-            {
-                "hz": "树",
-                "py": "shù",
-                "vn": "cây",
-                "ex_hz": "树上的鸟 zài chànggē.",
-                "ex_py": "Shù shàng de niǎo zài chànggē.",
-                "ex_vn": "Chim trên cây đang hót."
-            },
-            {
-                "hz": "换",
-                "py": "huàn",
-                "vn": "đổi",
-                "ex_hz": "我想换工作。",
-                "ex_py": "Wǒ xiǎng huàn gōngzuò.",
-                "ex_vn": "Tôi muốn đổi công việc."
-            },
-            {
-                "hz": "难",
-                "py": "nán",
-                "vn": "khó",
-                "ex_hz": "这个问题很难。",
-                "ex_py": "Zhège wèntí hěn nán.",
-                "ex_vn": "Vấn đề này rất khó."
-            },
-            {
-                "hz": "用",
-                "py": "yòng",
-                "vn": "dùng",
-                "ex_hz": "不要用手机。",
-                "ex_py": "Bùyào yòng shǒujī.",
-                "ex_vn": "Đừng dùng điện thoại."
-            },
-            {
-                "hz": "特别",
-                "py": "tèbié",
-                "vn": "đặc biệt",
-                "ex_hz": "他特别喜欢跑步。",
-                "ex_py": "Tā tèbié xǐhuān pǎobù.",
-                "ex_vn": "Anh ấy đặc biệt thích chạy bộ."
-            },
-            {
-                "hz": "马",
-                "py": "mǎ",
-                "vn": "ngựa",
-                "ex_hz": "马跑得很快。",
-                "ex_py": "Mǎ pǎo de hěn kuài.",
-                "ex_vn": "Ngựa chạy rất nhanh."
-            },
-            {
-                "hz": "双",
-                "py": "shuāng",
-                "vn": "đôi",
-                "ex_hz": "我买了一双鞋。",
-                "ex_py": "Wǒ mǎi le yī shuāng xié.",
-                "ex_vn": "Tôi đã mua một đôi giày."
-            },
-            {
-                "hz": "只",
-                "py": "zhǐ",
-                "vn": "chỉ",
-                "ex_hz": "我只吃了一点。",
-                "ex_py": "Wǒ zhǐ chī le yīdiǎn.",
-                "ex_vn": "Tôi chỉ ăn một chút."
-            },
-            {
-                "hz": "啤酒",
-                "py": "píjiǔ",
-                "vn": "bia",
-                "ex_hz": "我不喝啤酒。",
-                "ex_py": "Wǒ bù hē píjiǔ.",
-                "ex_vn": "Tôi không uống bia."
-            },
-            {
-                "hz": "裤子",
-                "py": "kùzi",
-                "vn": "quần",
-                "ex_hz": "穿了一条新裤子。",
-                "ex_py": "Chuān le yī tiáo xīn kùzi.",
-                "ex_vn": "Mặc một chiếc quần mới."
-            },
-            {
-                "hz": "银行",
-                "py": "yínháng",
-                "vn": "ngân hàng",
-                "ex_hz": "去银行取钱。",
-                "ex_py": "Qù yínháng qǔ qián.",
-                "ex_vn": "Đi ngân hàng rút tiền."
-            },
-            {
-                "hz": "极",
-                "py": "jí",
-                "vn": "cực kỳ",
-                "ex_hz": "这个菜好吃极了。",
-                "ex_py": "Zhège cài hǎochī jí le.",
-                "ex_vn": "Món này ngon cực kỳ."
-            },
-            {
-                "hz": "老",
-                "py": "lǎo",
-                "vn": "già/cũ",
-                "ex_hz": "他是老朋友。",
-                "ex_py": "Tā shì lǎo péngyǒu.",
-                "ex_vn": "Anh ấy là bạn cũ."
-            },
-            {
-                "hz": "饿",
-                "py": "è",
-                "vn": "đói",
-                "ex_hz": "我饿了，想吃饭。",
-                "ex_py": "Wǒ è le, xiǎng chī fàn.",
-                "ex_vn": "Tôi đói rồi, muốn ăn cơm."
-            },
-            {
-                "hz": "筷子",
-                "py": "kuàizi",
-                "vn": "đũa",
-                "ex_hz": "用筷子吃饭。",
-                "ex_py": "Yòng kuàizi chīfàn.",
-                "ex_vn": "Dùng đũa ăn cơm."
-            },
-            {
-                "hz": "爬山",
-                "py": "páshān",
-                "vn": "leo núi",
-                "ex_hz": "周末去爬山。",
-                "ex_py": "Zhōumò qù páshān.",
-                "ex_vn": "Cuối tuần đi leo núi."
-            },
-            {
-                "hz": "又",
-                "py": "yòu",
-                "vn": "lại/vừa",
-                "ex_hz": "他又来了。",
-                "ex_py": "Tā yòu lái le.",
-                "ex_vn": "Anh ấy lại đến rồi."
-            },
-            {
-                "hz": "练习",
-                "py": "liànxí",
-                "vn": "luyện tập",
-                "ex_hz": "每天练习中文。",
-                "ex_py": "Měitiān liànxí Zhōngwén.",
-                "ex_vn": "Luyện tập tiếng Trung mỗi ngày."
-            },
-            {
-                "hz": "节目",
-                "py": "jiémù",
-                "vn": "chương trình",
-                "ex_hz": "我喜欢这个节目。",
-                "ex_py": "Wǒ xǐhuān zhège jiémù.",
-                "ex_vn": "Tôi thích chương trình này."
-            },
-            {
-                "hz": "关于",
-                "py": "guānyú",
-                "vn": "về/liên quan",
-                "ex_hz": "关于旅行的书。",
-                "ex_py": "Guānyú lǚxíng de shū.",
-                "ex_vn": "Sách về du lịch."
-            },
-            {
-                "hz": "以前",
-                "py": "yǐqián",
-                "vn": "trước đây",
-                "ex_hz": "以前住在北京。",
-                "ex_py": "Yǐqián zhù zài Běijīng.",
-                "ex_vn": "Trước đây sống ở Bắc Kinh."
-            },
-            {
-                "hz": "普通话",
-                "py": "pǔtōnghuà",
-                "vn": "tiếng phổ thông",
-                "ex_hz": "说普通话。",
-                "ex_py": "Shuō Pǔtōnghuà.",
-                "ex_vn": "Nói tiếng phổ thông."
-            },
-            {
-                "hz": "声音",
-                "py": "shēngyīn",
-                "vn": "âm thanh",
-                "ex_hz": "听到他的声音。",
-                "ex_py": "Tīngdào tā de shēngyīn.",
-                "ex_vn": "Nghe thấy giọng anh ấy."
-            },
-            {
-                "hz": "图书馆",
-                "py": "túshūguǎn",
-                "vn": "thư viện",
-                "ex_hz": "去图书馆看书吧。",
-                "ex_py": "Qù túshūguǎn kànshū ba.",
-                "ex_vn": "Đến thư viện đọc sách đi."
-            },
-            {
-                "hz": "相信",
-                "py": "xiāngxìn",
-                "vn": "tin tưởng",
-                "ex_hz": "我相信他的话。",
-                "ex_py": "Wǒ xiāngxìn tā de huà.",
-                "ex_vn": "Tôi tin lời anh ấy nói."
-            },
-            {
-                "hz": "游戏",
-                "py": "yóuxì",
-                "vn": "trò chơi",
-                "ex_hz": "我喜欢玩游戏。",
-                "ex_py": "Wǒ xǐhuān wán yóuxì.",
-                "ex_vn": "Tôi thích chơi game."
-            },
-            {
-                "hz": "同意",
-                "py": "tóngyì",
-                "vn": "đồng ý",
-                "ex_hz": "我同意你的看法。",
-                "ex_py": "Wǒ tóngyì nǐ de kànfǎ.",
-                "ex_vn": "Tôi đồng ý với quan điểm của bạn."
-            },
-            {
-                "hz": "一边",
-                "py": "yībiān",
-                "vn": "vừa... vừa",
-                "ex_hz": "一边吃饭一边看。",
-                "ex_py": "Yìbiān chīfàn yìbiān kàn.",
-                "ex_vn": "Vừa ăn vừa xem."
+                "hz": "终于",
+                "py": "zhōngyú",
+                "vn": "cuối cùng",
+                "ex_hz": "我终于完成了作业。",
+                "ex_py": "Wǒ zhōngyú wánchéng le zuòyè.",
+                "ex_vn": "Cuối cùng tôi đã hoàn thành bài tập."
             },
             {
                 "hz": "裙子",
@@ -8958,300 +9102,188 @@
                 "ex_vn": "Mặc chiếc váy màu đỏ."
             },
             {
-                "hz": "提高",
-                "py": "tígāo",
-                "vn": "nâng cao",
-                "ex_hz": "提高汉语水平。",
-                "ex_py": "Tígāo hànyǔ shuǐpíng.",
-                "ex_vn": "Nâng cao trình độ tiếng Trung."
+                "hz": "努力",
+                "py": "nǔlì",
+                "vn": "nỗ lực",
+                "ex_hz": "他学习很努力。",
+                "ex_py": "Tā xuéxí hěn nǔlì.",
+                "ex_vn": "Anh ấy học rất chăm chỉ."
             },
             {
-                "hz": "邻居",
-                "py": "línjū",
-                "vn": "hàng xóm",
-                "ex_hz": "邻居很友好。",
-                "ex_py": "Línjū hěn yǒuhǎo.",
-                "ex_vn": "Hàng xóm rất thân thiện."
+                "hz": "胖",
+                "py": "pàng",
+                "vn": "béo",
+                "ex_hz": "小孩有点儿胖。",
+                "ex_py": "Xiǎohái yǒudiǎnr pàng.",
+                "ex_vn": "Đứa trẻ hơi mập."
             },
             {
-                "hz": "认真",
-                "py": "rènzhēn",
-                "vn": "nghiêm túc",
-                "ex_hz": "学习很认真。",
-                "ex_py": "Xuéxí hěn rènzhēn.",
-                "ex_vn": "Học hành rất nghiêm túc."
+                "hz": "骑",
+                "py": "qí",
+                "vn": "đi (xe)/cưỡi",
+                "ex_hz": "骑自行车。",
+                "ex_py": "Qí zìxíngchē.",
+                "ex_vn": "Đi xe đạp."
             },
             {
-                "hz": "了解",
-                "py": "liǎojiě",
-                "vn": "hiểu rõ",
-                "ex_hz": "我了解你的意思。",
-                "ex_py": "Wǒ liǎojiě nǐ de yìsi.",
-                "ex_vn": "Tôi hiểu ý của bạn."
+                "hz": "碗",
+                "py": "wǎn",
+                "vn": "bát",
+                "ex_hz": "他吃了三碗饭。",
+                "ex_py": "Tā chī le sān wǎn fàn.",
+                "ex_vn": "Anh ấy đã ăn ba bát cơm."
             },
             {
-                "hz": "离开",
-                "py": "líkāi",
-                "vn": "rời khỏi",
-                "ex_hz": "他已经离开了。",
-                "ex_py": "Tā yǐjīng líkāi le.",
-                "ex_vn": "Anh ấy đã rời đi rồi."
+                "hz": "一共",
+                "py": "yīgòng",
+                "vn": "tổng cộng",
+                "ex_hz": "我们一共有五个人。",
+                "ex_py": "Wǒmen yígòng yǒu wǔ gè rén.",
+                "ex_vn": "Chúng tôi có tổng cộng năm người."
             },
             {
-                "hz": "照顾",
-                "py": "zhàogu",
-                "vn": "chăm sóc",
-                "ex_hz": "我会照顾你。",
-                "ex_py": "Wǒ huì zhàogù nǐ.",
-                "ex_vn": "Tôi sẽ chăm sóc bạn."
+                "hz": "要求",
+                "py": "yāoqiú",
+                "vn": "yêu cầu",
+                "ex_hz": "老师对学生有很高的要求。",
+                "ex_py": "Lǎoshī duì xuéshēng yǒu hěn gāo de yāoqiú.",
+                "ex_vn": "Giáo viên có yêu cầu rất cao đối với học sinh."
             },
             {
-                "hz": "机会",
-                "py": "jīhuì",
-                "vn": "cơ hội",
-                "ex_hz": "这是一个好机会。",
-                "ex_py": "Zhè shì yīgè hǎo jīhuì.",
-                "ex_vn": "Đây là một cơ hội tốt."
+                "hz": "敢",
+                "py": "gǎn",
+                "vn": "dám",
+                "ex_hz": "我敢说你是对的。",
+                "ex_py": "Wǒ gǎn shuō nǐ shì duì de.",
+                "ex_vn": "Tôi dám nói bạn đúng."
             },
             {
-                "hz": "糖",
-                "py": "táng",
-                "vn": "kẹo/đường",
-                "ex_hz": "我不喜欢吃糖。",
-                "ex_py": "Wǒ bù xǐhuān chī táng.",
-                "ex_vn": "Tôi không thích ăn kẹo."
+                "hz": "护照",
+                "py": "hùzhào",
+                "vn": "hộ chiếu",
+                "ex_hz": "我需要护照。",
+                "ex_py": "Wǒ xūyào hùzhào.",
+                "ex_vn": "Tôi cần hộ chiếu."
             },
             {
-                "hz": "环境",
-                "py": "huánjìng",
-                "vn": "môi trường",
-                "ex_hz": "我喜欢安静的环境。",
-                "ex_py": "Wǒ xǐhuān ānjìng de huánjìng.",
-                "ex_vn": "Tôi thích môi trường yên tĩnh."
+                "hz": "腿",
+                "py": "tuǐ",
+                "vn": "chân",
+                "ex_hz": "他的腿很长。",
+                "ex_py": "Tā de tuǐ hěn cháng.",
+                "ex_vn": "Chân của anh ấy rất dài."
             },
             {
-                "hz": "刮风",
-                "py": "guā fēng",
-                "vn": "gió thổi",
-                "ex_hz": "今天刮风了。",
-                "ex_py": "Jīntiān guāfēng le.",
-                "ex_vn": "Hôm nay gió thổi."
+                "hz": "感冒",
+                "py": "gǎnmào",
+                "vn": "cảm lạnh",
+                "ex_hz": "他感冒了。",
+                "ex_py": "Tā gǎnmào le.",
+                "ex_vn": "Anh ấy bị cảm rồi."
             },
             {
-                "hz": "角",
-                "py": "jiǎo",
-                "vn": "góc",
-                "ex_hz": "猫 ở góc bàn.",
-                "ex_py": "Māo zài zhuōzi de jiǎoluò lǐ.",
-                "ex_vn": "Con mèo ở góc bàn."
+                "hz": "周末",
+                "py": "zhōumò",
+                "vn": "cuối tuần",
+                "ex_hz": "周末我去公园玩。",
+                "ex_py": "Zhōumò wǒ qù gōngyuán wán.",
+                "ex_vn": "Cuối tuần tôi đi công viên chơi."
             },
             {
-                "hz": "清楚",
-                "py": "qīngchǔ",
-                "vn": "rõ ràng",
-                "ex_hz": "我不清楚他的名字。",
-                "ex_py": "Wǒ bù qīngchǔ tā de míngzi.",
-                "ex_vn": "Tôi không rõ tên anh ấy."
+                "hz": "铅笔",
+                "py": "qiānbǐ",
+                "vn": "bút chì",
+                "ex_hz": "我需要铅笔。",
+                "ex_py": "Wǒ xūyào qiānbǐ.",
+                "ex_vn": "Tôi cần bút chì."
             },
             {
-                "hz": "刻",
-                "py": "kè",
-                "vn": "khắc (15p)",
-                "ex_hz": "八点一刻来。",
-                "ex_py": "Bā diǎn yí kè lái.",
-                "ex_vn": "8 giờ 15 phút đến."
+                "hz": "字典",
+                "py": "zìdiǎn",
+                "vn": "từ điển",
+                "ex_hz": "我 cần một cuốn từ điển.",
+                "ex_py": "Wǒ xūyào yī běn zìdiǎn.",
+                "ex_vn": "Tôi cần một quyển từ điển."
             },
             {
-                "hz": "复习",
-                "py": "fùxí",
-                "vn": "ôn tập",
-                "ex_hz": "我需要复习功课。",
-                "ex_py": "Wǒ xūyào fùxí gōngkè.",
-                "ex_vn": "Tôi cần ôn bài."
+                "hz": "秋",
+                "py": "qiū",
+                "vn": "mùa thu",
+                "ex_hz": "秋天很凉快。",
+                "ex_py": "Qiūtiān hěn liángkuai.",
+                "ex_vn": "Mùa thu rất mát mẻ."
             },
             {
-                "hz": "需要",
-                "py": "xūyào",
-                "vn": "cần",
-                "ex_hz": "我需要一杯水。",
-                "ex_py": "Wǒ xūyào yī bēi shuǐ.",
-                "ex_vn": "Tôi cần một cốc nước."
+                "hz": "照片",
+                "py": "zhàopiàn",
+                "vn": "bức ảnh",
+                "ex_hz": "这张照片很好看。",
+                "ex_py": "Zhè zhāng zhàopiàn hěn hǎokàn.",
+                "ex_vn": "Bức ảnh này rất đẹp."
             },
             {
-                "hz": "或者",
-                "py": "huòzhě",
-                "vn": "hoặc là",
-                "ex_hz": "苹果或者香蕉。",
-                "ex_py": "Píngguǒ huòzhě xiāngjiāo.",
-                "ex_vn": "Táo hoặc là chuối."
+                "hz": "热情",
+                "py": "rèqíng",
+                "vn": "nhiệt tình",
+                "ex_hz": "他对人很热情。",
+                "ex_py": "Tā duì rén hěn rèqíng.",
+                "ex_vn": "Anh ấy rất nhiệt tình."
             },
             {
-                "hz": "河",
-                "py": "hé",
-                "vn": "sông",
-                "ex_hz": "河边有很多花。",
-                "ex_py": "Hé biān yǒu hěn duō huā.",
-                "ex_vn": "Bờ sông có nhiều hoa."
+                "hz": "街道",
+                "py": "jiēdào",
+                "vn": "đường phố",
+                "ex_hz": "这条街道很宽。",
+                "ex_py": "Zhè tiáo jiēdào hěn kuān.",
+                "ex_vn": "Con đường này rất rộng."
             },
             {
-                "hz": "数学",
-                "py": "shùxué",
-                "vn": "toán học",
-                "ex_hz": "他数学很好。",
-                "ex_py": "Tā shùxué hěn hǎo.",
-                "ex_vn": "Anh ấy giỏi toán."
+                "hz": "极",
+                "py": "jí",
+                "vn": "cực kỳ",
+                "ex_hz": "这个菜好吃极了。",
+                "ex_py": "Zhège cài hǎochī jí le.",
+                "ex_vn": "Món này ngon cực kỳ."
             },
             {
-                "hz": "关",
-                "py": "guān",
-                "vn": "đóng/tắt",
-                "ex_hz": "请关门。",
-                "ex_py": "Qǐng guān mén.",
-                "ex_vn": "Vui lòng đóng cửa."
+                "hz": "祝",
+                "py": "zhù",
+                "vn": "chúc",
+                "ex_hz": "祝你生日快乐。",
+                "ex_py": "Zhù nǐ shēngrì kuàilè.",
+                "ex_vn": "Chúc bạn sinh nhật vui vẻ."
             },
             {
-                "hz": "礼物",
-                "py": "lǐwù",
-                "vn": "quà",
-                "ex_hz": "这是生日礼物。",
-                "ex_py": "Zhè shì shēngrì lǐwù.",
-                "ex_vn": "Đây là quà sinh nhật."
+                "hz": "马上",
+                "py": "mǎshàng",
+                "vn": "lập tức",
+                "ex_hz": "我马上就来。",
+                "ex_py": "Wǒ mǎshàng jiù lái.",
+                "ex_vn": "Tôi sẽ đến ngay."
             },
             {
-                "hz": "洗澡",
-                "py": "xǐzǎo",
-                "vn": "tắm",
-                "ex_hz": "我每天早上洗澡。",
-                "ex_py": "Wǒ měitiān zǎoshang xǐzǎo.",
-                "ex_vn": "Sáng nào tôi cũng tắm."
+                "hz": "放心",
+                "py": "fàngxīn",
+                "vn": "yên tâm",
+                "ex_hz": "请你放心。",
+                "ex_py": "Qǐng nǐ fàngxīn.",
+                "ex_vn": "Xin bạn yên tâm."
             },
             {
-                "hz": "坏",
-                "py": "huài",
-                "vn": "hỏng/xấu",
-                "ex_hz": "我的手机坏了。",
-                "ex_py": "Wǒ de shǒujī huài le.",
-                "ex_vn": "Điện thoại tôi hỏng rồi."
+                "hz": "虽然",
+                "py": "suīrán",
+                "vn": "tuy rằng",
+                "ex_hz": "虽然他很忙，但他还是来了。",
+                "ex_py": "Suīrán tā hěn máng, dàn tā háishì lái le.",
+                "ex_vn": "Mặc dù anh ấy rất bận, nhưng anh ấy vẫn đến."
             },
             {
-                "hz": "盘子",
-                "py": "pánzi",
-                "vn": "đĩa",
-                "ex_hz": "把盘子放在桌上。",
-                "ex_py": "Bǎ pánzi fàng zài zhuō shàng.",
-                "ex_vn": "Để đĩa lên bàn."
-            },
-            {
-                "hz": "辆",
-                "py": "liàng",
-                "vn": "chiếc (xe)",
-                "ex_hz": "他有一辆新车。",
-                "ex_py": "Tā yǒu yī liàng xīn chē.",
-                "ex_vn": "Anh ấy có một chiếc xe mới."
-            },
-            {
-                "hz": "干净",
-                "py": "gānjìng",
-                "vn": "sạch sẽ",
-                "ex_hz": "房间很干净。",
-                "ex_py": "Fángjiān hěn gānjìng.",
-                "ex_vn": "Phòng rất sạch sẽ."
-            },
-            {
-                "hz": "关心",
-                "py": "guānxīn",
-                "vn": "quan tâm",
-                "ex_hz": "她很关心我。",
-                "ex_py": "Tā hěn guānxīn wǒ.",
-                "ex_vn": "Cô ấy rất quan tâm tôi."
-            },
-            {
-                "hz": "久",
-                "py": "jiǔ",
-                "vn": "lâu",
-                "ex_hz": "我等了很久。",
-                "ex_py": "Wǒ děng le hěn jiǔ.",
-                "ex_vn": "Tôi đã đợi rất lâu."
-            },
-            {
-                "hz": "同事",
-                "py": "tóngshì",
-                "vn": "đồng nghiệp",
-                "ex_hz": "他是我的同事。",
-                "ex_py": "Tā shì wǒ de tóngshì.",
-                "ex_vn": "Anh ấy là đồng nghiệp của tôi."
-            },
-            {
-                "hz": "耳朵",
-                "py": "ěrduo",
-                "vn": "tai",
-                "ex_hz": "我的耳朵很敏感。",
-                "ex_py": "Wǒ de ěrduo hěn mǐngǎn.",
-                "ex_vn": "Tai tôi rất nhạy cảm."
-            },
-            {
-                "hz": "以后",
-                "py": "yǐhòu",
-                "vn": "sau này",
-                "ex_hz": "我以后再来。",
-                "ex_py": "Wǒ yǐhòu zài lái.",
-                "ex_vn": "Tôi sẽ quay lại sau."
-            },
-            {
-                "hz": "一样",
-                "py": "yīyàng",
-                "vn": "giống nhau",
-                "ex_hz": "他们和我们一样。",
-                "ex_py": "Tāmen hé wǒmen yīyàng.",
-                "ex_vn": "Họ giống như chúng tôi."
-            },
-            {
-                "hz": "喜欢",
-                "py": "xǐhuān",
-                "vn": "thích",
-                "ex_hz": "我喜欢这个颜色。",
-                "ex_py": "Wǒ xǐhuān zhège yánsè.",
-                "ex_vn": "Tôi thích màu này."
-            },
-            {
-                "hz": "为了",
-                "py": "wèile",
-                "vn": "để/vì",
-                "ex_hz": "为了学习汉语。",
-                "ex_py": "Wèile xuéxí hànyǔ.",
-                "ex_vn": "Để học tiếng Trung."
-            },
-            {
-                "hz": "米",
-                "py": "mǐ",
-                "vn": "gạo/mét",
-                "ex_hz": "吃了一碗米饭。",
-                "ex_py": "Chī le yī wǎn mǐfàn.",
-                "ex_vn": "Ăn một bát cơm."
-            },
-            {
-                "hz": "放",
-                "py": "fàng",
-                "vn": "đặt/để",
-                "ex_hz": "请把书放在桌上。",
-                "ex_py": "Qǐng bǎ shū fàng zài zhuō shàng.",
-                "ex_vn": "Hãy để sách lên bàn."
-            },
-            {
-                "hz": "然后",
-                "py": "ránhòu",
-                "vn": "sau đó",
-                "ex_hz": "吃饭然后看电影。",
-                "ex_py": "Chīfàn ránhòu kàn diànyǐng.",
-                "ex_vn": "Ăn cơm xong rồi xem phim."
-            },
-            {
-                "hz": "还",
-                "py": "huán",
-                "vn": "trả lại",
-                "ex_hz": "你什么时候把钱还给我？",
-                "ex_py": "Nǐ shénme shíhòu bǎ qián huán gěi wǒ?",
-                "ex_vn": "Khi nào bạn trả tiền cho tôi?"
+                "hz": "奶奶",
+                "py": "nǎinai",
+                "vn": "bà nội",
+                "ex_hz": "奶奶住在乡下。",
+                "ex_py": "Nǎinai zhù zài xiāngxià.",
+                "ex_vn": "Bà nội sống ở quê."
             },
             {
                 "hz": "多么",
@@ -9262,36 +9294,100 @@
                 "ex_vn": "Cảnh đẹp biết bao."
             },
             {
-                "hz": "自己",
-                "py": "zìjǐ",
-                "vn": "bản thân",
-                "ex_hz": "自己的问题。",
-                "ex_py": "Zìjǐ de wèntí.",
-                "ex_vn": "Vấn đề của chính mình."
+                "hz": "数学",
+                "py": "shùxué",
+                "vn": "toán học",
+                "ex_hz": "他数学很好。",
+                "ex_py": "Tā shùxué hěn hǎo.",
+                "ex_vn": "Anh ấy giỏi toán."
             },
             {
-                "hz": "校长",
-                "py": "xiàozhǎng",
-                "vn": "hiệu trưởng",
-                "ex_hz": "校长在办公室。",
-                "ex_py": "Xiàozhǎng zài bàngōngshì.",
-                "ex_vn": "Hiệu trưởng ở văn phòng."
+                "hz": "年级",
+                "py": "niánjí",
+                "vn": "lớp",
+                "ex_hz": "上三年级。",
+                "ex_py": "Shàng sān niánjí.",
+                "ex_vn": "Học lớp 3."
             },
             {
-                "hz": "明白",
-                "py": "míngbái",
-                "vn": "hiểu rõ",
-                "ex_hz": "我明白你的意思。",
-                "ex_py": "Wǒ míngbái nǐ de yìsi.",
-                "ex_vn": "Tôi hiểu ý của bạn."
+                "hz": "信",
+                "py": "xìn",
+                "vn": "thư, tin tưởng",
+                "ex_hz": "我给你写了一封信。",
+                "ex_py": "Wǒ gěi nǐ xiě le yī fēng xìn.",
+                "ex_vn": "Tôi đã viết cho bạn một bức thư."
             },
             {
-                "hz": "体育",
-                "py": "tǐyù",
-                "vn": "thể thao",
-                "ex_hz": "我喜欢体育运动。",
-                "ex_py": "Wǒ xǐhuān tǐyù yùndòng.",
-                "ex_vn": "Tôi thích vận động thể thao."
+                "hz": "需要",
+                "py": "xūyào",
+                "vn": "cần",
+                "ex_hz": "我需要一杯水。",
+                "ex_py": "Wǒ xūyào yī bēi shuǐ.",
+                "ex_vn": "Tôi cần một cốc nước."
+            },
+            {
+                "hz": "盘子",
+                "py": "pánzi",
+                "vn": "đĩa",
+                "ex_hz": "把盘子放在桌上。",
+                "ex_py": "Bǎ pánzi fàng zài zhuō shàng.",
+                "ex_vn": "Để đĩa lên bàn."
+            },
+            {
+                "hz": "段",
+                "py": "duàn",
+                "vn": "đoạn",
+                "ex_hz": "他讲了一段故事。",
+                "ex_py": "Tā jiǎng le yī duàn gùshì.",
+                "ex_vn": "Anh ấy kể một đoạn truyện."
+            },
+            {
+                "hz": "最近",
+                "py": "zuìjìn",
+                "vn": "gần đây",
+                "ex_hz": "最近我很忙。",
+                "ex_py": "Zuìjìn wǒ hěn máng.",
+                "ex_vn": "Gần đây tôi rất bận."
+            },
+            {
+                "hz": "经过",
+                "py": "jīngguò",
+                "vn": "đi qua",
+                "ex_hz": "他经过我家。",
+                "ex_py": "Tā jīngguò wǒ jiā.",
+                "ex_vn": "Anh ấy đi ngang qua nhà tôi."
+            },
+            {
+                "hz": "眼镜",
+                "py": "yǎnjìng",
+                "vn": "kính",
+                "ex_hz": "他戴着一副眼镜。",
+                "ex_py": "Tā dài zhe yī fù yǎnjìng.",
+                "ex_vn": "Anh ấy đang đeo một chiếc kính."
+            },
+            {
+                "hz": "关",
+                "py": "guān",
+                "vn": "đóng/tắt",
+                "ex_hz": "请关门。",
+                "ex_py": "Qǐng guān mén.",
+                "ex_vn": "Vui lòng đóng cửa."
+            },
+            {
+                "hz": "以前",
+                "py": "yǐqián",
+                "vn": "trước đây",
+                "ex_hz": "我以前住在北京。",
+                "ex_py": "Wǒ yǐqián zhù zài Běijīng.",
+                "ex_vn": "Tôi đã từng sống ở Bắc Kinh."
+            },
+            {
+                "hz": "练习",
+                "py": "liànxí",
+                "vn": "luyện tập",
+                "ex_hz": "每天练习中文。",
+                "ex_py": "Měitiān liànxí Zhōngwén.",
+                "ex_vn": "Luyện tập tiếng Trung mỗi ngày."
             },
             {
                 "hz": "更",
@@ -9302,228 +9398,132 @@
                 "ex_vn": "Cô ấy cao hơn tôi."
             },
             {
-                "hz": "空调",
-                "py": "kòngtiáo",
-                "vn": "máy lạnh",
-                "ex_hz": "房间里有空调。",
-                "ex_py": "Fángjiān lǐ yǒu kòngtiáo.",
-                "ex_vn": "Trong phòng có điều hòa."
+                "hz": "司机",
+                "py": "sījī",
+                "vn": "lái xe, tài xế",
+                "ex_hz": "他 là tài xế của chúng tôi.",
+                "ex_py": "Tā shì wǒmen de sījī.",
+                "ex_vn": "Anh ấy là tài xế của chúng tôi."
             },
             {
-                "hz": "伞",
-                "py": "sǎn",
-                "vn": "ô/dù",
-                "ex_hz": "带上伞吧。",
-                "ex_py": "Dài shàng sǎn ba.",
-                "ex_vn": "Mang ô theo đi."
+                "hz": "忘记",
+                "py": "wàngjì",
+                "vn": "quên",
+                "ex_hz": "请不要忘记带书。",
+                "ex_py": "Qǐng bùyào wàngjì dài shū.",
+                "ex_vn": "Vui lòng đừng quên mang sách."
             },
             {
-                "hz": "举行",
-                "py": "jǔxíng",
-                "vn": "tổ chức",
-                "ex_hz": "学校举行运动会。",
-                "ex_py": "Xuéxiào jǔxíng yùndònghuì.",
-                "ex_vn": "Trường tổ chức đại hội thể thao."
+                "hz": "关于",
+                "py": "guānyú",
+                "vn": "về/liên quan",
+                "ex_hz": "关于旅行的书。",
+                "ex_py": "Guānyú lǚxíng de shū.",
+                "ex_vn": "Sách về du lịch."
             },
             {
-                "hz": "关系",
-                "py": "guānxì",
-                "vn": "quan hệ",
-                "ex_hz": "我们的关系很好。",
-                "ex_py": "Wǒmen de guānxì hěn hǎo.",
-                "ex_vn": "Quan hệ chúng tôi rất tốt."
+                "hz": "口",
+                "py": "kǒu",
+                "vn": "miệng",
+                "ex_hz": "瓶子口上有纸。",
+                "ex_py": "Píngzi kǒu shàng yǒu zhǐ.",
+                "ex_vn": "Trên miệng chai có tờ giấy."
             },
             {
-                "hz": "站",
-                "py": "zhàn",
-                "vn": "đứng/trạm",
-                "ex_hz": "请站在这儿。",
-                "ex_py": "Qǐng zhàn zài zhèr.",
-                "ex_vn": "Hãy đứng ở đây."
+                "hz": "以后",
+                "py": "yǐhòu",
+                "vn": "sau này",
+                "ex_hz": "我以后再来。",
+                "ex_py": "Wǒ yǐhòu zài lái.",
+                "ex_vn": "Tôi sẽ đến sau."
             },
             {
-                "hz": "万",
-                "py": "wàn",
-                "vn": "vạn (10k)",
-                "ex_hz": "一万个人参加比赛。",
-                "ex_py": "Yī wàn gè rén cānjiā bǐsài.",
-                "ex_vn": "10k người tham gia cuộc thi."
+                "hz": "拿",
+                "py": "ná",
+                "vn": "cầm/lấy",
+                "ex_hz": "帮我拿一下书。",
+                "ex_py": "Bāng wǒ ná yīxià shū.",
+                "ex_vn": "Giúp tôi cầm quyển sách."
             },
             {
-                "hz": "以为",
-                "py": "yǐwéi",
-                "vn": "tưởng là",
-                "ex_hz": "我以为你不来。",
-                "ex_py": "Wǒ yǐwéi nǐ bù lái.",
-                "ex_vn": "Tôi tưởng bạn không đến."
+                "hz": "重要",
+                "py": "zhòngyào",
+                "vn": "quan trọng",
+                "ex_hz": "这件事很重要。",
+                "ex_py": "Zhè jiàn shì hěn zhòngyào.",
+                "ex_vn": "Việc này rất quan trọng."
+            },
+            {
+                "hz": "刷牙",
+                "py": "shuāyá",
+                "vn": "đánh răng",
+                "ex_hz": "我每天刷两次牙。",
+                "ex_py": "Wǒ měitiān shuā liǎng cì yá.",
+                "ex_vn": "Tôi đánh răng hai lần mỗi ngày."
+            },
+            {
+                "hz": "声音",
+                "py": "shēngyīn",
+                "vn": "âm thanh",
+                "ex_hz": "听到他的声音。",
+                "ex_py": "Tīngdào tā de shēngyīn.",
+                "ex_vn": "Nghe thấy giọng anh ấy."
+            },
+            {
+                "hz": "主要",
+                "py": "zhǔyào",
+                "vn": "chủ yếu",
+                "ex_hz": "主要问题是时间不够。",
+                "ex_py": "Zhǔyào wèntí shì shíjiān bù gòu.",
+                "ex_vn": "Vấn đề chính là không đủ thời gian."
+            },
+            {
+                "hz": "鞋",
+                "py": "xié",
+                "vn": "giày",
+                "ex_hz": "我买了一双新鞋。",
+                "ex_py": "Wǒ mǎi le yī shuāng xīn xié.",
+                "ex_vn": "Tôi đã mua một đôi giày mới."
+            },
+            {
+                "hz": "为了",
+                "py": "wèile",
+                "vn": "để, vì",
+                "ex_hz": "我来中国是为了学习汉语。",
+                "ex_py": "Wǒ lái Zhōngguó shì wèile xuéxí hànyǔ.",
+                "ex_vn": "Tôi đến Trung Quốc để học tiếng Trung."
             },
             {
                 "hz": "有名",
                 "py": "yǒumíng",
                 "vn": "nổi tiếng",
-                "ex_hz": "有名的歌手。",
-                "ex_py": "Yǒumíng de gēshǒu.",
-                "ex_vn": "Ca sĩ nổi tiếng."
+                "ex_hz": "他是一个有名的歌手。",
+                "ex_py": "Tā shì yī gè yǒumíng de gēshǒu.",
+                "ex_vn": "Anh ấy là một ca sĩ nổi tiếng."
             },
             {
-                "hz": "花",
-                "py": "huā",
-                "vn": "hoa/tiêu",
-                "ex_hz": "这里的花很美。",
-                "ex_py": "Zhèlǐ de huā hěn měi.",
-                "ex_vn": "Hoa ở đây rất đẹp."
+                "hz": "楼",
+                "py": "lóu",
+                "vn": "tòa nhà",
+                "ex_hz": "住在三楼。",
+                "ex_py": "Zhù zài sān lóu.",
+                "ex_vn": "Sống ở tầng 3."
             },
             {
-                "hz": "世界",
-                "py": "shìjiè",
-                "vn": "thế giới",
-                "ex_hz": "世界很大。",
-                "ex_py": "Shìjiè hěn dà.",
-                "ex_vn": "Thế giới rất rộng lớn."
+                "hz": "发现",
+                "py": "fāxiàn",
+                "vn": "phát hiện",
+                "ex_hz": "我发现了一个秘密。",
+                "ex_py": "Wǒ fāxiàn le yīgè mìmì.",
+                "ex_vn": "Tôi phát hiện ra một bí mật."
             },
             {
-                "hz": "健康",
-                "py": "jiànkāng",
-                "vn": "khỏe mạnh",
-                "ex_hz": "健康最重要。",
-                "ex_py": "Jiànkāng zuì zhòngyào.",
-                "ex_vn": "Sức khỏe là quan trọng nhất."
-            },
-            {
-                "hz": "分",
-                "py": "fēn",
-                "vn": "phút",
-                "ex_hz": "八点十分出发。",
-                "ex_py": "Bā diǎn shí fēn chūfā.",
-                "ex_vn": "8 giờ 10 phút xuất phát."
-            },
-            {
-                "hz": "刚才",
-                "py": "gāngcái",
-                "vn": "vừa mới",
-                "ex_hz": "刚才看见他了。",
-                "ex_py": "Gāngcái kànjiàn tā le.",
-                "ex_vn": "Vừa rồi thấy anh ấy."
-            },
-            {
-                "hz": "讲",
-                "py": "jiǎng",
-                "vn": "nói/giảng",
-                "ex_hz": "他喜欢讲故事。",
-                "ex_py": "Tā xǐhuān jiǎng gùshì.",
-                "ex_vn": "Anh ấy thích kể chuyện."
-            },
-            {
-                "hz": "最近",
-                "py": "zuìjìn",
-                "vn": "gần đây",
-                "ex_hz": "最近我很忙。",
-                "ex_py": "Zuìjìn wǒ hěn máng.",
-                "ex_vn": "Dạo này tôi rất bận."
-            },
-            {
-                "hz": "音乐",
-                "py": "yīnyuè",
-                "vn": "âm nhạc",
-                "ex_hz": "我喜欢听音乐。",
-                "ex_py": "Wǒ xǐhuān tīng yīnyuè.",
-                "ex_vn": "Tôi thích nghe nhạc."
-            },
-            {
-                "hz": "中间",
-                "py": "zhōngjiān",
-                "vn": "ở giữa",
-                "ex_hz": "站在房间中间。",
-                "ex_py": "Zhàn zài fángjiān zhōngjiān.",
-                "ex_vn": "Đứng giữa phòng."
-            },
-            {
-                "hz": "见面",
-                "py": "jiànmiàn",
-                "vn": "gặp mặt",
-                "ex_hz": "我们明天见面吧。",
-                "ex_py": "Wǒmen míngtiān jiànmiàn ba.",
-                "ex_vn": "Mai chúng mình gặp nhau nhé."
-            },
-            {
-                "hz": "兴趣",
-                "py": "xìngqù",
-                "vn": "hứng thú",
-                "ex_hz": "对文化有兴趣。",
-                "ex_py": "Duì wénhuà yǒu xìngqù.",
-                "ex_vn": "Có hứng thú với văn hóa."
-            },
-            {
-                "hz": "奇怪",
-                "py": "qíguài",
-                "vn": "lạ",
-                "ex_hz": "事情很奇怪。",
-                "ex_py": "Shìqíng hěn qíguài.",
-                "ex_vn": "Chuyện này rất lạ."
-            },
-            {
-                "hz": "新鲜",
-                "py": "xīnxiān",
-                "vn": "tươi mới",
-                "ex_hz": "水果很新鲜。",
-                "ex_py": "Shuǐguǒ hěn xīnxiān.",
-                "ex_vn": "Trái cây rất tươi."
-            },
-            {
-                "hz": "几乎",
-                "py": "jīhū",
-                "vn": "hầu như",
-                "ex_hz": "他几乎每天都锻炼。",
-                "ex_py": "Tā jīhū měitiān dōu duànliàn.",
-                "ex_vn": "Anh ấy hầu như tập thể dục mỗi ngày."
-            },
-            {
-                "hz": "影响",
-                "py": "yǐngxiǎng",
-                "vn": "ảnh hưởng",
-                "ex_hz": "电影影响很大。",
-                "ex_py": "Diànyǐng yǐngxiǎng hěn dà.",
-                "ex_vn": "Bộ phim ảnh hưởng rất lớn."
-            },
-            {
-                "hz": "终于",
-                "py": "zhōngyú",
-                "vn": "cuối cùng",
-                "ex_hz": "终于完成了。",
-                "ex_py": "Zhōngyú wánchéng le.",
-                "ex_vn": "Cuối cùng đã hoàn thành."
-            },
-            {
-                "hz": "字典",
-                "py": "zìdiǎn",
-                "vn": "từ điển",
-                "ex_hz": "需要一本字典。",
-                "ex_py": "Xūyào yī běn zìdiǎn.",
-                "ex_vn": "Cần một quyển từ điển."
-            },
-            {
-                "hz": "葡萄",
-                "py": "pútao",
-                "vn": "nho",
-                "ex_hz": "喜欢吃葡萄。",
-                "ex_py": "Xǐhuān chī pútáo.",
-                "ex_vn": "Thích ăn nho."
-            },
-            {
-                "hz": "云",
-                "py": "yún",
-                "vn": "mây",
-                "ex_hz": "天上的云很美。",
-                "ex_py": "Tiānshàng de yún hěn měi.",
-                "ex_vn": "Mây trên trời rất đẹp."
-            },
-            {
-                "hz": "习惯",
-                "py": "xíguàn",
-                "vn": "thói quen",
-                "ex_hz": "他习惯早起。",
-                "ex_py": "Tā xíguàn zǎoqǐ.",
-                "ex_vn": "Anh ấy có thói quen dậy sớm."
+                "hz": "认为",
+                "py": "rènwéi",
+                "vn": "cho rằng",
+                "ex_hz": "认为他是对的。",
+                "ex_py": "Rènwéi tā shì duì de.",
+                "ex_vn": "Cho rằng anh ấy đúng."
             }
         ]
     }
