@@ -247,36 +247,93 @@ import pandas as pd
 import streamlit as st
 
 if st.session_state.mode == "manage":
-    # --- 0. MIGRATION LOGIC (CONVERT DỮ LIỆU CŨ) ---
-    def migrate_old_data():
+    
+    # --- 0. MIGRATION & ĐỒNG BỘ HÓA (FIX TRIỆT ĐỂ BẰNG HÁN TỰ) ---
+    def migrate_to_hz_order():
         updated = False
         for name, info in st.session_state.notebooks.items():
-            # Nếu có 'fixed_word_order' (kiểu cũ) mà chưa có 'fixed_order_indices' (kiểu mới)
-            if 'fixed_word_order' in info and info['fixed_word_order']:
-                old_list = info['fixed_word_order']
-                current_words = info['words']
-                new_indices = []
-                
-                # Tìm index của từng từ cũ trong danh sách gốc mới
-                for old_w in old_list:
-                    for idx, cur_w in enumerate(current_words):
-                        if old_w.get('hz') == cur_w.get('hz'): # Khớp dựa trên Hán tự
-                            new_indices.append(idx)
-                            break
-                
-                # Cập nhật vào DB
-                st.session_state.notebooks[name]['fixed_order_indices'] = new_indices
-                # Xóa dấu vết dữ liệu cũ
-                del st.session_state.notebooks[name]['fixed_word_order']
+            current_words = info.get('words', [])
+            
+            # Dọn dẹp dữ liệu rác từ các phiên bản cũ
+            if 'fixed_word_order' in info:
+                info['fixed_hz_order'] = [w.get('hz') for w in info['fixed_word_order'] if w.get('hz')]
+                del info['fixed_word_order']
                 updated = True
-        
+                
+            if 'fixed_order_indices' in info:
+                hz_order = []
+                for idx in info['fixed_order_indices']:
+                    if idx < len(current_words):
+                        hz_order.append(current_words[idx].get('hz'))
+                info['fixed_hz_order'] = hz_order
+                del info['fixed_order_indices']
+                updated = True
+                
         if updated:
             save_json(DB_FILE, st.session_state.notebooks)
-            st.toast("✅ Đã convert dữ liệu cũ sang hệ thống Index mới!")
 
-    # Chạy migration ngay khi vào trang quản lý
-    migrate_old_data()
+    def sync_and_get_ordered_words(nb_name, current_words):
+        """
+        Hàm cốt lõi: Khóa trật tự bằng Hán tự.
+        - Lần đầu: Lấy 60 từ đầu -> shuffle, phần còn lại -> shuffle. Lưu mảng Hán tự.
+        - Các lần sau: Lấy đúng trật tự đã lưu. Từ nào mới thêm sẽ bị ném xuống cuối.
+        """
+        if 'fixed_hz_order' not in st.session_state.notebooks[nb_name]:
+            st.session_state.notebooks[nb_name]['fixed_hz_order'] = []
+            
+        saved_hzs = st.session_state.notebooks[nb_name]['fixed_hz_order']
+        current_dict = {w['hz']: w for w in current_words}
+        need_save = False
+        
+        # 1. Khởi tạo lần đầu
+        if not saved_hzs and current_words:
+            sorted_words = sorted(current_words, key=lambda x: x.get('py', ''))
+            part1 = [w['hz'] for w in sorted_words[:60]]
+            part2 = [w['hz'] for w in sorted_words[60:]]
+            random.shuffle(part1)
+            random.shuffle(part2)
+            
+            saved_hzs = part1 + part2
+            st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
+            need_save = True
+
+        # 2. Quét xem có từ nào mới được thêm vào không
+        saved_set = set(saved_hzs)
+        new_hzs = [w['hz'] for w in current_words if w['hz'] not in saved_set]
+        if new_hzs:
+            random.shuffle(new_hzs) # Xáo trộn đám từ mới
+            saved_hzs.extend(new_hzs) # Nối vào đuôi, không làm hỏng Set cũ
+            st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
+            need_save = True
+            
+        if need_save:
+            save_json(DB_FILE, st.session_state.notebooks)
+            
+        # 3. Trả về mảng words hoàn chỉnh theo đúng trật tự Hán tự đã khóa
+        ordered_words = []
+        for hz in saved_hzs:
+            if hz in current_dict: # Rất an toàn: Nếu bạn lỡ xóa từ trong list gốc, nó sẽ tự bỏ qua
+                ordered_words.append(current_dict[hz])
+                
+        return ordered_words
+
+    # --- 1. HÀM TẠO QUIZ ---
+    def get_smart_quiz(ordered_words, start_idx=0, end_idx=None):
+        if end_idx is None: end_idx = len(ordered_words)
+        selected_words = ordered_words[start_idx:end_idx]
+        
+        quiz_pool = []
+        for w in selected_words:
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+            quiz_pool.append({'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w, 'type': 'vn_hz'})
+        
+        random.shuffle(quiz_pool) # Chỉ xáo trộn câu hỏi bên trong Set lúc làm bài
+        return quiz_pool
+
+    # Chạy dọn rác ngay khi vào trang
+    migrate_to_hz_order()
     
+    # --- UI HEADER ---
     col1, col2 = st.columns([4, 1])
     col1.title(f"🚀 Làm tí HSK [{user}]")
     if col2.button("Đăng xuất"):
@@ -284,47 +341,6 @@ if st.session_state.mode == "manage":
         save_json(SESSION_FILE, st.session_state.session)
         for key in list(st.session_state.keys()): del st.session_state[key]
         st.rerun()
-
-    # --- HÀM TẠO THỨ TỰ TỪ CỐ ĐỊNH (SHUFFLE 2 PHẦN) ---
-    def generate_fixed_order(word_list):
-        """
-        Chia làm 2 phần: 60 từ đầu và phần còn lại. 
-        Xáo trộn riêng từng phần rồi nối lại.
-        """
-        part1 = word_list[:60]
-        part2 = word_list[60:]
-        
-        random.shuffle(part1)
-        random.shuffle(part2)
-        
-        return part1 + part2
-
-    # --- HÀM TẠO QUIZ (2 CÂU/TỪ + XÁO TRỘN CÂU HỎI) ---
-    def get_smart_quiz(nb_name, word_list, start_idx=0, end_idx=None):
-        nb_info = st.session_state.notebooks[nb_name]
-        
-        # 1. Nếu chưa có hoặc dữ liệu từ thay đổi, tạo lại trật tự cố định
-        if not nb_info.get('fixed_word_order') or len(nb_info['fixed_word_order']) != len(word_list):
-            new_order = generate_fixed_order(word_list)
-            st.session_state.notebooks[nb_name]['fixed_word_order'] = new_order
-            save_json(DB_FILE, st.session_state.notebooks)
-        
-        # 2. Lấy danh sách từ đã được sắp xếp theo quy tắc "60 đầu + phần còn lại"
-        full_ordered_words = st.session_state.notebooks[nb_name]['fixed_word_order']
-        
-        # 3. Cắt lát (Slicing) theo yêu cầu (Toàn bộ hoặc theo Set)
-        if end_idx is None: end_idx = len(full_ordered_words)
-        selected_words = full_ordered_words[start_idx:end_idx]
-        
-        # 4. Tạo pool 2 chiều (Hán-Việt & Việt-Hán)
-        quiz_pool = []
-        for w in selected_words:
-            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
-            quiz_pool.append({'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w, 'type': 'vn_hz'})
-        
-        # 5. Xáo trộn thứ tự xuất hiện của các câu hỏi
-        random.shuffle(quiz_pool)
-        return quiz_pool
 
     # --- CÀI ĐẶT & LỊCH SỬ ---
     with st.expander("🎨 Cài đặt & Lịch sử"):
@@ -351,7 +367,7 @@ if st.session_state.mode == "manage":
                         'words': parse_data(n_data), 
                         'updated_at': datetime.now().isoformat(), 
                         'last_accessed': datetime.now().isoformat(),
-                        'fixed_word_order': []
+                        'fixed_hz_order': [] # Mảng rỗng, sẽ tự sinh khi load
                     }
                     save_json(DB_FILE, st.session_state.notebooks)
                     st.success("Đã tạo sổ tay!")
@@ -359,69 +375,81 @@ if st.session_state.mode == "manage":
 
     # --- DANH SÁCH SỔ TAY ---
     if st.session_state.notebooks:
-        # LIFO Sorting
         sorted_nbs = sorted(st.session_state.notebooks.items(), key=lambda x: str(x[1].get('last_accessed', '')), reverse=True)
         
         for idx, (name, info) in enumerate(sorted_nbs, 1):
-            words = info['words']
+            raw_words = info['words']
+            # BƯỚC QUAN TRỌNG: Đồng bộ và lấy mảng từ vựng đã được khóa chặt trật tự
+            ordered_words = sync_and_get_ordered_words(name, raw_words)
+            
             sticker = ["📚", "🔥", "⚡", "🌟", "🧠"][idx % 5]
             
             with st.container():
-                st.markdown(f"### {sticker} {name} <span style='font-size:0.5em; color:gray'>({len(words)} từ)</span>", unsafe_allow_html=True)
+                st.markdown(f"### {sticker} {name} <span style='font-size:0.5em; color:gray'>({len(ordered_words)} từ)</span>", unsafe_allow_html=True)
                 c1, c2, c3, c4 = st.columns([1.5, 1.5, 1, 1])
                 
-                # Nút "Học ngay": Mặc định học 60 từ đầu (theo trật tự đã shuffle)
+                # --- NÚT HỌC NGAY (Top 60) ---
                 if c1.button("📖 Học ngay", key=f"std_{name}", use_container_width=True):
                     st.session_state.notebooks[name]['last_accessed'] = datetime.now().isoformat()
-                    # Lấy 60 từ đầu tiên của danh sách đã trộn cố định
-                    quiz = get_smart_quiz(name, words, 0, 60)
+                    quiz = get_smart_quiz(ordered_words, 0, 60)
                     st.session_state.update({"qs": quiz, "curr_nb": f"{name} (Top 60)", "mode": "study", "idx": 0, "answered": False})
                     save_resume_state()
                     st.rerun()
                 
-                # 1. Nút bấm Toggle (Giữ nguyên logic cũ để đóng/mở)
+                # --- NÚT XEM DANH SÁCH (Sắp xếp A-Z Pinyin) ---
                 if c2.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
                     st.session_state.view_nb = name if st.session_state.get('view_nb') != name else None
                     st.rerun()
 
-                # 2. Khối hiển thị danh sách khi được kích hoạt
+                import unicodedata
+
+                def remove_accents(input_str):
+                    """Chuyển 'ā' thành 'a', 'ò' thành 'o' để sắp xếp chuẩn A-Z"""
+                    if not isinstance(input_str, str):
+                        return ""
+                    # Chuẩn hóa Unicode về dạng NFD (tách chữ và dấu)
+                    nfkd_form = unicodedata.normalize('NFKD', input_str)
+                    # Chỉ giữ lại các ký tự không phải là dấu (non-spacing mark)
+                    return "".join([c for c in nfkd_form if not unicodedata.combining(c)])
+
                 if st.session_state.get('view_nb') == name:
                     with st.container():
                         st.markdown(f"#### 📖 Tra cứu từ vựng: {name}")
+                        df_view = pd.DataFrame(raw_words)
                         
-                        # Chuyển dữ liệu gốc vào DataFrame
-                        df_view = pd.DataFrame(words)
-                        
-                        # Sắp xếp theo bảng chữ cái (mặc định theo Pinyin 'py', bạn có thể đổi thành 'vn' nếu muốn)
-                        df_view = df_view.sort_values(by='py').reset_index(drop=True)
-                        df_view.index += 1 # Đánh số thứ tự từ 1
-                        
-                        # Hiển thị thông báo nhỏ
-                        st.caption("📍 Danh sách được sắp xếp theo bảng chữ cái Pinyin để bạn dễ tra cứu.")
-                        
-                        # Hiển thị bảng dạng DataFrame (có thanh tìm kiếm và lọc)
-                        st.dataframe(
-                            df_view[['hz', 'py', 'vn']], 
-                            column_config={
-                                "hz": "Hán tự",
-                                "py": "Pinyin (A-Z)",
-                                "vn": "Nghĩa Việt"
-                            },
-                            use_container_width=True,
-                            height=400 # Giới hạn chiều cao để không bị tràn màn hình
-                        )
-                        
-                        # Nút đóng nhanh ở cuối danh sách
-                        if st.button("✖️ Đóng bảng tra cứu", key=f"close_view_{name}"):
-                            st.session_state.view_nb = None
-                            st.rerun()
-                    
+                        if not df_view.empty:
+                            # TẠO CỘT TẠM ĐỂ SORT: Loại bỏ dấu và chuyển về chữ thường
+                            df_view['sort_key'] = df_view['py'].apply(lambda x: remove_accents(x).lower())
+                            
+                            # Sắp xếp theo cột tạm đó
+                            df_view = df_view.sort_values(by='sort_key').reset_index(drop=True)
+                            df_view.index += 1
+                            
+                            st.caption("📍 Danh sách đã được sắp xếp chuẩn A-Z (không bị đẩy chữ có dấu xuống cuối).")
+                            
+                            # Hiển thị bảng (loại bỏ cột sort_key khi show)
+                            st.dataframe(
+                                df_view[['hz', 'py', 'vn']], 
+                                column_config={
+                                    "hz": "Hán tự",
+                                    "py": "Pinyin",
+                                    "vn": "Nghĩa Việt"
+                                },
+                                use_container_width=True, height=400
+                            )
+                        else:
+                            st.info("Trống.")
+
+                    if st.button("✖️ Đóng", key=f"close_view_{name}"):
+                        st.session_state.view_nb = None
+                        st.rerun()
+            
+                # --- QUẢN LÝ ADMIN: SỬA VÀ XÓA ---
                 if is_admin:
                     if c3.button("🤕 Sửa", key=f"ed_{name}", use_container_width=True):
                         st.session_state.editing_nb = name if st.session_state.get("editing_nb") != name else None
                         st.rerun()
                     
-                    # Xóa có xác nhận
                     conf_k = f"conf_del_{name}"
                     if not st.session_state.get(conf_k):
                         if c4.button("😵 Xóa", key=f"dl_{name}", use_container_width=True):
@@ -437,25 +465,33 @@ if st.session_state.mode == "manage":
                             st.session_state[conf_k] = False
                             st.rerun()
 
-                # --- FORM SỬA TỪ (ORDER VẪN GIỮ NGUYÊN) ---
+                # --- FORM SỬA SỔ TAY ---
                 if st.session_state.get("editing_nb") == name:
                     with st.form(key=f"f_edit_{name}"):
-                        new_d = st.text_area("Nội dung sửa:", value=format_to_text_6_cols(words), height=250)
-                        if st.form_submit_button("Lưu thay đổi"):
-                            st.session_state.notebooks[name]['words'] = parse_data(new_d)
-                            # Không reset fixed_order_indices để giữ vị trí cũ
+                        new_n = st.text_input("Tên mới:", value=name)
+                        new_d = st.text_area("Dữ liệu:", value=format_to_text_6_cols(raw_words), height=250)
+                        if st.form_submit_button("Lưu ✅"):
+                            if new_n != name: 
+                                st.session_state.notebooks.pop(name)
+                            st.session_state.notebooks[new_n] = {
+                                'words': parse_data(new_d), 
+                                'updated_at': datetime.now().isoformat(),
+                                'last_accessed': datetime.now().isoformat(),
+                                # ĐẶC BIỆT: Bê nguyên trật tự cũ sang, không reset. Hàm sync sẽ lo phần còn lại.
+                                'fixed_hz_order': info.get('fixed_hz_order', []) 
+                            }
                             save_json(DB_FILE, st.session_state.notebooks)
                             st.session_state.editing_nb = None
-                            st.success("Đã cập nhật!")
                             st.rerun()
 
-                # --- CHIA SET (DỰA TRÊN TRẬT TỰ ĐÃ SHUFFLE 2 LỚP) ---
+                # --- CHIA SET ---
                 with st.expander("🧩 Chia nhỏ bài học (Smart Sets)"):
-                    total_w = len(words)
+                    total_w = len(ordered_words)
                     step_opts = get_step_options(total_w)
-                    chunk = st.select_slider("Số từ mỗi Set:", options=step_opts, key=f"s_{name}")
-                    num_sets = (total_w + chunk - 1) // chunk
+                    chunk = st.select_slider("Số từ mỗi Set:", options=step_opts, key=f"s_{name}", value=min(10, total_w))
                     
+                    num_sets = (total_w + chunk - 1) // chunk
+
                     for r_idx in range(0, num_sets, 3):
                         cols = st.columns(3)
                         for c_idx in range(3):
@@ -464,30 +500,26 @@ if st.session_state.mode == "manage":
                                 start_i = s_idx * chunk
                                 end_i = min(start_i + chunk, total_w)
                                 
-                                # Lấy thông tin trật tự từ DB
-                                if not info.get('fixed_word_order'):
-                                    st.session_state.notebooks[name]['fixed_word_order'] = generate_fixed_order(words)
-                                    save_json(DB_FILE, st.session_state.notebooks)
+                                # Cắt trực tiếp từ mảng đã khóa trật tự
+                                subset = ordered_words[start_i:end_i]
                                 
-                                subset = st.session_state.notebooks[name]['fixed_word_order'][start_i:end_i]
                                 mastered = sum(1 for w in subset if st.session_state.progress["words"].get(w['hz'], 0) >= 3)
-                                rate = mastered / len(subset) if len(subset) > 0 else 0
+                                rate = mastered / len(subset) if subset else 0
                                 color = "#22c55e" if rate >= 0.8 else ("#3b82f6" if rate >= 0.4 else "#475569")
                                 
                                 btn_k = f"btn_set_{name}_{start_i}"
-                                st.markdown(f"<style>button[key='{btn_k}']{{background:{color}!important; height:4.5rem!important;}}</style>", unsafe_allow_html=True)
+                                st.markdown(f"<style>button[key='{btn_k}']{{background:{color}!important; color:white!important; min-height:4rem;}}</style>", unsafe_allow_html=True)
                                 
                                 if cols[c_idx].button(f"Set {s_idx+1}\n({start_i+1}-{end_i})\n✅ {mastered}/{len(subset)}", key=btn_k, use_container_width=True):
-                                    quiz = get_smart_quiz(name, words, start_i, end_i)
+                                    quiz = get_smart_quiz(ordered_words, start_i, end_i)
                                     st.session_state.update({
                                         "qs": quiz, 
-                                        "curr_nb": f"{name} ({start_i} -> {end_i})", 
+                                        "curr_nb": f"{name} (Set {s_idx+1})", 
                                         "mode": "study", "idx": 0, "answered": False
                                     })
                                     save_resume_state()
-                                    st.rerun()                                                       
-
-
+                                    st.rerun()
+                                    
 # --- UI ÔN TẬP (MOBI-OPTIMIZED) ---
 elif st.session_state.mode == "study":
     total = len(st.session_state.qs)
