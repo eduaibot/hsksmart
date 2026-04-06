@@ -247,6 +247,36 @@ import pandas as pd
 import streamlit as st
 
 if st.session_state.mode == "manage":
+    # --- 0. MIGRATION LOGIC (CONVERT DỮ LIỆU CŨ) ---
+    def migrate_old_data():
+        updated = False
+        for name, info in st.session_state.notebooks.items():
+            # Nếu có 'fixed_word_order' (kiểu cũ) mà chưa có 'fixed_order_indices' (kiểu mới)
+            if 'fixed_word_order' in info and info['fixed_word_order']:
+                old_list = info['fixed_word_order']
+                current_words = info['words']
+                new_indices = []
+                
+                # Tìm index của từng từ cũ trong danh sách gốc mới
+                for old_w in old_list:
+                    for idx, cur_w in enumerate(current_words):
+                        if old_w.get('hz') == cur_w.get('hz'): # Khớp dựa trên Hán tự
+                            new_indices.append(idx)
+                            break
+                
+                # Cập nhật vào DB
+                st.session_state.notebooks[name]['fixed_order_indices'] = new_indices
+                # Xóa dấu vết dữ liệu cũ
+                del st.session_state.notebooks[name]['fixed_word_order']
+                updated = True
+        
+        if updated:
+            save_json(DB_FILE, st.session_state.notebooks)
+            st.toast("✅ Đã convert dữ liệu cũ sang hệ thống Index mới!")
+
+    # Chạy migration ngay khi vào trang quản lý
+    migrate_old_data()
+    
     col1, col2 = st.columns([4, 1])
     col1.title(f"🚀 Làm tí HSK [{user}]")
     if col2.button("Đăng xuất"):
