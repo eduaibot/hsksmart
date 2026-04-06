@@ -349,10 +349,43 @@ if st.session_state.mode == "manage":
                     save_resume_state()
                     st.rerun()
                 
+                # 1. Nút bấm Toggle (Giữ nguyên logic cũ để đóng/mở)
                 if c2.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
                     st.session_state.view_nb = name if st.session_state.get('view_nb') != name else None
                     st.rerun()
 
+                # 2. Khối hiển thị danh sách khi được kích hoạt
+                if st.session_state.get('view_nb') == name:
+                    with st.container():
+                        st.markdown(f"#### 📖 Tra cứu từ vựng: {name}")
+                        
+                        # Chuyển dữ liệu gốc vào DataFrame
+                        df_view = pd.DataFrame(words)
+                        
+                        # Sắp xếp theo bảng chữ cái (mặc định theo Pinyin 'py', bạn có thể đổi thành 'vn' nếu muốn)
+                        df_view = df_view.sort_values(by='py').reset_index(drop=True)
+                        df_view.index += 1 # Đánh số thứ tự từ 1
+                        
+                        # Hiển thị thông báo nhỏ
+                        st.caption("📍 Danh sách được sắp xếp theo bảng chữ cái Pinyin để bạn dễ tra cứu.")
+                        
+                        # Hiển thị bảng dạng DataFrame (có thanh tìm kiếm và lọc)
+                        st.dataframe(
+                            df_view[['hz', 'py', 'vn']], 
+                            column_config={
+                                "hz": "Hán tự",
+                                "py": "Pinyin (A-Z)",
+                                "vn": "Nghĩa Việt"
+                            },
+                            use_container_width=True,
+                            height=400 # Giới hạn chiều cao để không bị tràn màn hình
+                        )
+                        
+                        # Nút đóng nhanh ở cuối danh sách
+                        if st.button("✖️ Đóng bảng tra cứu", key=f"close_view_{name}"):
+                            st.session_state.view_nb = None
+                            st.rerun()
+                    
                 if is_admin:
                     if c3.button("🤕 Sửa", key=f"ed_{name}", use_container_width=True):
                         st.session_state.editing_nb = name if st.session_state.get("editing_nb") != name else None
