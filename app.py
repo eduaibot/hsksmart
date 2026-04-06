@@ -253,7 +253,7 @@ if st.session_state.mode == "manage":
     with st.expander("🎨 Cài đặt & Lịch sử"):
         c_th, c_his = st.columns(2)
         with c_th:
-            theme_choice = st.selectbox("Giao diện (Theme):", list(THEMES.keys()), index=list(THEMES.keys()).index(st.session_state.theme_name))
+            theme_choice = st.selectbox("Giao diện:", list(THEMES.keys()), index=list(THEMES.keys()).index(st.session_state.theme_name))
             if theme_choice != st.session_state.theme_name:
                 st.session_state.theme_name = theme_choice
                 st.session_state.users[user]["theme"] = theme_choice
@@ -263,202 +263,156 @@ if st.session_state.mode == "manage":
             total_learned = len([k for k, v in st.session_state.progress["words"].items() if v != 0])
             st.metric("Số từ đã tiếp xúc", total_learned)
     
-    
     # Admin Module
     if is_admin:
         with st.expander("🛠️ Tạo Sổ Tay (Admin Only)"):
             n_name = st.text_input("Tên sổ tay:")
-            n_data = st.text_area("Dữ liệu (Hán - Pinyin - Nghĩa):", height=100)
+            n_data = st.text_area("Dữ liệu (Hán-Py-Nghĩa-VD Hán-VD Py-VD Nghĩa):", height=100)
             if st.button("Lưu Sổ Tay"):
                 if n_name and n_data:
-                    st.session_state.notebooks[n_name] = {'words': parse_data(n_data), 'updated_at': datetime.now().isoformat(), 'last_accessed': datetime.now().isoformat()}
+                    st.session_state.notebooks[n_name] = {
+                        'words': parse_data(n_data), 
+                        'updated_at': datetime.now().isoformat(), 
+                        'last_accessed': datetime.now().isoformat(),
+                        'shuffled_fixed': {} # Nơi lưu trữ bảng random cố định cho từ > 60
+                    }
                     save_json(DB_FILE, st.session_state.notebooks)
                     st.success("Đã lưu!")
                     st.rerun()
 
+    # --- HÀM TẠO QUIZ THEO LOGIC YÊU CẦU ---
+    def get_smart_quiz(nb_name, word_list):
+        # 1. Tách 60 từ đầu và phần còn lại
+        part_dynamic = word_list[:60]
+        part_fixed = word_list[60:]
+        
+        final_quiz = []
+        
+        # Xử lý Part 1 (60 từ đầu): Luôn random mới
+        p1_pool = []
+        for w in part_dynamic:
+            p1_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+            p1_pool.append({'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w, 'type': 'vn_hz'})
+        random.shuffle(p1_pool)
+        final_quiz.extend(p1_pool)
+        
+        # Xử lý Part 2 (Từ 61 trở đi): Cố định trong DB
+        if part_fixed:
+            nb_info = st.session_state.notebooks[nb_name]
+            # Nếu chưa từng có bảng random cố định, tạo mới và lưu vào DB
+            if not nb_info.get('shuffled_fixed'):
+                p2_pool = []
+                for w in part_fixed:
+                    p2_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+                    p2_pool.append({'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w, 'type': 'vn_hz'})
+                random.shuffle(p2_pool)
+                # Lưu vào DB để lần sau lấy ra
+                st.session_state.notebooks[nb_name]['shuffled_fixed'] = p2_pool
+                save_json(DB_FILE, st.session_state.notebooks)
+                final_quiz.extend(p2_pool)
+            else:
+                # Nếu đã có, bốc đúng cái cũ ra
+                final_quiz.extend(nb_info['shuffled_fixed'])
+                
+        return final_quiz
+
+    # --- HIỂN THỊ DANH SÁCH SỔ TAY ---
     if st.session_state.notebooks:
-        # Reordering LIFO (Sổ tay mở gần nhất lên đầu)
-        sorted_nbs = sorted(
-            st.session_state.notebooks.items(), 
-            key=lambda x: str(x[1].get('last_accessed', x[1].get('updated_at', ''))), 
-            reverse=True
-        )
+        sorted_nbs = sorted(st.session_state.notebooks.items(), key=lambda x: str(x[1].get('last_accessed', '')), reverse=True)
         
         for idx, (name, info) in enumerate(sorted_nbs, 1):
             words = info['words']
-            sticker = random.choice(["📚", "🔥", "⚡", "🌟", "🧠"])
+            sticker = ["📚", "🔥", "⚡", "🌟", "🧠"][idx % 5]
             
             with st.container():
                 st.markdown(f"### {sticker} {name} <span style='font-size:0.5em; color:gray'>({len(words)} từ)</span>", unsafe_allow_html=True)
                 c1, c2, c3, c4 = st.columns([1.5, 1.5, 1, 1])
                 
-                # Nút hành động
+                # Nút Học Ngay
                 if c1.button("📖 Học ngay", key=f"std_{name}", use_container_width=True):
-                    # LIFO update
                     st.session_state.notebooks[name]['last_accessed'] = datetime.now().isoformat()
-                    save_json(DB_FILE, st.session_state.notebooks)
-                    
-                    # Create Smart Quiz (Chỉ chọn các từ có trong sổ này)
-                    quiz = []
-                    for w in words:
-                        forms = [
-                            {'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w},
-                            {'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w},
-                        ]
-                        quiz.extend(forms)
-                    random.shuffle(quiz)
-                    
+                    # Lấy quiz theo logic: 60 dynamic + rest fixed
+                    quiz = get_smart_quiz(name, words)
                     st.session_state.update({"qs": quiz, "curr_nb": name, "mode": "study", "idx": 0, "answered": False})
                     save_resume_state()
                     st.rerun()
                 
-                if c2.button("📑 Xem danh sách", key=f"vw_{name}", use_container_width=True):
-                    if st.session_state.get('view_nb') == name: st.session_state.view_nb = None
-                    else: st.session_state.view_nb = name
+                if c2.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
+                    st.session_state.view_nb = name if st.session_state.get('view_nb') != name else None
                     st.rerun()
 
-                # --- PHẦN NÀY DÀNH CHO ADMIN: NÚT SỬA & XÓA ---
                 if is_admin:
-                    c3.button("🤕 Sửa", key=f"ed_btn_{name}", use_container_width=True, 
-                              on_click=lambda n=name: st.session_state.update({"editing_nb": n if st.session_state.get("editing_nb") != n else None}))
-                    
-                    # Khởi tạo trạng thái xác nhận nếu chưa có
-                    confirm_key = f"conf_del_{name}"
-                    if confirm_key not in st.session_state:
-                        st.session_state[confirm_key] = False
+                    if c3.button("🤕 Sửa", key=f"ed_{name}", use_container_width=True):
+                        st.session_state.editing_nb = name if st.session_state.get("editing_nb") != name else None
+                        st.rerun()
 
-                    # Kiểm tra xem có đang trong trạng thái chờ xóa không
-                    if not st.session_state[confirm_key]:
+                    # Logic xác nhận xóa
+                    conf_key = f"conf_del_{name}"
+                    if not st.session_state.get(conf_key):
                         if c4.button("😵 Xóa", key=f"dl_{name}", use_container_width=True):
-                            st.session_state[confirm_key] = True
+                            st.session_state[conf_key] = True
                             st.rerun()
                     else:
-                        # Hiện 2 nút xác nhận nhỏ gọn
-                        c_yes, c_no = c4.columns(2)
-                        if c_yes.button("✅", key=f"y_{name}", help="Chốt xóa"):
+                        cy, cn = c4.columns(2)
+                        if cy.button("✅", key=f"y_{name}"):
                             del st.session_state.notebooks[name]
                             save_json(DB_FILE, st.session_state.notebooks)
-                            st.session_state[confirm_key] = False
                             st.rerun()
-                        if c_no.button("❌", key=f"n_{name}", help="Hủy"):
-                            st.session_state[confirm_key] = False
+                        if cn.button("❌", key=f"n_{name}"):
+                            st.session_state[conf_key] = False
                             st.rerun()
 
-                # --- FORM CHỈNH SỬA (CHỈ HIỆN KHI BẤM NÚT SỬA) ---
+                # --- FORM CHỈNH SỬA ---
                 if st.session_state.get("editing_nb") == name:
-                    with st.form(key=f"edit_form_{name}"):
-                        st.markdown(f"### 🛠️ Chỉnh sửa: {name}")
-                        new_n = st.text_input("Tên sổ tay mới:", value=name)
-                        # Hiển thị dữ liệu 6 cột để sửa
-                        current_text = format_to_text_6_cols(words)
-                        new_d = st.text_area("Nội dung (Hán - Py - Nghĩa - VD Hán - VD Py - VD Nghĩa):", 
-                                            value=current_text, height=300)
-                        
-                        btn_c1, btn_c2 = st.columns(2)
-                        if btn_c1.form_submit_button("Lưu thay đổi ✅", use_container_width=True):
-                            # Nếu đổi tên, xóa key cũ
-                            if new_n != name: 
-                                st.session_state.notebooks.pop(name)
-                            
-                            # Cập nhật dữ liệu mới
+                    with st.form(key=f"edit_f_{name}"):
+                        new_n = st.text_input("Tên mới:", value=name)
+                        new_d = st.text_area("Dữ liệu:", value=format_to_text_6_cols(words), height=250)
+                        if st.form_submit_button("Lưu ✅"):
+                            if new_n != name: st.session_state.notebooks.pop(name)
                             st.session_state.notebooks[new_n] = {
-                                'words': parse_data(new_d),
+                                'words': parse_data(new_d), 
                                 'updated_at': datetime.now().isoformat(),
-                                'last_accessed': datetime.now().isoformat() # LIFO logic: Đưa lên đầu sau khi sửa
+                                'last_accessed': datetime.now().isoformat(),
+                                'shuffled_fixed': {} # Reset bảng random khi data thay đổi
                             }
                             save_json(DB_FILE, st.session_state.notebooks)
                             st.session_state.editing_nb = None
-                            st.success("Đã cập nhật thành công!")
-                            st.rerun()
-                        
-                        if btn_c2.form_submit_button("Hủy ❌", use_container_width=True):
-                            st.session_state.editing_nb = None
                             st.rerun()
 
-                # Hiển thị List Dạng Table
-                if st.session_state.get('view_nb') == name:
-                    st.markdown("<div class='glass-box'>", unsafe_allow_html=True)
-                    df_data = []
-                    idx = 0
-                    for w in words:
-                        idx += 1
-                        hz = w['hz']
-                        status_val = st.session_state.progress["words"].get(hz, 0)
-                        status = "🟢 Thuộc" if status_val >= 3 else ("🔴 Yếu" if status_val < 0 else "⚪ Mới")
-                        
-                        df_data.append({
-                            "Từ vựng": f"{hz} ({w['py']})",
-                            "Nghĩa": w['vn'],
-                            "Ví dụ": w['ex_hz'] if w['ex_hz'] else "-",
-                            "Trạng thái": status
-                        })
+                # --- CHIA SET THÔNG MINH ---
+                with st.expander("🧩 Chia nhỏ bài học"):
+                    step_opts = get_step_options(len(words))
+                    chunk = st.select_slider("Số từ/Set:", options=step_opts, key=f"s_{name}")
+                    num_sets = (len(words) + chunk - 1) // chunk
                     
-                    st.dataframe(pd.DataFrame(df_data), use_container_width=True, hide_index=False)
-                    st.markdown("</div>", unsafe_allow_html=True)
-                    
-                # --- CHỨC NĂNG CHIA SET NÂNG CAO (MÀU SẮC THEO TIẾN ĐỘ) ---
-                with st.expander("🧩 Chia nhỏ bài học (Smart Sets)"):
-                    total_words = len(words)
-                    step_options = get_step_options(total_words)
-                    chunk = st.select_slider(f"Số từ mỗi Set:", options=step_options, key=f"slider_{name}")
-                    
-                    num_sets = (total_words + chunk - 1) // chunk 
-                    
-                    # CHÌA KHÓA: Lặp qua từng hàng (mỗi hàng 3 set)
-                    for row_idx in range(0, num_sets, 3):
-                        cols = st.columns(3) # Tạo 1 hàng có 3 cột
-                        for col_idx in range(3):
-                            set_idx_zero = row_idx + col_idx
-                            if set_idx_zero < num_sets:
-                                # Tính toán STT và dữ liệu
-                                start_num = set_idx_zero * chunk + 1
-                                end_num = min((set_idx_zero + 1) * chunk, total_words)
-                                start_idx = set_idx_zero * chunk
-                                end_idx = min(start_idx + chunk, total_words)
-                                subset = words[start_idx : end_idx]
+                    for r_idx in range(0, num_sets, 3):
+                        cols = st.columns(3)
+                        for c_idx in range(3):
+                            s_idx = r_idx + c_idx
+                            if s_idx < num_sets:
+                                start_i, end_i = s_idx * chunk, min((s_idx + 1) * chunk, len(words))
+                                subset = words[start_i:end_i]
                                 
-                                # Tính số từ đã thuộc (mastered >= 3)
-                                mastered_in_set = sum(1 for sw in subset if st.session_state.progress["words"].get(sw['hz'], 0) >= 3)
-                                total_in_set = len(subset)
-                                rate = mastered_in_set / total_in_set if total_in_set > 0 else 0
+                                # Tính tiến độ màu sắc
+                                mastered = sum(1 for w in subset if st.session_state.progress["words"].get(w['hz'], 0) >= 3)
+                                rate = mastered / len(subset)
+                                color = "#22c55e" if rate >= 0.8 else ("#3b82f6" if rate >= 0.4 else "#475569")
                                 
-                                # Màu sắc
-                                bg_color = "#22c55e" if rate >= 0.8 else (t['main'] if rate >= 0.4 else "#475569")
-                                btn_key = f"btn_{name}_{start_idx}"
+                                btn_k = f"b_{name}_{start_i}"
+                                st.markdown(f"<style>button[key='{btn_k}']{{background:{color}!important; height:4rem!important;}}</style>", unsafe_allow_html=True)
                                 
-                                st.markdown(f"""
-                                    <style>
-                                    button[key="{btn_key}"] {{
-                                        background-color: {bg_color} !important;
-                                        height: 4.5rem !important;
-                                        margin-bottom: 10px !important;
-                                        line-height: 1.2 !important;
-                                        white-space: pre-wrap !important; /* Cho phép xuống dòng trong nút */
-                                    }}
-                                    </style>
-                                """, unsafe_allow_html=True)
-
-                                with cols[col_idx]:
-                                    # Label hiển thị: Set X (1-30) \n Đã thuộc: 15/30
-                                    label = f"Set {set_idx_zero + 1}\n({start_num}-{end_num})\n✅ {mastered_in_set}/{total_in_set}"
+                                if cols[c_idx].button(f"Set {s_idx+1}\n({start_i+1}-{end_i})\n✅{mastered}/{len(subset)}", key=btn_k, use_container_width=True):
+                                    # CHÌA KHÓA: Với Set nhỏ, chúng ta cũng áp dụng logic 60 từ đầu
+                                    # Tuy nhiên nếu Set đó bắt đầu từ chỉ số > 60, nó sẽ tự động dùng "Fixed"
+                                    set_quiz = get_smart_quiz(name, words)[start_i*2 : end_i*2] 
                                     
-                                    if st.button(label, key=btn_key, use_container_width=True):
-                                        # Logic bắt đầu học... (giữ nguyên phần tạo set_quiz của Hải)
-                                        set_quiz = []
-                                        for w_sub in subset:
-                                            set_quiz.extend([
-                                                {'q': w_sub['hz'].capitalize(), 'a': w_sub['vn'], 'f': w_sub},
-                                                {'q': w_sub['vn'].capitalize(), 'a': w_sub['hz'], 'f': w_sub},
-                                            ])
-                                        random.shuffle(set_quiz)
-                                        st.session_state.update({
-                                            "qs": set_quiz, 
-                                            "curr_nb": f"{name} ({start_num}-{end_num})", 
-                                            "mode": "study", "idx": 0, "answered": False
-                                        })
-                                        save_resume_state()
-                                        st.rerun()
-                  
+                                    st.session_state.update({
+                                        "qs": set_quiz, 
+                                        "curr_nb": f"{name} Set {s_idx+1}", 
+                                        "mode": "study", "idx": 0, "answered": False
+                                    })
+                                    save_resume_state()
+                                    st.rerun()                  
                         
 # --- UI ÔN TẬP (MOBI-OPTIMIZED) ---
 elif st.session_state.mode == "study":
