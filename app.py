@@ -437,21 +437,16 @@ if st.session_state.mode == "manage":
                             st.session_state[conf_k] = False
                             st.rerun()
 
-                # --- FORM SỬA ---
+                # --- FORM SỬA TỪ (ORDER VẪN GIỮ NGUYÊN) ---
                 if st.session_state.get("editing_nb") == name:
                     with st.form(key=f"f_edit_{name}"):
-                        new_n = st.text_input("Tên mới:", value=name)
-                        new_d = st.text_area("Dữ liệu:", value=format_to_text_6_cols(words), height=250)
-                        if st.form_submit_button("Lưu ✅"):
-                            if new_n != name: st.session_state.notebooks.pop(name)
-                            st.session_state.notebooks[new_n] = {
-                                'words': parse_data(new_d), 
-                                'updated_at': datetime.now().isoformat(),
-                                'last_accessed': datetime.now().isoformat(),
-                                'fixed_word_order': [] # Reset trật tự
-                            }
+                        new_d = st.text_area("Nội dung sửa:", value=format_to_text_6_cols(words), height=250)
+                        if st.form_submit_button("Lưu thay đổi"):
+                            st.session_state.notebooks[name]['words'] = parse_data(new_d)
+                            # Không reset fixed_order_indices để giữ vị trí cũ
                             save_json(DB_FILE, st.session_state.notebooks)
                             st.session_state.editing_nb = None
+                            st.success("Đã cập nhật!")
                             st.rerun()
 
                 # --- CHIA SET (DỰA TRÊN TRẬT TỰ ĐÃ SHUFFLE 2 LỚP) ---
@@ -491,6 +486,8 @@ if st.session_state.mode == "manage":
                                     })
                                     save_resume_state()
                                     st.rerun()                                                       
+
+
 # --- UI ÔN TẬP (MOBI-OPTIMIZED) ---
 elif st.session_state.mode == "study":
     total = len(st.session_state.qs)
