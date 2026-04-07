@@ -21,7 +21,7 @@ THEMES = {
     "Cyberpunk (G)": {"bg": "#0f172a", "main": "#fde047", "text": "#e2e8f0", "border": "#334155", "grad": "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", "neon": "0 0 15px #fde047"},
     "Neon Matrix (G)": {"bg": "#020617", "main": "#22c55e", "text": "#f8fafc", "border": "#064e3b", "grad": "linear-gradient(135deg, #065f46 0%, #022c22 100%)", "neon": "0 0 15px #22c55e"},
     "Sunset Glow (G)": {"bg": "#fff7ed", "main": "#f97316", "text": "#7c2d12", "border": "#fed7aa", "grad": "linear-gradient(135deg, #ffedd5 0%, #fdba74 100%)", "neon": "0 0 10px #f97316"},
-    "Deep Forest (G)": {"bg": "#f0fdf4", "main": "#16a34a", "text": "#14532d", "border": "#bbf7d0", "grad": "linear-gradient(135deg, #dcfce7 0%, #86efac 100%)", "neon": "0 0 10px #16a34a"},
+    "Deep Forest (G)": {"bg": "#f0fdf4", "main": "#4fff8f", "text": "#14532d", "border": "#bbf7d0", "grad": "linear-gradient(135deg, #dcfce7 0%, #86efac 100%)", "neon": "0 0 10px #16a34a"},
     "Royal Purple (G)": {"bg": "#faf5ff", "main": "#a855f7", "text": "#581c87", "border": "#e9d5ff", "grad": "linear-gradient(135deg, #f3e8ff 0%, #d8b4fe 100%)", "neon": "0 0 10px #a855f7"},
     "Midnight (G)": {"bg": "#f8fafc", "main": "#334155", "text": "#0f172a", "border": "#e2e8f0", "grad": "linear-gradient(135deg, #f1f5f9 0%, #94a3b8 100%)", "neon": "0 0 10px #334155"},
     "Blood Moon (G)": {"bg": "#1a0505", "main": "#dc2626", "text": "#fee2e2", "border": "#7f1d1d", "grad": "linear-gradient(135deg, #450a0a 0%, #220505 100%)", "neon": "0 0 15px #dc2626"},
