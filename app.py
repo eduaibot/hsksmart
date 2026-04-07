@@ -168,19 +168,17 @@ st.set_page_config(
 
 st.markdown("""
     <style>
-        /* Ẩn thanh header phía trên (Taskbar) */
-        header {visibility: hidden;}
+        /* Ẩn nút 'Manage app' và các hiệu ứng liên quan ở góc dưới */
+        #stDecoration {display:none;}
+        [data-testid="stStatusWidget"] {display:none;}
         
-        /* Ẩn thanh menu (3 gạch) và logo Streamlit ở góc trên phải */
-        #MainMenu {visibility: hidden;}
+        /* Chặn hoàn toàn nút Deploy/Manage app nếu nó xuất hiện ở góc dưới phải hoặc trái */
+        .stAppDeployButton {display:none;}
         
-        /* Ẩn footer "Made with Streamlit" */
-        footer {visibility: hidden;}
-        
-        /* Điều chỉnh khoảng cách nội dung đẩy lên sát trên cùng */
+        /* Tối ưu không gian nội dung */
         .block-container {
+            margin-top: 2rem;
             padding-top: 1rem;
-            padding-bottom: 0rem;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -353,7 +351,7 @@ if st.session_state.mode == "manage":
     migrate_to_hz_order()
     
     # --- UI HEADER ---
-    col1, col2 = st.columns([4, 1])
+    col1, col2 = st.columns([6, 1])
     col1.title(f"🚀 Làm tí HSK [{user}]")
     if col2.button("Đăng xuất"):
         st.session_state.session["remembered"] = None
