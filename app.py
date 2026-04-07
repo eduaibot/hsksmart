@@ -531,7 +531,7 @@ if st.session_state.mode == "manage":
                                     quiz = get_smart_quiz(ordered_words, start_i, end_i)
                                     st.session_state.update({
                                         "qs": quiz, 
-                                        "curr_nb": f"{name} (Set {s_idx+1})", 
+                                        "curr_nb": f"{name} ({start_i} -> {end_i})", 
                                         "mode": "study", "idx": 0, "answered": False
                                     })
                                     save_resume_state()
