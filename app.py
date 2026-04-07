@@ -166,6 +166,25 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <style>
+        /* Ẩn thanh header phía trên (Taskbar) */
+        header {visibility: hidden;}
+        
+        /* Ẩn thanh menu (3 gạch) và logo Streamlit ở góc trên phải */
+        #MainMenu {visibility: hidden;}
+        
+        /* Ẩn footer "Made with Streamlit" */
+        footer {visibility: hidden;}
+        
+        /* Điều chỉnh khoảng cách nội dung đẩy lên sát trên cùng */
+        .block-container {
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 st.markdown(f"""
     <style>
     .stApp {{ background-color: {t['bg']}; color: {t['text']}; font-family: 'Inter', sans-serif; transition: 0.3s; }}
