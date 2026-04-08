@@ -304,7 +304,7 @@ if st.session_state.mode == "manage":
         
         # 1. Khởi tạo lần đầu
         if not saved_hzs and current_words:
-            sorted_words = sorted(current_words, key=lambda x: x.get('py', ''))
+            sorted_words = current_words
             part1 = [w['hz'] for w in sorted_words[:60]]
             part2 = [w['hz'] for w in sorted_words[60:]]
             random.shuffle(part1)
@@ -361,7 +361,7 @@ if st.session_state.mode == "manage":
 
     # --- CÀI ĐẶT & LỊCH SỬ ---
     with st.expander("🎨 Cài đặt & Lịch sử"):
-        c_th, c_his = st.columns(2)
+        c_th, c_his, c_download = st.columns(3)
         with c_th:
             theme_choice = st.selectbox("Giao diện:", list(THEMES.keys()), index=list(THEMES.keys()).index(st.session_state.theme_name))
             if theme_choice != st.session_state.theme_name:
@@ -372,6 +372,13 @@ if st.session_state.mode == "manage":
         with c_his:
             total_learned = len([k for k, v in st.session_state.progress["words"].items() if v != 0])
             st.metric("Số từ đã tiếp xúc", total_learned)
+        with open("user_data/notebooks.json", "rb") as f:
+            c_download.download_button(
+                label="Tải dữ liệu JSON",
+                data=f,
+                file_name="notebooks.json",
+                mime="application/json"
+            )
 
     # --- ADMIN: TẠO SỔ TAY ---
     if is_admin:
@@ -441,8 +448,6 @@ if st.session_state.mode == "manage":
                             # Sắp xếp theo cột tạm đó
                             df_view = df_view.sort_values(by='sort_key').reset_index(drop=True)
                             df_view.index += 1
-                            
-                            st.caption("📍 Danh sách đã được sắp xếp chuẩn A-Z (không bị đẩy chữ có dấu xuống cuối).")
                             
                             # Hiển thị bảng (loại bỏ cột sort_key khi show)
                             st.dataframe(
