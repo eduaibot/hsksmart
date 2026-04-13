@@ -419,11 +419,18 @@ if st.session_state.mode == "manage":
                     st.session_state.update({"qs": quiz, "curr_nb": f"{name} (Top 60)", "mode": "study", "idx": 0, "answered": False})
                     save_resume_state()
                     st.rerun()
+                    
+                # 2. Nút Xem trật tự ngẫu nhiên (Mới)
+                if c2.button("🎯 Trật tự học", key=f"rnd_{name}", use_container_width=True):
+                    st.session_state.view_type = "random"
+                    st.session_state.view_nb = name if (st.session_state.get('view_nb') != name or st.session_state.get('view_type') != "random") else None
+                    st.rerun()
                 
                 # --- NÚT XEM DANH SÁCH (Sắp xếp A-Z Pinyin) ---
                 if c2.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
                     st.session_state.view_nb = name if st.session_state.get('view_nb') != name else None
                     st.rerun()
+
 
                 import unicodedata
 
@@ -437,30 +444,26 @@ if st.session_state.mode == "manage":
                     return "".join([c for c in nfkd_form if not unicodedata.combining(c)])
 
                 if st.session_state.get('view_nb') == name:
-                    with st.container():
-                        st.markdown(f"#### 📖 Tra cứu từ vựng: {name}")
-                        df_view = pd.DataFrame(raw_words)
-                        
-                        if not df_view.empty:
-                            # TẠO CỘT TẠM ĐỂ SORT: Loại bỏ dấu và chuyển về chữ thường
-                            df_view['sort_key'] = df_view['py'].apply(lambda x: remove_accents(x).lower())
-                            
-                            # Sắp xếp theo cột tạm đó
-                            df_view = df_view.sort_values(by='sort_key').reset_index(drop=True)
-                            df_view.index += 1
-                            
-                            # Hiển thị bảng (loại bỏ cột sort_key khi show)
-                            st.dataframe(
-                                df_view[['hz', 'py', 'vn']], 
-                                column_config={
-                                    "hz": "Hán tự",
-                                    "py": "Pinyin",
-                                    "vn": "Nghĩa Việt"
-                                },
-                                use_container_width=True, height=400
-                            )
-                        else:
-                            st.info("Trống.")
+                    v_type = st.session_state.get('view_type', 'az')
+                    st.markdown(f"#### {'🎯 Trật tự học hiện tại' if v_type == 'random' else '📖 Tra cứu A-Z'}: {name}")
+                    
+                    if v_type == "random":
+                        # Hiển thị đúng trật tự đã được lưu trong fixed_hz_order
+                        df_display = pd.DataFrame(ordered_words)
+                    else:
+                        # Logic sắp xếp A-Z Pinyin như cũ
+                        df_display = pd.DataFrame(raw_words)
+                        if not df_display.empty:
+                            df_display['sort_key'] = df_display['py'].apply(lambda x: remove_accents(x).lower())
+                            df_display = df_display.sort_values(by='sort_key').reset_index(drop=True)
+
+                    if not df_display.empty:
+                        df_display.index += 1
+                        st.dataframe(
+                            df_display[['hz', 'py', 'vn']], 
+                            column_config={"hz": "Hán tự", "py": "Pinyin", "vn": "Nghĩa Việt"},
+                            use_container_width=True, height=400
+                        )
 
                     if st.button("✖️ Đóng", key=f"close_view_{name}"):
                         st.session_state.view_nb = None
