@@ -30,7 +30,31 @@ THEMES = {
     "Lava (G)": {"bg": "#2a0800", "main": "#ef4444", "text": "#ffedd5", "border": "#9a3412", "grad": "linear-gradient(135deg, #7c2d12 0%, #431407 100%)", "neon": "0 0 15px #ef4444"},
     "Obsidian (G)": {"bg": "#09090b", "main": "#71717a", "text": "#fafafa", "border": "#27272a", "grad": "linear-gradient(135deg, #18181b 0%, #09090b 100%)", "neon": "0 0 10px #71717a"},
     "Gold Leaf (G)": {"bg": "#fffbeb", "main": "#eab308", "text": "#713f12", "border": "#fde047", "grad": "linear-gradient(135deg, #fef3c7 0%, #fde047 100%)", "neon": "0 0 10px #eab308"},
-    "Toxic (G)": {"bg": "#051f0e", "main": "#84cc16", "text": "#ecfccb", "border": "#3f6212", "grad": "linear-gradient(135deg, #1a2e05 0%, #051f0e 100%)", "neon": "0 0 15px #84cc16"}
+    "Toxic (G)": {"bg": "#051f0e", "main": "#84cc16", "text": "#ecfccb", "border": "#3f6212", "grad": "linear-gradient(135deg, #1a2e05 0%, #051f0e 100%)", "neon": "0 0 15px #84cc16"},
+    # Deep Ocean: Xanh sâu thẳm, chữ trắng xanh rất dịu
+    "Deep Ocean (G)": {
+        "bg": "#0f172a", "main": "#38bdf8", "text": "#f1f5f9", 
+        "border": "#1e293b", "grad": "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", 
+        "neon": "0 0 15px #38bdf8"
+    },
+    # Graphite: Xám than cao cấp, không bị đen tuyệt đối gây chói
+    "Soft Charcoal (G)": {
+        "bg": "#121212", "main": "#bb86fc", "text": "#e0e0e0", 
+        "border": "#333333", "grad": "linear-gradient(135deg, #1f1f1f 0%, #121212 100%)", 
+        "neon": "0 0 10px #bb86fc"
+    },
+    # Nord Night: Màu phong cách lập trình viên (rất dễ nhìn)
+    "Nord Dark (G)": {
+        "bg": "#2e3440", "main": "#88c0d0", "text": "#eceff4", 
+        "border": "#3b4252", "grad": "linear-gradient(135deg, #3b4252 0%, #2e3440 100%)", 
+        "neon": "0 0 10px #88c0d0"
+    },
+    # Dracula: Tím tối cổ điển
+    "Dracula (G)": {
+        "bg": "#282a36", "main": "#bd93f9", "text": "#f8f8f2", 
+        "border": "#44475a", "grad": "linear-gradient(135deg, #44475a 0%, #282a36 100%)", 
+        "neon": "0 0 12px #bd93f9"
+    }
 }
 
 # --- TIỆN ÍCH DỮ LIỆU ---
@@ -177,8 +201,11 @@ st.markdown("""
         
         /* Tối ưu không gian nội dung */
         .block-container {
-            margin-top: 2rem;
-            padding-top: 1rem;
+            padding-top: 2rem;
+            max-width: 1000px !important;
+            padding-top: 1rem !important
+            padding-bottom: 0rem !important;
+            margin: 20px auto !important;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -200,9 +227,14 @@ st.markdown(f"""
         box-shadow: {t['neon']}; transition: 0.3s;
     }}
     .stButton > button {{ 
+        width: auto !important; /* Không bắt buộc dài 100% */
+        min-width: 120px;       /* Độ dài tối thiểu để nút không quá bé */
+        max-width: 250px;       /* Giới hạn độ dài tối đa của nút */
+        display: block;
+        margin: 0 auto;         /* Căn giữa nút nếu cần */
         background-color: {t['main']} !important; color: white !important; 
         border-radius: 8px !important; border: none; font-weight: bold; transition: 0.3s;
-    }}
+    }}F
     .stButton > button:hover {{ box-shadow: {t['neon']}; opacity: 0.9; }}
     .stTextInput input {{ text-align: center; border-radius: 10px !important; font-size: 20px;}}
     
@@ -243,6 +275,33 @@ st.markdown(f"""
     .stButton > button[key*="check"] {{
         padding: 0.2rem 0.5rem !important;
         font-size: 0.8rem !important;
+    }}
+    /* Glassmorphism Tối ưu: Dùng màu nền của border để pha trộn thay vì trắng tinh */
+    div[data-testid="stExpander"], .stAlert, div[data-testid="stForm"], .glass-box {{
+        background: rgba(0, 0, 0, 0.2) !important; /* Đổi sang nền đen mờ cho sang */
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid {t['border']}77 !important; /* Thêm 77 để border mờ đi chút */
+        border-radius: 15px !important; 
+        padding: 15px !important; 
+        margin-bottom: 10px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }}
+
+    /* Tối ưu chữ trong Expander để luôn nổi bật */
+    div[data-testid="stExpander"] p, div[data-testid="stExpander"] span {{
+        color: {t['text']} !important;
+    }}
+
+    .stButton > button {{ 
+        background-color: {t['main']} !important; 
+        color: {"#000000" if t['main'] in ['#fde047', '#84cc16'] else "#ffffff"} !important; /* Tự đổi màu chữ nút nếu nền quá sáng */
+        border-radius: 8px !important; 
+        border: none; 
+        font-weight: bold; 
+        width: auto !important;
+        min-width: 100px;
+        max-width: 200px;
     }}
     </style>
     
@@ -410,7 +469,7 @@ if st.session_state.mode == "manage":
             
             with st.container():
                 st.markdown(f"### {sticker} {name} <span style='font-size:0.5em; color:gray'>({len(ordered_words)} từ)</span>", unsafe_allow_html=True)
-                c1, c2, c3, c4 = st.columns([1.5, 1.5, 1, 1])
+                c1, c2, c3, c4, c5 = st.columns([1, 1, 1, 1, 1])
                 
                 # --- NÚT HỌC NGAY (Top 60) ---
                 if c1.button("📖 Học ngay", key=f"std_{name}", use_container_width=True):
@@ -427,7 +486,7 @@ if st.session_state.mode == "manage":
                     st.rerun()
                 
                 # --- NÚT XEM DANH SÁCH (Sắp xếp A-Z Pinyin) ---
-                if c2.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
+                if c3.button("📑 Danh sách", key=f"vw_{name}", use_container_width=True):
                     st.session_state.view_nb = name if st.session_state.get('view_nb') != name else None
                     st.rerun()
 
@@ -471,13 +530,13 @@ if st.session_state.mode == "manage":
             
                 # --- QUẢN LÝ ADMIN: SỬA VÀ XÓA ---
                 if is_admin:
-                    if c3.button("🤕 Sửa", key=f"ed_{name}", use_container_width=True):
+                    if c4.button("🤕 Sửa", key=f"ed_{name}", use_container_width=True):
                         st.session_state.editing_nb = name if st.session_state.get("editing_nb") != name else None
                         st.rerun()
                     
                     conf_k = f"conf_del_{name}"
                     if not st.session_state.get(conf_k):
-                        if c4.button("😵 Xóa", key=f"dl_{name}", use_container_width=True):
+                        if c5.button("😵 Xóa", key=f"dl_{name}", use_container_width=True):
                             st.session_state[conf_k] = True
                             st.rerun()
                     else:
@@ -593,7 +652,7 @@ elif st.session_state.mode == "study":
         st.progress((curr_idx) / total)
         
         # Câu hỏi to, rõ ràng
-        st.markdown(f'<div class="question-container"><h3 style="margin:0; font-size:1.8rem; text-align:center; font-weight: 600">{q["q"]}</h3></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="question-container"><h3 style="margin:0; font-size:2.2rem; text-align:center; font-weight: 500">{q["q"]}</h3></div>', unsafe_allow_html=True)
         
         # --- 3. INPUT & NÚT KIỂM TRA (Nút nằm bên trái) ---
         # Tỷ lệ [1, 4] để nút Check nhỏ và nằm bên trái, nếu màn hình quá hẹp sẽ tự xuống dòng
@@ -674,7 +733,7 @@ elif st.session_state.mode == "study":
             st.markdown(f"""
                 <div class="glass-box answer-card">
                     <div class="ans-left">
-                        <h2 style="margin:0; color: {t['main']}">{q['f']['hz']}</h2>
+                        <h1 style="margin:0; color: #ffffff; font-weight: 500;">{q['f']['hz']}</h1>
                         <div style="font-size: 1.1rem; font-weight: bold;">{q['f']['py']}</div>
                         <div style="font-size: 0.9rem; color: gray;">{q['f']['vn'].capitalize()}</div>
                     </div>
