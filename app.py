@@ -401,7 +401,7 @@ if st.session_state.mode == "manage":
         quiz_pool = []
         for w in selected_words:
             quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
-            quiz_pool.append({'q': w['vn'].capitalize(), 'a': w['hz'], 'f': w, 'type': 'vn_hz'})
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
         
         random.shuffle(quiz_pool) # Chỉ xáo trộn câu hỏi bên trong Set lúc làm bài
         return quiz_pool
@@ -723,9 +723,16 @@ elif st.session_state.mode == "study":
             ex_content = f"""
                 <div class="ans-right">
                     <b style="color: {t['main']}">Ví dụ:</b><br>
-                    <span style="font-size: 1rem;">{q['f']['ex_hz']}</span><br>
-                    <i style="color: gray; font-size: 0.8rem;">{q['f']['ex_py']}</i><br>
-                    <span>{q['f']['ex_vn']}</span>
+                    <span style="font-size: 1.3rem;">{q['f']['ex_hz']}</span><br>
+                    <details style="margin-top: 5px;">
+                        <summary style="cursor: pointer; font-size: 0.85rem; color: {t['main']}; font-weight: bold; outline: none;">
+                            👁️ Hiện/Ẩn Pinyin & Dịch
+                        </summary>
+                        <div style="margin-top: 5px; padding-left: 10px; border-left: 2px solid {t['main']};">
+                            <i style="color: gray; font-size: 0.9rem;">{q['f']['ex_py']}</i><br>
+                            <span>{q['f']['ex_vn']}</span>
+                        </div>
+                    </details>
                 </div>
             """ if q['f']['ex_hz'] else '<div class="ans-right"><i>(Không có ví dụ)</i></div>'
 
