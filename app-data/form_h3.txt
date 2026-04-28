@@ -1,0 +1,295 @@
+1 - 阿姨 - āyí - dì, cô - 阿姨，您好！ - Āyí, nín hǎo! - Chào dì ạ!
+2 - 啊 - a - a, à, ơ (trợ từ ngữ khí) - 这把伞真漂亮啊！ - Zhè bǎ sǎn zhēn piàoliang a! - Chiếc ô này đẹp thật đấy!
+3 - 矮 - ǎi - thấp, lùn - 弟弟比我矮一点儿。 - Dìdi bǐ wǒ ǎi yīdiǎnr. - Em trai thấp hơn tôi một chút.
+4 - 爱好 - àihào - sở thích - 我的爱好是看书。 - Wǒ de àihào shì kànshū. - Sở thích của tôi là đọc sách.
+5 - 安静 - ānjìng - yên tĩnh - 请安静，大家在考试。 - Qǐng ānjìng, dàjiā zài kǎoshì. - Xin hãy yên tĩnh, mọi người đang thi.
+6 - 把 - bǎ - đem, lấy (giới từ) - 请把门关上。 - Qǐng bǎ mén guānshàng. - Hãy đóng cửa lại.
+7 - 班 - bān - lớp, ca (làm việc) - 我们班有二十个学生。 - Wǒmen bān yǒu èrshí gè xuéshēng. - Lớp chúng tôi có 20 học sinh.
+8 - 搬 - bān - chuyển, dời - 他下个月搬家。 - Tā xià gè yuè bānjiā. - Tháng sau anh ấy chuyển nhà.
+9 - 半 - bàn - một nửa - 现在是三点半。 - Xiànzài shì sān diǎn bàn. - Bây giờ là 3 giờ rưỡi.
+10 - 办法 - bànfǎ - biện pháp - 这是一个好办法。 - Zhè shì yīgè hǎo bànfǎ. - Đây là một cách hay.
+11 - 办公室 - bàngōngshì - văn phòng - 老师在办公室里。 - Lǎoshī zài bàngōngshì lǐ. - Thầy giáo ở trong văn phòng.
+12 - 帮忙 - bāngmáng - giúp đỡ - 你能帮我个忙吗？ - Nǐ néng bāng wǒ gè máng ma? - Bạn có thể giúp tôi một tay không?
+13 - 包 - bāo - túi, bao - 你的包真好看。 - Nǐ de bāo zhēn hǎokàn. - Túi của bạn thật đẹp.
+14 - 饱 - bǎo - no - 我已经吃饱了。 - Wǒ yǐjīng chī bǎo le. - Tôi đã ăn no rồi.
+15 - 北方 - běifāng - miền Bắc - 北方的冬天很冷。 - Běifāng de dōngtiān hěn lěng. - Mùa đông ở miền Bắc rất lạnh.
+16 - 被 - bèi - bị, được (bị động) - 苹果被我吃了。 - Píngguǒ bèi wǒ chī le. - Quả táo bị tôi ăn rồi.
+17 - 比较 - bǐjiào - khá, tương đối - 这家超市比较远。 - Zhè jiā chāoshì bǐjiào yuǎn. - Siêu thị này tương đối xa.
+18 - 比赛 - bǐsài - cuộc thi, thi đấu - 昨天的比赛很精彩。 - Zuótiān de bǐsài hěn jīngcǎi. - Trận đấu hôm qua rất kịch tính.
+19 - 必须 - bìxū - phải, cần phải - 你必须今天完成。 - Nǐ bìxū jīntiān wánchéng. - Bạn phải hoàn thành trong hôm nay.
+20 - 变化 - biànhuà - thay đổi - 这几年城市变化很大。 - Zhè jǐ nián chéngshì biànhuà hěn dà. - Mấy năm nay thành phố thay đổi rất nhiều.
+21 - 表示 - biǎoshì - biểu thị, thể hiện - 他送我花表示感谢。 - Tā sòng wǒ huā biǎoshì gǎnxiè. - Anh ấy tặng hoa cho tôi để thể hiện sự cảm ơn.
+22 - 表演 - biǎoyǎn - biểu diễn - 他们的表演很出色。 - Tāmen de biǎoyǎn hěn chūsè. - Màn biểu diễn của họ rất xuất sắc.
+23 - 别人 - biérén - người khác - 别随便拿别人的东西。 - Bié suíbiàn ná biérén de dōngxī. - Đừng tùy tiện lấy đồ của người khác.
+24 - 宾馆 - bīnguǎn - khách sạn - 我们住在宾馆里。 - Wǒmen zhù zài bīnguǎn lǐ. - Chúng tôi ở trong khách sạn.
+25 - 冰箱 - bīngxiāng - tủ lạnh - 冰箱里有很多水果。 - Bīngxiāng lǐ yǒu hěnduō shuǐguǒ. - Trong tủ lạnh có rất nhiều trái cây.
+26 - 才 - cái - mới (nhấn mạnh muộn) - 他十点才睡觉。 - Tā shí diǎn cái shuìjiào. - 10 giờ anh ấy mới đi ngủ.
+27 - 菜单 - càidān - thực đơn - 请给我看看菜单。 - Qǐng gěi wǒ kànkàn càidān. - Cho tôi xem thực đơn với.
+28 - 参加 - cānjiā - tham gia - 我想参加这个比赛。 - Wǒ xiǎng cānjiā zhè gè bǐsài. - Tôi muốn tham gia cuộc thi này.
+29 - 草 - cǎo - cỏ - 地上的草绿了。 - Dì shàng de cǎo lǜ le. - Cỏ trên mặt đất xanh rồi.
+30 - 层 - céng - tầng - 我家住在三层。 - Wǒ jiā zhù zài sān céng. - Nhà tôi ở tầng 3.
+31 - 差 - chà - kém, thiếu, tệ - 他的中文水平不差。 - Tā de Zhōngwén shuǐpíng bù chà. - Trình độ tiếng Trung của anh ấy không tệ.
+32 - 超市 - chāoshì - siêu thị - 我去超市买东西。 - Wǒ qù chāoshì mǎi dōngxī. - Tôi đi siêu thị mua đồ.
+33 - 衬衫 - chènshān - áo sơ mi - 这件衬衫很贵。 - Zhè jiàn chènshān hěn guì. - Chiếc áo sơ mi này rất đắt.
+34 - 成绩 - chéngjì - thành tích - 他的考试成绩很好。 - Tā de kǎoshì chéngjì hěn hǎo. - Thành tích thi cử của anh ấy rất tốt.
+35 - 城市 - chéngshì - thành phố - 这个城市很美。 - Zhè gè chéngshì hěn měi. - Thành phố này rất đẹp.
+36 - 迟到 - chídào - đến trễ - 对不起，我迟到了。 - Duìbuqǐ, wǒ chídào le. - Xin lỗi, tôi đến muộn.
+37 - 出现 - chūxiàn - xuất hiện - 太阳出现了。 - Tàiyáng chūxiàn le. - Mặt trời đã xuất hiện.
+38 - 厨房 - chúfáng - nhà bếp - 妈妈在厨房里做饭。 - Māma zài chúfáng lǐ zuòfàn. - Mẹ đang nấu cơm trong bếp.
+39 - 除了 - chúle - ngoài ra, trừ ra - 除了他，大家都来了。 - Chúle tā, dàjiā dōu lái le. - Trừ anh ấy ra, mọi người đều đến rồi.
+40 - 春 - chūn - mùa xuân - 春天到了，花都开了。 - Chūntiān dào le, huā dōu kāi le. - Mùa xuân đến rồi, hoa đều nở rồi.
+41 - 词语 - cíyǔ - từ ngữ - 请解释这个词语。 - Qǐng jiěshì zhè gè cíyǔ. - Hãy giải thích từ ngữ này.
+42 - 聪明 - cōngmíng - thông minh - 这个孩子很聪明。 - Zhè gè háizi hěn cōngmíng. - Đứa trẻ này rất thông minh.
+43 - 打扫 - dǎsǎo - quét dọn - 请打扫一下房间。 - Qǐng dǎsǎo yīxià fángjiān. - Hãy quét dọn phòng một chút.
+44 - 打算 - dǎsuàn - dự định - 你周末有什么打算？ - Nǐ zhōumò yǒu shéme dǎsuàn? - Cuối tuần bạn có dự định gì?
+45 - 带 - dài - mang theo, dẫn theo - 别忘了带伞。 - Bié wàngle dài sǎn. - Đừng quên mang theo ô.
+46 - 担心 - dānxīn - lo lắng - 别担心，一切都会好的。 - Bié dānxīn, yīqiè dōu huì hǎo de. - Đừng lo lắng, mọi chuyện sẽ ổn thôi.
+47 - 蛋糕 - dàngāo - bánh ngọt - 生日蛋糕真甜。 - Shēngrì dàngāo zhēn tián. - Bánh kem sinh nhật thật ngọt.
+48 - 当然 - dāngrán - đương nhiên - 我当然会支持你。 - Wǒ dāngrán huì zhīchí nǐ. - Tôi đương nhiên sẽ ủng hộ bạn.
+49 - 地 - de - trợ từ của động từ - 他飞快地跑了过去。 - Tā fēikuài de pǎo le guòqù. - Anh ấy chạy vụt qua một cách nhanh chóng.
+50 - 灯 - dēng - đèn - 请把灯关了。 - Qǐng bǎ dēng guān le. - Vui lòng tắt đèn đi.
+51 - 低 - dī - thấp - 声音太低。 - Shēngyīn tài dī. - Tiếng quá thấp.
+52 - 地方 - dìfāng - nơi, chỗ - 这是什么地方？ - Zhè shì shénme dìfāng? - Đây là nơi nào?
+53 - 地铁 - dìtiě - tàu điện ngầm - 我坐地铁去。 - Wǒ zuò dìtiě qù. - Tôi đi tàu điện ngầm.
+54 - 地图 - dìtú - bản đồ - 我看地图。 - Wǒ kàn dìtú. - Tôi xem bản đồ.
+55 - 电梯 - diàntī - thang máy - 电梯在哪儿？ - Diàntī zài nǎr? - Thang máy ở đâu?
+56 - 电子邮箱 - diànzǐ yóuxiāng - email - 这是我的电子邮箱。 - Zhè shì wǒ de diànzǐ yóuxiāng. - Đây là email của tôi.
+57 - 东 - dōng - đông - 太阳在东边。 - Tàiyáng zài dōngbian. - Mặt trời ở phía đông.
+58 - 冬 - dōng - mùa đông - 冬天很冷。 - Dōngtiān hěn lěng. - Mùa đông rất lạnh.
+59 - 动物 - dòngwù - động vật - 我爱小动物。 - Wǒ ài xiǎo dòngwù. - Tôi yêu động vật nhỏ.
+60 - 短 - duǎn - ngắn - 头发很短。 - Tóufa hěn duǎn. - Tóc rất ngắn.
+61 - 段 - duàn - đoạn, quãng - 这段时间我很忙。 - Zhè duàn shíjiān wǒ hěn máng. - Quãng thời gian này tôi rất bận.
+62 - 锻炼 - duànliàn - rèn luyện - 我每天去公园锻炼。 - Wǒ měitiān qù gōngyuán duànliàn. - Tôi đi công viên tập thể dục mỗi ngày.
+63 - 多么 - duōme - bao nhiêu - 这里多么漂亮啊！ - Zhèlǐ duōme piàoliang a! - Ở đây đẹp biết bao!
+64 - 饿 - è - đói - 我饿得没力气了。 - Wǒ è dé méi lìqì le. - Tôi đói đến mức không còn sức rồi.
+65 - 而且 - érqiě - hơn nữa - 他聪明而且努力。 - Tā cōngmíng érqiě nǔlì. - Anh ấy thông minh mà còn nỗ lực.
+66 - 耳朵 - ěrduo - tai - 我的耳朵有点儿疼。 - Wǒ de ěrduo yǒudiǎnr téng. - Tai của tôi hơi đau.
+67 - 发烧 - fāshāo - sốt - 他今天感冒发烧了。 - Tā jīntiān gǎnmào fāshāole. - Hôm nay anh ấy bị cảm sốt rồi.
+68 - 发现 - fāxiàn - phát hiện - 我发现他没来学校。 - Wǒ fāxiàn tā méi lái xuéxiào. - Tôi phát hiện anh ấy không đến trường.
+69 - 方便 - fāngbiàn - thuận tiện - 在这儿买东西很方便。 - Zài zhèr mǎi dōngxī hěn fāngbiàn. - Mua đồ ở đây rất thuận tiện.
+70 - 放 - fàng - đặt, để - 请把书放在桌上。 - Qǐng bǎ shū fàng zài zhuō shàng. - Hãy để sách lên trên bàn.
+71 - 放心 - fàngxīn - yên tâm - 请你对我放心吧。 - Qǐng nǐ duì wǒ fàngxīn ba. - Xin hãy yên tâm về tôi.
+72 - 分 - fēn - phút - 现在是八点五分。 - Xiànzài shì bā diǎn wǔ fēn. - Bây giờ là 8 giờ 5 phút.
+73 - 附近 - fùjìn - gần đây - 我家附近有家超市。 - Wǒ jiā fùjìn yǒu jiā chāoshì. - Gần nhà tôi có một cái siêu thị.
+74 - 复习 - fùxí - ôn tập - 我要回家复习课文。 - Wǒ yào huí jiā fùxí kèwén. - Tôi phải về nhà ôn tập bài khóa.
+75 - 干净 - gānjìng - sạch sẽ - 这间教室很干净。 - Zhè jiān jiàoshì hěn gānjìng. - Phòng học này rất sạch sẽ.
+76 - 敢 - gǎn - dám - 我不敢一个人出门。 - Wǒ bù gǎn yīgè rén chūmén. - Tôi không dám ra ngoài một mình.
+77 - 感冒 - gǎnmào - cảm lạnh - 天气冷了，别感冒。 - Tiānqì lěngle, bié gǎnmào. - Trời lạnh rồi, đừng để bị cảm.
+78 - 刚才 - gāngcái - vừa mới - 刚才谁来过办公室？ - Gāngcái shéi láiguò bàngōngshì? - Vừa nãy ai đến văn phòng vậy?
+79 - 跟 - gēn - cùng với - 我想跟你一起去。 - Wǒ xiǎng gēn nǐ yīqǐ qù. - Tôi muốn đi cùng với bạn.
+80 - 根据 - gēnjù - căn cứ - 根据天气预报有雨。 - Gēnjù tiānqì yùbào yǒu yǔ. - Theo dự báo thời tiết thì có mưa.
+81 - 更 - gèng - hơn - 明天会变得更好。 - Míngtiān huì biàn de gèng hǎo. - Ngày mai sẽ trở nên tốt đẹp hơn.
+82 - 公园 - gōngyuán - công viên - 我们去公园散步吧。 - Wǒmen qù gōngyuán sànbù ba. - Chúng ta đi dạo công viên đi.
+83 - 故事 - gùshì - câu chuyện - 爷爷给我讲了个故事。 - Yéye gěi wǒ jiǎngle gè gùshì. - Ông nội kể cho tôi nghe một câu chuyện.
+84 - 刮风 - guā fēng - gió thổi - 外面刮风了，快进来。 - Wàimiàn guā fēng le, kuài jìnlái. - Bên ngoài gió thổi rồi, mau vào đi.
+85 - 关 - guān - đóng, tắt - 请记得把门关上。 - Qǐng jìdé bǎ mén guānshàng. - Hãy nhớ đóng cửa lại nhé.
+86 - 关系 - guānxì - quan hệ - 他们两人的关系很好。 - Tāmen liǎng rén de guānxì hěn hǎo. - Quan hệ giữa hai người họ rất tốt.
+87 - 关心 - guānxīn - quan tâm - 爸爸很关心我的学习。 - Bàba hěn guānxīn wǒ de xuéxí. - Bố rất quan tâm đến việc học của tôi.
+88 - 关于 - guānyú - về - 这是关于他的故事。 - Zhè shì guānyú tā de gùshì. - Đây là câu chuyện về anh ấy.
+89 - 国家 - guójiā - quốc gia - 世界有很多国家。 - Shìjiè yǒu hěnduō guójiā. - Thế giới có rất nhiều quốc gia.
+90 - 果汁 - guǒzhī - nước ép - 我想喝新鲜果汁。 - Wǒ xiǎng hē xīnxian guǒzhī. - Tôi muốn uống nước ép tươi.
+91 - 过去 - guòqù - quá khứ - 这已经成为过去了。 - Zhè yǐjīng chéngwéi guòqù le. - Chuyện này đã trở thành quá khứ rồi.
+92 - 还是 - háishì - hay là - 喝咖啡还是喝茶？ - Hē kāfēi háishì hē chá? - Uống cà phê hay là uống trà?
+93 - 害怕 - hàipà - sợ - 别害怕，我在这儿。 - Bié hàipà, wǒ zài zhèr. - Đừng sợ, có tôi ở đây rồi.
+94 - 河 - hé - sông - 河里的水非常清。 - Hé lǐ de shuǐ fēicháng qīng. - Nước dưới sông rất trong.
+95 - 黑板 - hēibǎn - bảng - 请大家看黑板。 - Qǐng dàjiā kàn hēibǎn. - Mời mọi người nhìn lên bảng.
+96 - 护照 - hùzhào - hộ chiếu - 我的护照在包里。 - Wǒ de hùzhào zài bāo lǐ. - Hộ chiếu của tôi ở trong túi.
+97 - 花 - huā - hoa/tiêu - 公园里的花开了。 - Gōngyuán lǐ de huā kāile. - Hoa trong công viên nở rồi.
+98 - 花园 - huāyuán - vườn hoa - 这个花园很漂亮。 - Zhège huāyuán hěn piàoliang. - Khu vườn này rất đẹp.
+99 - 画 - huà - vẽ/tranh - 他正在画画儿。 - Tā zhèngzài huà huàr. - Anh ấy đang vẽ tranh.
+100 - 坏 - huài - hỏng, xấu - 我的笔记本坏了。 - Wǒ de bǐjìběn huàile. - Máy tính xách tay của tôi bị hỏng rồi.
+101 - 还 - huán - trả lại - 请把这本书还给我。 - Qǐng bǎ zhè běn shū huán gěi wǒ. - Hãy trả cuốn sách này cho tôi.
+102 - 环境 - huánjìng - môi trường - 这里的环境很不错。 - Zhèlǐ de huánjìng hěn bùcuò. - Môi trường ở đây rất tốt.
+103 - 换 - huàn - đổi - 我想去银行换点钱。 - Wǒ xiǎng qù yínháng huàn diǎn qián. - Tôi muốn đi ngân hàng đổi ít tiền.
+104 - 黄 - huáng - màu vàng - 她穿着一件黄裙子。 - Tā chuānzhe yī jiàn huáng qúnzi. - Cô ấy đang mặc một chiếc váy vàng.
+105 - 会议 - huìyì - cuộc họp - 会议两点正式开始。 - Huìyì liǎng diǎn zhèngshì kāishǐ. - Cuộc họp đúng 2 giờ sẽ bắt đầu.
+106 - 或者 - huòzhě - hoặc là - 喝茶或者咖啡都可以。 - Hē chá huòzhě kāfēi dōu kěyǐ. - Uống trà hoặc cà phê đều được.
+107 - 机会 - jīhuì - cơ hội - 这是一个好机会。 - Zhè shì yīgè hǎo jīhuì. - Đây là một cơ hội tốt.
+108 - 几乎 - jīhū - hầu như - 我几乎忘了这件事。 - Wǒ jīhū wàngle zhè jiàn shì. - Tôi suýt nữa thì quên việc này.
+109 - 极 - jí - cực kỳ - 今天的菜好极了！ - Jīntiān de cài hǎo jíle! - Món ăn hôm nay ngon cực kỳ!
+110 - 记得 - jìdé - nhớ - 你还记得我名字吗？ - Nǐ hái jìdé wǒ míngzì ma? - Bạn còn nhớ tên tôi không?
+111 - 季节 - jìjié - mùa - 你最喜欢哪个季节？ - Nǐ zuì xǐhuān nǎge jìjié? - Bạn thích nhất là mùa nào?
+112 - 检查 - jiǎnchá - kiểm tra - 医生在检查我身体。 - Yīshēng zài jiǎnchá wǒ shēntǐ. - Bác sĩ đang kiểm tra cơ thể tôi.
+113 - 简单 - jiǎndān - đơn giản - 这个问题很简单。 - Zhège wèntí hěn jiǎndān. - Vấn đề này rất đơn giản.
+114 - 健康 - jiànkāng - khỏe mạnh - 祝你身体永远健康。 - Zhù nǐ shēntǐ yǒngyuǎn jiànkāng. - Chúc bạn sức khỏe luôn dồi dào.
+115 - 见面 - jiànmiàn - gặp mặt - 我们在哪儿见面？ - Wǒmen zài nǎ'er jiànmiàn? - Chúng ta gặp nhau ở đâu?
+116 - 讲 - jiǎng - nói, giảng - 老师在讲中国历史。 - Lǎoshī zài jiǎng Zhōngguó lìshǐ. - Thầy giáo đang giảng lịch sử Trung Quốc.
+117 - 教 - jiāo - dạy - 他教我们学汉语。 - Tā jiāo wǒmen xué Hànyǔ. - Anh ấy dạy chúng tôi học tiếng Trung.
+118 - 角 - jiǎo - hào/góc - 这支笔三块五角。 - Zhè zhī bǐ sān kuài wǔ jiǎo. - Chiếc bút này giá 3 tệ 5 hào.
+119 - 脚 - jiǎo - chân - 走太久了，脚很疼。 - Zǒu tài jiǔle, jiǎo hěn téng. - Đi lâu quá rồi, chân rất đau.
+120 - 接 - jiē - nhận/nghe - 快去接个电话吧。 - Kuài qù jiē gè diànhuà ba. - Mau đi nghe điện thoại đi.
+121 - 街道 - jiēdào - đường phố - 这条街道很干净。 - Zhè tiáo jiēdào hěn gānjìng. - Con đường này rất sạch sẽ.
+122 - 结婚 - jiéhūn - kết hôn - 他们明年就要结婚。 - Tāmen míngnián jiù yào jiéhūn. - Năm sau họ sẽ kết hôn.
+123 - 结束 - jiéshù - kết thúc - 比赛什么时候结束？ - Bǐsài shénme shíhòu jiéshù? - Trận đấu khi nào thì kết thúc?
+124 - 节目 - jiémù - chương trình - 今晚的节目好看吗？ - Jīnwǎn de jiémù hǎokàn ma? - Chương trình tối nay có hay không?
+125 - 节日 - jiérì - ngày lễ - 春节是重要的节日。 - Chūnjié shì zhòngyào de jiérì. - Tết Nguyên Đán là ngày lễ quan trọng.
+126 - 解决 - jiějué - giải quyết - 谁能解决这个问题？ - Shéi néng jiějué zhège wèntí? - Ai có thể giải quyết vấn đề này?
+127 - 借 - jiè - mượn - 我想借一下你的笔。 - Wǒ xiǎng jiè yīxià nǐ de bǐ. - Tôi muốn mượn bút của bạn một chút.
+128 - 经常 - jīngcháng - thường xuyên - 我经常去公园散步。 - Wǒ jīngcháng qù gōngyuán sànbù. - Tôi thường xuyên đi công viên dạo bộ.
+129 - 经过 - jīngguò - trải qua - 我每天经过那家店。 - Wǒ měitiān jīngguò nà jiā diàn. - Mỗi ngày tôi đều đi ngang qua cửa hàng đó.
+130 - 经历 - jīnglì - kinh nghiệm - 这是一段难忘经历。 - Zhè shì yī duàn nánwàng jīnglì. - Đây là một trải nghiệm khó quên.
+131 - 久 - jiǔ - lâu - 我们认识很久了。 - Wǒmen rènshì hěnjiǔle. - Chúng tôi quen nhau rất lâu rồi.
+132 - 旧 - jiù - cũ - 这件衣服太旧了。 - Zhè jiàn yīfú tài jiùle. - Chiếc áo này cũ quá rồi.
+133 - 举行 - jǔxíng - tổ chức - 会议在上海举行。 - Huìyì zài Shànghǎi jǔxíng. - Cuộc họp được tổ chức tại Thượng Hải.
+134 - 句子 - jùzi - câu - 请用这个词写个句。 - Qǐng yòng zhège cí xiě gè jù. - Hãy dùng từ này viết một câu.
+135 - 决定 - juédìng - quyết định - 我决定去中国留学。 - Wǒ juédìng qù Zhōngguó liúxué. - Tôi quyết định đi Trung Quốc du học.
+136 - 可爱 - kě'ài - đáng yêu - 你的小狗真可爱。 - Nǐ de xiǎogǒu zhēn kě'ài. - Chú chó nhỏ của bạn thật đáng yêu.
+137 - 刻 - kè - khắc - 现在是三点一刻。 - Xiànzài shì sān diǎn yī kè. - Bây giờ là 3 giờ 15 phút.
+138 - 客人 - kèrén - khách - 家里今天有客人。 - Jiālǐ jīntiān yǒu kèrén. - Nhà hôm nay có khách.
+139 - 空调 - kòngtiáo - điều hòa - 请把空调关上吧。 - Qǐng bǎ kòngtiáo guānshàng ba. - Hãy tắt điều hòa đi nhé.
+140 - 口 - kǒu - miệng/ngụm - 我只想喝一口水。 - Wǒ zhǐ xiǎng hē yī kǒu shuǐ. - Tôi chỉ muốn uống một ngụm nước.
+141 - 哭 - kū - khóc - 小妹妹为什么哭？ - Xiǎo mèimei wèishéme kū? - Tại sao em gái nhỏ lại khóc?
+142 - 裤子 - kùzi - quần - 这条裤子太长了。 - Zhè tiáo kùzi tài chángle. - Chiếc quần này dài quá rồi.
+143 - 筷子 - kuàizi - đũa - 他不会用筷子。 - Tā bù huì yòng kuàizi. - Anh ấy không biết dùng đũa.
+144 - 蓝 - lán - màu xanh - 蓝色的天空很美。 - Lánsè de tiānkōng hěn měi. - Bầu trời màu xanh rất đẹp.
+145 - 老 - lǎo - già/cũ - 我爷爷已经老了。 - Wǒ yéye yǐjīng lǎole. - Ông nội tôi đã già rồi.
+146 - 离开 - líkāi - rời khỏi - 他已经离开北京了。 - Tā yǐjīng líkāi Běijīngle. - Anh ấy đã rời khỏi Bắc Kinh rồi.
+147 - 礼物 - lǐwù - quà - 这是送给你的礼物。 - Zhè shì sòng gěi nǐ de lǐwù. - Đây là món quà tặng cho bạn.
+148 - 历史 - lìshǐ - lịch sử - 中国历史很有趣。 - Zhōngguó lìshǐ hěn yǒuqù. - Lịch sử Trung Quốc rất thú vị.
+149 - 脸 - liǎn - mặt - 你的脸怎么红了？ - Nǐ de liǎn zěnme hóngle? - Sao mặt bạn lại đỏ lên thế?
+150 - 练习 - liànxí - luyện tập - 我要做语法练习。 - Wǒ yào zuò yǔfǎ liànxí. - Tôi phải làm bài tập ngữ pháp.
+151 - 辆 - liàng - chiếc (xe) - 弟弟有一辆白色的车。 - Dìdi yǒu yī liàng báisè de chē. - Em trai có một chiếc xe màu trắng.
+152 - 了解 - liǎojiě - hiểu rõ - 我非常了解他的性格。 - Wǒ fēicháng liǎojiě tā de xìnggé. - Tôi rất hiểu tính cách của anh ấy.
+153 - 邻居 - línjū - hàng xóm - 我的邻居是个热情的人。 - Wǒ de línjū shì gè rèqíng de rén. - Hàng xóm của tôi là người nhiệt tình.
+154 - 楼 - lóu - tòa nhà - 我家住在三楼，没电梯。 - Wǒ jiā zhù zài sān lóu, méi diàntī. - Nhà tôi ở tầng 3, không có thang máy.
+155 - 马 - mǎ - con ngựa - 他在草地上练习骑马。 - Tā zài cǎodì shàng liànxí qí mǎ. - Anh ấy đang luyện cưỡi ngựa trên bãi cỏ.
+156 - 马上 - mǎshàng - ngay lập tức - 请等一下，我马上就到。 - Qǐng děng yīxià, wǒ mǎshàng jiù dào. - Xin đợi một chút, tôi đến ngay đây.
+157 - 满意 - mǎnyì - hài lòng - 老师对我的成绩很满意。 - Lǎoshī duì wǒ de chéngjì hěn mǎnyì. - Thầy giáo rất hài lòng với thành tích của tôi.
+158 - 帽子 - màozi - mũ - 外面太冷了，戴上帽子。 - Wàimiàn tài lěngle, dàishàng màozi. - Bên ngoài lạnh quá, đội mũ vào đi.
+159 - 米 - mǐ - gạo, mét - 这家超市的小米很好吃。 - Zhè jiā chāoshì de xiǎomǐ hěn hǎochī. - Gạo của siêu thị này rất ngon.
+160 - 面包 - miànbāo - bánh mì - 我早餐经常吃牛奶面包。 - Wǒ zǎocān jīngcháng chī niúnǎi miànbāo. - Bữa sáng tôi thường ăn sữa và bánh mì.
+161 - 面条 - miàntiáo - mì sợi - 我最喜欢吃妈妈煮的面。 - Wǒ zuì xǐhuān chī māma zhǔ de miàn. - Tôi thích ăn mì mẹ nấu nhất.
+162 - 明白 - míngbái - hiểu rõ - 听了讲解，我终于明白了。 - Tīngle jiǎngjiě, wǒ zhōngyú míngbáile. - Nghe giảng xong, cuối cùng tôi cũng hiểu rồi.
+163 - 拿 - ná - cầm, lấy - 请帮我拿一下那个包。 - Qǐng bāng wǒ ná yīxià nàge bāo. - Phiền bạn lấy giúp tôi cái túi đó với.
+164 - 奶奶 - nǎinai - bà nội - 奶奶正在厨房里做饭。 - Nǎinai zhèngzài chúfáng lǐ zuò fàn. - Bà nội đang nấu cơm ở trong bếp.
+165 - 南 - nán - phía nam - 我们学校在城市的南边。 - Wǒmen xuéxiào zài chéngshì de nánbian. - Trường chúng tôi nằm ở phía nam thành phố.
+166 - 难 - nán - khó - 这道题对他来说并不难。 - Zhè dào tí duì tā lái shuō bìng bù nán. - Câu hỏi này đối với anh ấy mà nói không hề khó.
+167 - 难过 - nánguò - buồn - 别难过了，一切都会好的。 - Bié nánguòle, yīqiè dōu huì hǎo de. - Đừng buồn nữa, mọi chuyện rồi sẽ ổn thôi.
+168 - 年级 - niánjí - lớp/năm học - 他现在是小学三年级。 - Tā xiànzài shì xiǎoxué sān niánjí. - Hiện tại cậu ấy đang là học sinh lớp 3.
+169 - 年轻 - niánqīng - trẻ - 他的妈妈看起来很年轻。 - Tā de māma kàn qǐlái hěn niánqīng. - Mẹ của cậu ấy trông rất trẻ.
+170 - 鸟 - niǎo - chim - 树上有几只鸟在唱歌。 - Shù shàng yǒu jǐ zhī niǎo zài chànggē. - Trên cây có vài con chim đang hót.
+171 - 努力 - nǔlì - nỗ lực - 只要努力，你就能成功。 - Zhǐyào nǔlì, nǐ jiù néng chénggōng. - Chỉ cần nỗ lực, bạn sẽ thành công.
+172 - 爬山 - páshān - leo núi - 我们周末打算去爬山。 - Wǒmen zhōumò dǎsuàn qù páshān. - Cuối tuần chúng tôi dự định đi leo núi.
+173 - 盘子 - pánzi - đĩa - 请把桌上的盘子洗干净。 - Qǐng bǎ zhuō shàng de pánzi xǐ gānjìng. - Hãy rửa sạch đĩa ở trên bàn nhé.
+174 - 胖 - pàng - béo - 最近我胖了三公斤。 - Zuìjìn wǒ pàngle sān gōngjīn. - Dạo này tôi béo lên 3 kg rồi.
+175 - 啤酒 - píjiǔ - bia - 爸爸不喜欢喝啤酒。 - Bàba bù xǐhuān hē píjiǔ. - Bố không thích uống bia.
+176 - 葡萄 - pútao - nho - 这些葡萄又大又甜。 - Zhèxiē pútao yòu dà yòu tián. - Những quả nho này vừa to vừa ngọt.
+177 - 普通话 - pǔtōnghuà - tiếng Phổ thông - 他的普通话讲得很好。 - Tā de pǔtōnghuà jiǎng dé hěn hǎo. - Tiếng Phổ thông của anh ấy nói rất tốt.
+178 - 骑 - qí - cưỡi, đi - 他每天骑自行车上学。 - Tā měitiān qí zìxíngchē shàngxué. - Mỗi ngày cậu ấy đều đạp xe đi học.
+179 - 其实 - qíshí - thực ra - 其实，我并不认识他。 - Qíshí, wǒ bìng bù rènshì tā. - Thực ra, tôi chẳng quen biết anh ta.
+180 - 其他 - qítā - khác - 除了他，其他人都在。 - Chúle tā, qítā rén dōu zài. - Ngoại trừ anh ta, những người khác đều ở đây.
+181 - 奇怪 - qíguài - kỳ lạ - 发生这种事真奇怪。 - Fāshēng zhè zhǒng shì zhēn qíguài. - Chuyện này xảy ra thật là kỳ lạ.
+182 - 铅笔 - qiānbǐ - bút chì - 谁有铅笔借我用一下？ - Shéi yǒu qiānbǐ jiè wǒ yòng yīxià? - Ai có bút chì cho tôi mượn một chút?
+183 - 清楚 - qīngchǔ - rõ ràng - 这张照片拍得不清楚。 - Zhè zhāng zhàopiàn pāi dé bù qīngchǔ. - Bức ảnh này chụp không rõ nét.
+184 - 秋 - qiū - mùa thu - 秋天是一年最美的季节。 - Qiūtiān shì yī nián zuì měi de jìjié. - Mùa thu là mùa đẹp nhất trong năm.
+185 - 裙子 - qúnzi - váy - 她穿这条裙子真漂亮。 - Tā chuān zhè tiáo qúnzi zhēn piàoliang. - Cô ấy mặc chiếc váy này thật đẹp.
+186 - 然后 - ránhòu - sau đó - 先洗手，然后去吃饭。 - Xiān xǐshǒu, ránhòu qù chīfàn. - Rửa tay trước, sau đó mới đi ăn cơm.
+187 - 热情 - rèqíng - nhiệt tình - 这里的服务员很热情。 - Zhèlǐ de fúwùyuán hěn rèqíng. - Nhân viên phục vụ ở đây rất nhiệt tình.
+188 - 认真 - rènzhēn - nghiêm túc - 他做事一直很认真。 - Tā zuòshì yīzhí hěn rènzhēn. - Anh ấy làm việc luôn rất nghiêm túc.
+189 - 认为 - rènwéi - cho rằng - 我认为这个办法很好。 - Wǒ rènwéi zhège bànfǎ hěn hǎo. - Tôi cho rằng cách này rất tốt.
+190 - 容易 - róngyì - dễ dàng - 学好一门外语不容易。 - Xuéhǎo yī mén wàiyǔ bù róngyì. - Học tốt một ngoại ngữ không hề dễ.
+191 - 如果 - rúguǒ - nếu như - 如果下雨，我就不去了。 - Rúguǒ xiàyǔ, wǒ jiù bù qùle. - Nếu trời mưa, tôi sẽ không đi nữa.
+192 - 伞 - sǎn - ô, dù - 出门记得带一把伞。 - Chūmén jìdé dài yī bǎ sǎn. - Ra ngoài nhớ mang theo một chiếc ô.
+193 - 上网 - shàngwǎng - lên mạng - 爷爷学会了上网看新闻。 - Yéye xuéhuìle shàngwǎng kàn xīnwén. - Ông nội đã học được cách lên mạng xem tin tức.
+194 - 生气 - shēngqì - giận dữ - 别生气了，是我不对。 - Bié shēngqìle, shì wǒ bùduì. - Đừng giận nữa, là tôi sai rồi.
+195 - 声音 - shēngyīn - âm thanh - 这个人的声音很好听。 - Zhège rén de shēngyīn hěn hǎotīng. - Giọng của người này rất hay.
+196 - 使 - shǐ - khiến, làm cho - 读书使人变得更聪明。 - Dúshū shǐ rén biàn de gèng cōngmíng. - Đọc sách khiến con người ta trở nên thông minh hơn.
+197 - 世界 - shìjiè - thế giới - 我想去看看这个世界。 - Wǒ xiǎng qù kàn kàn zhège shìjiè. - Tôi muốn đi ngắm nhìn thế giới này.
+198 - 瘦 - shòu - gầy - 她最近瘦了很多。 - Tā zuìjìn shòule hěnduō. - Dạo này cô ấy gầy đi rất nhiều.
+199 - 舒服 - shūfu - thoải mái - 躺在床上真舒服。 - Tǎng zài chuángshàng zhēn shūfu. - Nằm trên giường thật là thoải mái.
+200 - 叔叔 - shūshu - chú - 叔叔送我一件礼物。 - Shūshu sòng wǒ yī jiàn lǐwù. - Chú tặng tôi một món quà.
+201 - 树 - shù - cây - 树上有很多红苹果。 - Shù shàng yǒu hěnduō hóng píngguǒ. - Trên cây có rất nhiều táo đỏ.
+202 - 数学 - shùxué - toán học - 数学课非常有趣。 - Shùxué kè fēicháng yǒuqù. - Giờ Toán vô cùng thú vị.
+203 - 刷牙 - shuāyá - đánh răng - 睡觉前要记得刷牙。 - Shuìjiào qián yào jìdé shuāyá. - Trước khi ngủ phải nhớ đánh răng.
+204 - 双 - shuāng - đôi - 我想买双新皮鞋。 - Wǒ xiǎng mǎi shuāng xīn píxié. - Tôi muốn mua một đôi giày da mới.
+205 - 水平 - shuǐpíng - trình độ - 他的汉语水平很高。 - Tā de Hànyǔ shuǐpíng hěn gāo. - Trình độ tiếng Trung của anh ấy rất cao.
+206 - 司机 - sījī - tài xế - 这位司机开车很稳。 - Zhè wèi sījī kāichē hěn wěn. - Vị tài xế này lái xe rất điềm đạm.
+207 - 虽然 - suīrán - tuy rằng - 虽然累，但我很高兴。 - Suīrán lèi, dàn wǒ hěn gāoxìng. - Tuy mệt nhưng tôi rất vui.
+208 - 太阳 - tàiyáng - mặt trời - 今天的太阳很大。 - Jīntiān de tàiyáng hěn dà. - Mặt trời hôm nay rất lớn.
+209 - 糖 - táng - kẹo, đường - 医生说不能吃太多糖。 - Yīshēng shuō bùnéng chī tài duō táng. - Bác sĩ nói không được ăn quá nhiều kẹo.
+210 - 特别 - tèbié - đặc biệt - 那个女孩特别漂亮。 - Nàge nǚhái tèbié piàoliang. - Cô gái đó đặc biệt xinh đẹp.
+211 - 疼 - téng - đau - 我的腿突然有点儿疼。 - Wǒ de tuǐ tūrán yǒudiǎnr téng. - Chân của tôi đột nhiên hơi đau.
+212 - 提高 - tígāo - nâng cao - 提高成绩需要努力。 - Tígāo chéngjì xūyào nǔlì. - Nâng cao thành tích cần phải nỗ lực.
+213 - 体育 - tǐyù - thể dục - 他经常参加体育运动。 - Tā jīngcháng cānjiā tǐyù yùndòng. - Anh ấy thường xuyên tham gia vận động thể dục.
+214 - 甜 - tián - ngọt - 这些葡萄真的特别甜。 - Zhèxiē pútáo zhēnde tèbié tián. - Những quả nho này thực sự đặc biệt ngọt.
+215 - 条 - tiáo - sợi, cái - 那条裙子很适合你。 - Nà tiáo qúnzi hěn shìhé nǐ. - Chiếc váy đó rất hợp với bạn.
+216 - 同事 - tóngshì - đồng nghiệp - 同事们都对我很好。 - Tóngshìmen dōu duì wǒ hěn hǎo. - Các đồng nghiệp đều đối xử rất tốt với tôi.
+217 - 同意 - tóngyì - đồng ý - 爸爸不同意我去旅游。 - Bàba bù tóngyì wǒ qù lǚyóu. - Bố không đồng ý cho tôi đi du lịch.
+218 - 头发 - tóufa - tóc - 她的头发长得很漂亮。 - Tā de tóufǎ zhǎng de hěn piàoliang. - Tóc của cô ấy mọc rất đẹp.
+219 - 突然 - tūrán - đột nhiên - 天气突然变得很冷。 - Tiānqì tūrán biàn de hěn lěng. - Thời tiết đột nhiên trở nên rất lạnh.
+220 - 图书馆 - túshūguǎn - thư viện - 我每天去图书馆看书。 - Wǒ měitiān qù túshūguǎn kàn shū. - Mỗi ngày tôi đều đến thư viện đọc sách.
+221 - 腿 - tuǐ - chân - 他的腿长，跑得很快。 - Tā de tuǐ cháng, pǎo de hěn kuài. - Chân anh ấy dài, chạy rất nhanh.
+222 - 完成 - wánchéng - hoàn thành - 我终于完成了作业。 - Wǒ zhōngyú wánchéngle zuòyè. - Cuối cùng tôi cũng hoàn thành bài tập rồi.
+223 - 碗 - wǎn - bát - 请给我一碗米饭。 - Qǐng gěi wǒ yī wǎn mǐfàn. - Xin cho tôi một bát cơm.
+224 - 万 - wàn - vạn - 这台电脑一万多块。 - Zhè tái diànnǎo yī wàn duō kuài. - Cái máy tính này hơn một vạn tệ.
+225 - 忘记 - wàngjì - quên - 别忘记明天有会议。 - Bié wàngjì míngtiān yǒu huìyì. - Đừng quên ngày mai có cuộc họp.
+226 - 位 - wèi - vị, ngài - 这位是我的汉语老师。 - Zhè wèi shì wǒ de Hànyǔ lǎoshī. - Vị này là thầy giáo tiếng Trung của tôi.
+227 - 为 - wèi - vì - 我在为你感到高兴。 - Wǒ zài wèi nǐ gǎndào gāoxìng. - Tôi đang cảm thấy vui cho bạn.
+228 - 为了 - wèile - để - 为了健康要多运动。 - Wèile jiànkāng yào duō yùndòng. - Để khỏe mạnh cần vận động nhiều hơn.
+229 - 文化 - wénhuà - văn hóa - 我对中国文化感兴趣。 - Wǒ duì Zhōngguó wénhuà gǎn xìngqù. - Tôi có hứng thú với văn hóa Trung Quốc.
+230 - 西 - xī - phía tây - 太阳从西边落下了。 - Tàiyáng cóng xībiān luòxiàle. - Mặt trời lặn ở phía tây rồi.
+231 - 习惯 - xíguàn - thói quen - 早起是个好习惯。 - Zǎoqǐ shì gè hǎo xíguàn. - Dậy sớm là một thói quen tốt.
+232 - 洗手间 - xǐshǒujiān - nhà vệ sinh - 请问，洗手间在哪儿？ - Qǐngwèn, xǐshǒujiān zài nǎr? - Cho hỏi, nhà vệ sinh ở đâu ạ?
+233 - 洗澡 - xǐzǎo - tắm - 我洗个澡就去睡觉。 - Wǒ xǐ gè zǎo jiù qù shuìjiào. - Tôi tắm một cái rồi đi ngủ luôn.
+234 - 喜欢 - xǐhuān - thích - 我很喜欢吃中国菜。 - Wǒ hěn xǐhuān chī Zhōngguócài. - Tôi rất thích ăn món Trung Quốc.
+235 - 现在 - xiànzài - hiện tại - 现在是下午三点。 - Xiànzài shì xiàwǔ sān diǎn. - Bây giờ là 3 giờ chiều.
+236 - 香蕉 - xiāngjiāo - chuối - 桌上放着几个香蕉。 - Zhuō shàng fàngzhe jǐ gè xiāngjiāo. - Trên bàn có đặt mấy quả chuối.
+237 - 相同 - xiāngtóng - giống nhau - 他们的兴趣不相同。 - Tāmen de xìngqù bù xiāngtóng. - Sở thích của họ không giống nhau.
+238 - 相信 - xiāngxìn - tin tưởng - 我相信你一定能行。 - Wǒ xiāngxìn nǐ yīdìng néng xíng. - Tôi tin rằng bạn nhất định có thể làm được.
+239 - 像 - xiàng - giống - 他的性格很像爸爸。 - Tā de xìnggé hěn xiàng bàba. - Tính cách của cậu ấy rất giống bố.
+240 - 小心 - xiǎoxīn - cẩn thận - 下雨路滑，走快小心。 - Xiàyǔ lù huá, zǒu kuài xiǎoxīn. - Trời mưa đường trơn, đi mau phải cẩn thận.
+241 - 校长 - xiàozhǎng - hiệu trưởng - 校长正在开会议。 - Xiàozhǎng zhèngzài kāi huìyì. - Hiệu trưởng đang họp.
+242 - 鞋 - xié - giày - 这双鞋有点儿小。 - Zhè shuāng xié yǒudiǎnr xiǎo. - Đôi giày này hơi nhỏ một chút.
+243 - 新闻 - xīnwén - tin tức - 他每天晚上看新闻。 - Tā měitiān wǎnshàng kàn xīnwén. - Anh ấy xem tin tức mỗi tối.
+244 - 新鲜 - xīnxiān - tươi mới - 这里的空气很新鲜。 - Zhèlǐ de kōngqì hěn xīnxiān. - Không khí ở đây rất trong lành.
+245 - 信 - xìn - thư, tin - 我收到了一封信。 - Wǒ shōudàole yī fēng xìn. - Tôi đã nhận được một bức thư.
+246 - 行里箱 - xínglǐxiāng - vali - 你的行李箱太重了。 - Nǐ de xínglǐxiāng tài zhòngle. - Vali của bạn nặng quá rồi.
+247 - 兴趣 - xìngqù - hứng thú - 姐姐对画画感兴趣。 - Jiějiě duì huàhuà gǎn xìngqù. - Chị gái có hứng thú với việc vẽ tranh.
+248 - 熊猫 - xióngmāo - gấu trúc - 熊猫是中国的国宝。 - Xióngmāo shì Zhōngguó de guóbǎo. - Gấu trúc là quốc bảo của Trung Quốc.
+249 - 需要 - xūyào - cần - 学习英语需要多读。 - Xuéxí Yīngyǔ xūyào duō dú. - Học tiếng Anh cần đọc nhiều hơn.
+250 - 选择 - xuǎnzé - lựa chọn - 这是一个好的选择。 - Zhè shì yīgè hǎo de xuǎnzé. - Đây là một sự lựa chọn tốt.
+251 - 眼镜 - yǎnjìng - kính - 我的眼镜找不到了。 - Wǒ de yǎnjìng zhǎo bù dào le. - Kính của tôi không tìm thấy rồi.
+252 - 要求 - yāoqiú - yêu cầu - 老师的要求并不高。 - Lǎoshī de yāoqiú bìng bù gāo. - Yêu cầu của thầy giáo không cao.
+253 - 爷爷 - yéye - ông nội - 爷爷每天去公园散步。 - Yéye měitiān qù gōngyuán sànbù. - Ông nội đi dạo công viên mỗi ngày.
+254 - 一定 - yīdìng - nhất định - 明天的会议你一定要去。 - Míngtiān de huìyì nǐ yīdìng yào qù. - Cuộc họp ngày mai bạn nhất định phải đi.
+255 - 一共 - yīgòng - tổng cộng - 这些水果一共二十块。 - Zhèxiē shuǐguǒ yīgòng èrshí kuài. - Những hoa quả này tổng cộng 20 tệ.
+256 - 一会儿 - yīhuìr - một lát - 请在这儿等我一会儿。 - Qǐng zài zhèr děng wǒ yīhuìr. - Xin hãy đợi tôi ở đây một lát.
+257 - 一样 - yīyàng - giống nhau - 这两支铅笔是一样的。 - Zhè liǎng zhī qiānbǐ shì yīyàng de. - Hai chiếc bút chì này là giống nhau.
+258 - 以后 - yǐhòu - sau này - 下课以后我要去图书馆。 - Xiàkè yǐhòu wǒ yào qù túshūguǎn. - Sau khi tan học tôi sẽ đi thư viện.
+259 - 以前 - yǐqián - trước đây - 他以前在银行工作。 - Tā yǐqián zài yínháng gōngzuò. - Trước đây anh ấy làm việc ở ngân hàng.
+260 - 以为 - yǐwéi - cho rằng - 我以为你已经回去了。 - Wǒ yǐwéi nǐ yǐjīng huíqù le. - Tôi tưởng là bạn đã về rồi.
+261 - 一般 - yībān - thông thường - 这个电影水平很一般。 - Zhège diànyǐng shuǐpíng hěn yībān. - Trình độ của bộ phim này rất bình thường.
+262 - 一边 - yībiān - vừa... vừa... - 他喜欢一边喝茶一边看书。 - Tā xǐhuān yībiān hē chá yībiān kàn shū. - Anh ấy thích vừa uống trà vừa đọc sách.
+263 - 一直 - yīzhí - luôn luôn - 今天早上的雨一直在下。 - Jīntiān zǎoshang de yǔ yīzhí zài xià. - Cơn mưa sáng nay cứ mưa suốt.
+264 - 音乐 - yīnyuè - âm nhạc - 这种音乐非常好听。 - Zhè zhǒng yīnyuè fēicháng hǎotīng. - Loại nhạc này vô cùng hay.
+265 - 银行 - yínháng - ngân hàng - 银行就在超市对面。 - Yínháng jiù zài chāoshì duìmiàn. - Ngân hàng nằm ngay đối diện siêu thị.
+266 - 应该 - yīnggāi - nên - 你不应该跟妈妈生气。 - Nǐ bù yīnggāi gēn māma shēngqì. - Bạn không nên giận dỗi với mẹ.
+267 - 影响 - yǐngxiǎng - ảnh hưởng - 别影响其他人休息。 - Bié yǐngxiǎng qítā rén xiūxi. - Đừng ảnh hưởng đến người khác nghỉ ngơi.
+268 - 用 - yòng - dùng - 请用普通话回答问题。 - Qǐng yòng pǔtōnghuà huídá wèntí. - Hãy dùng tiếng Phổ thông trả lời câu hỏi.
+269 - 游戏 - yóuxì - trò chơi - 这个游戏很有意思。 - Zhège yóuxì hěn yǒuyìsi. - Trò chơi này rất thú vị.
+270 - 又 - yòu - lại, vừa - 今天他又迟到了。 - Jīntiān tā yòu chídào le. - Hôm nay anh ấy lại đi muộn rồi.
+271 - 有名 - yǒumíng - nổi tiếng - 这位医生非常有名。 - Zhè wèi yīshēng fēicháng yǒumíng. - Vị bác sĩ này vô cùng nổi tiếng.
+272 - 遇到 - yùdào - gặp phải - 刚才我遇到了张老师。 - Gāngcái wǒ yùdào le Zhāng lǎoshī. - Vừa nãy tôi đã gặp được thầy Trương.
+273 - 月亮 - yuèliàng - mặt trăng - 今天的月亮圆极了。 - Jīntiān de yuèliàng yuán jí le. - Trăng hôm nay tròn cực kỳ.
+274 - 云 - yún - mây - 天空有很多白云。 - Tiānkōng yǒu hěnduō báiyún. - Bầu trời có rất nhiều mây trắng.
+275 - 站 - zhàn - đứng, trạm - 下一站就是火车站。 - Xià yī zhàn jiùshì huǒchēzhàn. - Trạm tiếp theo chính là ga tàu hỏa.
+276 - 长 - cháng - dài - 这条裤子有点儿长。 - Zhè tiáo kùzi yǒudiǎnr cháng. - Chiếc quần này hơi dài một chút.
+277 - 着急 - zhāojí - lo lắng - 别着急，我会帮你的。 - Bié zhāojí, wǒ huì bāng nǐ de. - Đừng lo lắng, tôi sẽ giúp bạn.
+278 - 照顾 - zhàogu - chăm sóc - 你要照顾好自己。 - Nǐ yào zhàogù hǎo zìjǐ. - Bạn phải chăm sóc tốt cho bản thân.
+279 - 照片 - zhàopiàn - bức ảnh - 照片上的女孩是谁？ - Zhàopiàn shàng de nǚhái shì shéi? - Cô gái trong bức ảnh là ai vậy?
+280 - 照相机 - zhàoxiàngjī - máy ảnh - 我的照相机坏了。 - Wǒ de zhàoxiàngjī huàile. - Máy ảnh của tôi bị hỏng rồi.
+281 - 只 - zhǐ - chỉ - 房间里只有一个人。 - Fángjiān lǐ zhǐyǒu yīgè rén. - Trong phòng chỉ có một người.
+282 - 中间 - zhōngjiān - ở giữa - 那个坐在中间的是谁？ - Nàge zuò zài zhōngjiān de shì shéi? - Người ngồi ở giữa kia là ai thế?
+283 - 终于 - zhōngyú - cuối cùng - 我终于买到了机票。 - Wǒ zhōngyú mǎidào le jīpiào. - Cuối cùng tôi cũng mua được vé máy bay.
+284 - 种 - zhǒng - loại - 我不喜欢这种颜色。 - Wǒ bù xǐhuān zhè zhǒng yánsè. - Tôi không thích loại màu sắc này.
+285 - 重要 - zhòngyào - quan trọng - 这件事对我非常重要。 - Zhè jiàn shì duì wǒ fēicháng zhòngyào. - Việc này vô cùng quan trọng đối với tôi.
+286 - 主要 - zhǔyào - chủ yếu - 这是我的主要任务。 - Zhè shì wǒ de zhǔyào rènwu. - Đây là nhiệm vụ chủ yếu của tôi.
+287 - 周末 - zhōumò - cuối tuần - 周末我们去爬山吧。 - Zhōumò wǒmen qù páshān ba. - Cuối tuần chúng ta đi leo núi đi.
+288 - 祝 - zhù - chúc - 祝你学习进步。 - Zhù nǐ xuéxí jìnbù. - Chúc bạn học tập tiến bộ.
+289 - 注意 - zhùyì - chú ý - 请注意看路，别玩手机。 - Qǐng zhùyì kàn lù, bié wán shǒujī. - Hãy chú ý nhìn đường, đừng chơi điện thoại.
+290 - 字典 - zìdiǎn - từ điển - 我买了一本汉字字典。 - Wǒ mǎile yī běn Hànzì zìdiǎn. - Tôi đã mua một cuốn từ điển Hán tự.
+291 - 自己 - zìjǐ - bản thân - 我可以自己去学校。 - Wǒ kěyǐ zìjǐ qù xuéxiào. - Tôi có thể tự đi đến trường.
+292 - 总是 - zǒngshì - luôn luôn - 他总是起得很早。 - Tā zǒngshì qǐ de hěn zǎo. - Anh ấy luôn luôn dậy rất sớm.
+293 - 最近 - zuìjìn - gần đây - 你最近身体怎么样？ - Nǐ zuìjìn shēntǐ zěnmeyàng? - Dạo này sức khỏe của bạn thế nào?
+294 - 作业 - zuòyè - bài tập - 今天的作业写完了吗？ - Jīntiān de zuòyè xiě wán le ma? - Bài tập hôm nay đã viết xong chưa?
+295 - 作用 - zuòyòng - tác dụng - 这种药起作用了。 - Zhè zhǒng yào qǐ zuòyòng le. - Loại thuốc này có tác dụng rồi.
