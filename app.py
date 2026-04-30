@@ -609,6 +609,10 @@ elif st.session_state.mode == "study":
     total = len(st.session_state.qs)
     curr_idx = st.session_state.idx
     
+    # Khởi tạo trạng thái lật thẻ nếu chưa có
+    if "flipped" not in st.session_state:
+        st.session_state.flipped = False
+    
     # --- 1. CSS TỐI ƯU GIAO DIỆN ---
     st.markdown(f"""
         <style>
@@ -619,7 +623,7 @@ elif st.session_state.mode == "study":
         /* Container đáp án chia 2 phần */
         .answer-card {{
             display: flex; flex-direction: row; gap: 12px;
-            padding: 12px !important; align-items: flex-start; margin-top: 10px;
+            padding: 12px !important; align-items: flex-start; margin-top: 20px; margin-bottom: 20px;
         }}
         .ans-left {{ 
             flex: 1; border-right: 1px solid {t['border']}; 
@@ -630,6 +634,12 @@ elif st.session_state.mode == "study":
         .study-header {{
             display: flex; justify-content: space-between; align-items: center;
             flex-wrap: nowrap; gap: 10px; margin-bottom: 5px;
+        }}
+        /* Tùy chỉnh nút Flashcard */
+        .btn-flashcard button {{
+            height: 3rem !important;
+            font-size: 1.2rem !important;
+            font-weight: bold !important;
         }}
         </style>
     """, unsafe_allow_html=True)
@@ -643,6 +653,7 @@ elif st.session_state.mode == "study":
         if st.button("✖", help="Thoát", use_container_width=True):
             st.session_state.mode = "manage"
             st.session_state.progress["resume_state"] = None
+            st.session_state.flipped = False # Reset trạng thái lật thẻ
             sync_progress()
             st.rerun()
     st.markdown('</div>', unsafe_allow_html=True)
@@ -651,75 +662,20 @@ elif st.session_state.mode == "study":
         q = st.session_state.qs[curr_idx]
         st.progress((curr_idx) / total)
         
-        # Câu hỏi to, rõ ràng
-        st.markdown(f'<div class="question-container"><h3 style="margin:0; font-size:2.2rem; text-align:center; font-weight: 500">{q["q"]}</h3></div>', unsafe_allow_html=True)
+        # --- 3. MẶT TRƯỚC: HIỂN THỊ TỪ/CÂU HỎI ---
+        st.markdown(f'<div class="question-container" style="padding: 20px 0;"><h3 style="margin:0; font-size:2.5rem; text-align:center; font-weight: 500">{q["q"]}</h3></div>', unsafe_allow_html=True)
         
-        # --- 3. INPUT & NÚT KIỂM TRA (Nút nằm bên trái) ---
-        # Tỷ lệ [1, 4] để nút Check nhỏ và nằm bên trái, nếu màn hình quá hẹp sẽ tự xuống dòng
-        st.markdown(f"""
-            <style>
-            /* Ép nút Primary có nền màu chủ đạo, chữ trắng, không bị nền trắng */
-            .stButton > button[data-testid="baseButton-primary"] {{
-                background-color: {t['main']} !important;
-                color: white !important;
-                border: none !important;
-                width: 100% !important;
-                height: 3rem !important;
-            }}
-            /* Hiệu ứng khi di chuột */
-            .stButton > button[data-testid="baseButton-primary"]:hover {{
-                opacity: 0.9;
-                color: white !important;
-            }}
-            </style>
-        """, unsafe_allow_html=True)
-        with st.form(key=f"study_form_{curr_idx}", border=False):
-            c_btn, c_input = st.columns([1, 4])
-            
-            with c_input:
-                u_ans = st.text_input(
-                    "Nhập đáp án:", 
-                    key=f"ans_{curr_idx}", 
-                    label_visibility="collapsed", 
-                    placeholder="Gõ câu trả lời..."
-                ).strip()
-
-            with c_btn:
-                if not st.session_state.get('answered'):
-                    # Dùng form_submit_button để click 1 phát ăn ngay
-                    # type="primary" sẽ làm nút có màu nền (không bị nền trắng viền xanh)
-                    check_clicked = st.form_submit_button("✅", type="primary")
-                else:
-                    # Sau khi trả lời, nút Tiếp theo thế chỗ
-                    if st.form_submit_button("➡️", type="primary"):
-                        st.session_state.idx += 1
-                        st.session_state.answered = False
-                        save_resume_state()
-                        st.rerun()
-
-        # --- LOGIC XỬ LÝ (Nằm ngoài Form hoặc check biến check_clicked) ---
-        if not st.session_state.get('answered') and check_clicked:
-            if not u_ans:
-                st.warning("Nhập từ đã nhé!")
-            else:
-                st.session_state.answered = True
-                is_ok = (q['a'].lower() in u_ans.lower()) or (u_ans.lower() in q['a'].lower() and len(u_ans) > 0)
-                st.session_state.is_correct = is_ok
-                
-                hz = q['f']['hz']
-                st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) + (1 if is_ok else -1)
-                save_resume_state()
+        # --- 4. LOGIC FLASHCARD ---
+        if not st.session_state.flipped:
+            # Trạng thái chưa lật thẻ
+            st.markdown('<div class="btn-flashcard">', unsafe_allow_html=True)
+            if st.button("🔄 LẬT THẺ", use_container_width=True, type="primary"):
+                st.session_state.flipped = True
                 st.rerun()
-
-        # --- 4. CONTAINER ĐÁP ÁN (CHIA 2 PHẦN) ---
-        if st.session_state.get('answered'):
-            if st.session_state.is_correct: 
-                st.success("🎉 Chính xác!")
-            else: 
-                st.error(f"Sai rồi! Đáp án: **{q['a']}**")
-                st.session_state.qs.append(st.session_state.qs[curr_idx])
+            st.markdown('</div>', unsafe_allow_html=True)
             
-            # Nội dung ví dụ bên phải
+        else:
+            # Trạng thái đã lật thẻ -> Hiện Nghĩa & Ví dụ
             ex_content = f"""
                 <div class="ans-right">
                     <b style="color: {t['main']}">Ví dụ:</b><br>
@@ -734,13 +690,12 @@ elif st.session_state.mode == "study":
                         </div>
                     </details>
                 </div>
-            """ if q['f']['ex_hz'] else '<div class="ans-right"><i>(Không có ví dụ)</i></div>'
+            """ if q['f']['ex_hz'] else '<div class="ans-right" style="display:flex; align-items:center; color:gray;"><i>(Không có ví dụ)</i></div>'
 
-            # Card hiển thị chi tiết (Không còn nút Tiếp theo ở dưới này nữa)
             st.markdown(f"""
                 <div class="glass-box answer-card">
                     <div class="ans-left">
-                        <h1 style="margin:0; color: #ffffff; font-weight: 500;">{q['f']['hz']}</h1>
+                        <h1 style="margin:0; color: #ffffff; font-weight: 500;">{q['f']['hz']}</h1> 
                         <div style="font-size: 1.1rem; font-weight: bold;">{q['f']['py']}</div>
                         <div style="font-size: 0.9rem; color: gray;">{q['f']['vn'].capitalize()}</div>
                     </div>
@@ -748,15 +703,41 @@ elif st.session_state.mode == "study":
                 </div>
             """, unsafe_allow_html=True)
 
-        auto_focus()
+            # Nút đánh giá (Tích & X)
+            st.markdown('<div class="btn-flashcard">', unsafe_allow_html=True)
+            c_wrong, c_right = st.columns(2)
+            
+            with c_wrong:
+                if st.button("❌ Quên", use_container_width=True):
+                    # Phạt điểm & đẩy xuống cuối
+                    hz = q['f']['hz']
+                    st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) - 1
+                    st.session_state.qs.append(st.session_state.qs[curr_idx])
+                    
+                    st.session_state.idx += 1
+                    st.session_state.flipped = False
+                    save_resume_state()
+                    st.rerun()
+                    
+            with c_right:
+                if st.button("✅ Nhớ", use_container_width=True, type="primary"):
+                    # Cộng điểm & đi tiếp
+                    hz = q['f']['hz']
+                    st.session_state.progress["words"][hz] = st.session_state.progress["words"].get(hz, 0) + 1
+                    
+                    st.session_state.idx += 1
+                    st.session_state.flipped = False
+                    save_resume_state()
+                    st.rerun()
+            st.markdown('</div>', unsafe_allow_html=True)
+
     else:
+        # Hoàn thành
         st.balloons()
-        st.success("Hoàn thành bài học!")
+        st.success("🎉 Bạn đã hoàn thành bài học!")
         if st.button("Về Menu chính", use_container_width=True):
             st.session_state.mode = "manage"
+            st.session_state.flipped = False
             st.rerun()
-  
-  
-  
   
             
