@@ -379,12 +379,10 @@ if st.session_state.mode == "manage":
         # 1. Khởi tạo lần đầu
         if not saved_hzs and current_words:
             sorted_words = current_words
-            part1 = [w['hz'] for w in sorted_words[:60]]
-            part2 = [w['hz'] for w in sorted_words[60:]]
-            random.shuffle(part1)
-            random.shuffle(part2)
+            all_hzs = [w['hz'] for w in sorted_words]
+            random.shuffle(all_hzs)
             
-            saved_hzs = part1 + part2
+            saved_hzs = all_hzs
             st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
             need_save = True
 
@@ -643,6 +641,7 @@ elif st.session_state.mode == "study":
         .ans-left {{ 
             flex: 1; border-right: 1px solid {t['border']}; 
             padding-right: 10px; text-align: center;
+            color: {t['text']} !important;
         }}
         .ans-right {{ flex: 1.5; font-size: 0.85rem; padding-left: 5px; }}
         /* Ép header 1 dòng */
@@ -705,14 +704,14 @@ elif st.session_state.mode == "study":
                         </div>
                     </details>
                 </div>
-            """ if q['f']['ex_hz'] else '<div class="ans-right" style="display:flex; align-items:center; color:gray;"><i>(Không có ví dụ)</i></div>'
+            """ if q['f']['ex_hz'] else f'<div class="ans-right" style="display:flex; align-items:center; color:{t["text"]};"><i>(Không có ví dụ)</i></div>'
 
             st.markdown(f"""
                 <div class="glass-box answer-card">
                     <div class="ans-left">
-                        <h1 style="margin:0; color: #ffffff; font-weight: 500;">{q['f']['hz']}</h1> 
-                        <div style="font-size: 1.1rem; font-weight: bold;">{q['f']['py']}</div>
-                        <div style="font-size: 0.9rem; color: gray;">{q['f']['vn'].capitalize()}</div>
+                        <h1 style="margin:0; color: {t['text']}; font-weight: 700;">{q['f']['hz']}</h1> 
+                        <div style="font-size: 1.1rem; font-weight: bold; color: {t['text']};">{q['f']['py']}</div>
+                        <div style="font-size: 0.9rem; color: {t['text']};">{q['f']['vn'].capitalize()}</div>
                     </div>
                     {ex_content}
                 </div>
