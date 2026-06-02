@@ -184,6 +184,21 @@ def save_resume_state():
 
 # --- CSS TECH UI ---
 t = THEMES[st.session_state.theme_name]
+
+# Phát hiện theme sáng hay tối dựa trên màu nền
+def is_light_theme(theme_dict):
+    """Kiểm tra xem theme có phải light theme dựa trên độ sáng của màu nền"""
+    # Chuyển hex thành RGB và tính luminance
+    bg_hex = theme_dict['bg'].lstrip('#')
+    r, g, b = tuple(int(bg_hex[i:i+2], 16) for i in (0, 2, 4))
+    # Công thức tính độ sáng: (R*0.299 + G*0.587 + B*0.114) > 128 = sáng
+    luminance = r * 0.299 + g * 0.587 + b * 0.114
+    return luminance > 128
+
+is_light = is_light_theme(t)
+# Chọn nền glassmorphism: trắng mờ cho theme sáng, đen mờ cho theme tối
+glass_bg = "rgba(255, 255, 255, 0.3)" if is_light else "rgba(0, 0, 0, 0.2)"
+
 st.set_page_config(
     page_title="HSK Smart 2.0", 
     page_icon="logo.png",
@@ -276,9 +291,9 @@ st.markdown(f"""
         padding: 0.2rem 0.5rem !important;
         font-size: 0.8rem !important;
     }}
-    /* Glassmorphism Tối ưu: Dùng màu nền của border để pha trộn thay vì trắng tinh */
+    /* Glassmorphism Tối ưu: Thích ứng với theme sáng/tối */
     div[data-testid="stExpander"], .stAlert, div[data-testid="stForm"], .glass-box {{
-        background: rgba(0, 0, 0, 0.2) !important; /* Đổi sang nền đen mờ cho sang */
+        background: {glass_bg} !important; /* Tự động điều chỉnh dựa trên theme */
         backdrop-filter: blur(12px); 
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid {t['border']}77 !important; /* Thêm 77 để border mờ đi chút */
