@@ -337,88 +337,103 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+# --- 0. MIGRATION & ĐỒNG BỘ HÓA (FIX TRIỆT ĐỂ BẰNG HÁN TỰ) ---
+def migrate_to_hz_order():
+    updated = False
+    for name, info in st.session_state.notebooks.items():
+        current_words = info.get('words', [])
+        
+        # Dọn dẹp dữ liệu rác từ các phiên bản cũ
+        if 'fixed_word_order' in info:
+            info['fixed_hz_order'] = [w.get('hz') for w in info['fixed_word_order'] if w.get('hz')]
+            del info['fixed_word_order']
+            updated = True
+            
+        if 'fixed_order_indices' in info:
+            hz_order = []
+            for idx in info['fixed_order_indices']:
+                if idx < len(current_words):
+                    hz_order.append(current_words[idx].get('hz'))
+            info['fixed_hz_order'] = hz_order
+            del info['fixed_order_indices']
+            updated = True
+            
+    if updated:
+        save_json(DB_FILE, st.session_state.notebooks)
+
+def sync_and_get_ordered_words(nb_name, current_words):
+    """
+    Hàm cốt lõi: Khóa trật tự bằng Hán tự.
+    - Lần đầu: Lấy 60 từ đầu -> shuffle, phần còn lại -> shuffle. Lưu mảng Hán tự.
+    - Các lần sau: Lấy đúng trật tự đã lưu. Từ nào mới thêm sẽ bị ném xuống cuối.
+    """
+    if 'fixed_hz_order' not in st.session_state.notebooks[nb_name]:
+        st.session_state.notebooks[nb_name]['fixed_hz_order'] = []
+        
+    saved_hzs = st.session_state.notebooks[nb_name]['fixed_hz_order']
+    current_dict = {w['hz']: w for w in current_words}
+    need_save = False
+    
+    # 1. Khởi tạo lần đầu
+    if not saved_hzs and current_words:
+        sorted_words = current_words
+        all_hzs = [w['hz'] for w in sorted_words]
+        random.shuffle(all_hzs)
+        
+        saved_hzs = all_hzs
+        st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
+        need_save = True
+
+    # 2. Quét xem có từ nào mới được thêm vào không
+    saved_set = set(saved_hzs)
+    new_hzs = [w['hz'] for w in current_words if w['hz'] not in saved_set]
+    if new_hzs:
+        random.shuffle(new_hzs) # Xáo trộn đám từ mới
+        saved_hzs.extend(new_hzs) # Nối vào đuôi, không làm hỏng Set cũ
+        st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
+        need_save = True
+        
+    if need_save:
+        save_json(DB_FILE, st.session_state.notebooks)
+        
+    # 3. Trả về mảng words hoàn chỉnh theo đúng trật tự Hán tự đã khóa
+    ordered_words = []
+    for hz in saved_hzs:
+        if hz in current_dict: # Rất an toàn: Nếu bạn lỡ xóa từ trong list gốc, nó sẽ tự bỏ qua
+            ordered_words.append(current_dict[hz])
+            
+    return ordered_words
+
+# --- 1. HÀM TẠO QUIZ ---
+def get_smart_quiz(ordered_words, start_idx=0, end_idx=None, mode="vn2"):
+    """
+    Tạo danh sách câu hỏi với các mode:
+    - vn1: 1 lần VN (Hán -> Việt)
+    - vn2: 2 lần VN (mặc định)
+    - vn_zh: 1 lần Hán->Việt + 1 lần Việt->Hán (xáo trộn hết lên)
+    """
+    if end_idx is None: end_idx = len(ordered_words)
+    selected_words = ordered_words[start_idx:end_idx]
+    
+    quiz_pool = []
+    for w in selected_words:
+        if mode == "vn1":
+            # 1 lần dịch sang Việt
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+        elif mode == "vn2":
+            # 2 lần dịch sang Việt (mặc định)
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+        elif mode == "vn_zh":
+            # 1 lần Hán -> Việt + 1 lần Việt -> Hán (xáo trộn)
+            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
+            quiz_pool.append({'q': w['vn'], 'a': w['hz'].capitalize(), 'f': w, 'type': 'vn_hz'})
+    
+    random.shuffle(quiz_pool) # Chỉ xáo trộn câu hỏi bên trong Set lúc làm bài
+    return quiz_pool
+
 if st.session_state.mode == "manage":
     
-    # --- 0. MIGRATION & ĐỒNG BỘ HÓA (FIX TRIỆT ĐỂ BẰNG HÁN TỰ) ---
-    def migrate_to_hz_order():
-        updated = False
-        for name, info in st.session_state.notebooks.items():
-            current_words = info.get('words', [])
-            
-            # Dọn dẹp dữ liệu rác từ các phiên bản cũ
-            if 'fixed_word_order' in info:
-                info['fixed_hz_order'] = [w.get('hz') for w in info['fixed_word_order'] if w.get('hz')]
-                del info['fixed_word_order']
-                updated = True
-                
-            if 'fixed_order_indices' in info:
-                hz_order = []
-                for idx in info['fixed_order_indices']:
-                    if idx < len(current_words):
-                        hz_order.append(current_words[idx].get('hz'))
-                info['fixed_hz_order'] = hz_order
-                del info['fixed_order_indices']
-                updated = True
-                
-        if updated:
-            save_json(DB_FILE, st.session_state.notebooks)
-
-    def sync_and_get_ordered_words(nb_name, current_words):
-        """
-        Hàm cốt lõi: Khóa trật tự bằng Hán tự.
-        - Lần đầu: Lấy 60 từ đầu -> shuffle, phần còn lại -> shuffle. Lưu mảng Hán tự.
-        - Các lần sau: Lấy đúng trật tự đã lưu. Từ nào mới thêm sẽ bị ném xuống cuối.
-        """
-        if 'fixed_hz_order' not in st.session_state.notebooks[nb_name]:
-            st.session_state.notebooks[nb_name]['fixed_hz_order'] = []
-            
-        saved_hzs = st.session_state.notebooks[nb_name]['fixed_hz_order']
-        current_dict = {w['hz']: w for w in current_words}
-        need_save = False
-        
-        # 1. Khởi tạo lần đầu
-        if not saved_hzs and current_words:
-            sorted_words = current_words
-            all_hzs = [w['hz'] for w in sorted_words]
-            random.shuffle(all_hzs)
-            
-            saved_hzs = all_hzs
-            st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
-            need_save = True
-
-        # 2. Quét xem có từ nào mới được thêm vào không
-        saved_set = set(saved_hzs)
-        new_hzs = [w['hz'] for w in current_words if w['hz'] not in saved_set]
-        if new_hzs:
-            random.shuffle(new_hzs) # Xáo trộn đám từ mới
-            saved_hzs.extend(new_hzs) # Nối vào đuôi, không làm hỏng Set cũ
-            st.session_state.notebooks[nb_name]['fixed_hz_order'] = saved_hzs
-            need_save = True
-            
-        if need_save:
-            save_json(DB_FILE, st.session_state.notebooks)
-            
-        # 3. Trả về mảng words hoàn chỉnh theo đúng trật tự Hán tự đã khóa
-        ordered_words = []
-        for hz in saved_hzs:
-            if hz in current_dict: # Rất an toàn: Nếu bạn lỡ xóa từ trong list gốc, nó sẽ tự bỏ qua
-                ordered_words.append(current_dict[hz])
-                
-        return ordered_words
-
-    # --- 1. HÀM TẠO QUIZ ---
-    def get_smart_quiz(ordered_words, start_idx=0, end_idx=None):
-        if end_idx is None: end_idx = len(ordered_words)
-        selected_words = ordered_words[start_idx:end_idx]
-        
-        quiz_pool = []
-        for w in selected_words:
-            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
-            quiz_pool.append({'q': w['hz'].capitalize(), 'a': w['vn'], 'f': w, 'type': 'hz_vn'})
-        
-        random.shuffle(quiz_pool) # Chỉ xáo trộn câu hỏi bên trong Set lúc làm bài
-        return quiz_pool
-
     # Chạy dọn rác ngay khi vào trang
     migrate_to_hz_order()
     
@@ -487,9 +502,13 @@ if st.session_state.mode == "manage":
                 # --- NÚT HỌC NGAY (Top 60) ---
                 if c1.button("📖 Học ngay", key=f"std_{name}", use_container_width=True):
                     st.session_state.notebooks[name]['last_accessed'] = datetime.now().isoformat()
-                    quiz = get_smart_quiz(ordered_words, 0, 60)
-                    st.session_state.update({"qs": quiz, "curr_nb": f"{name} (Top 60)", "mode": "study", "idx": 0, "answered": False})
-                    save_resume_state()
+                    st.session_state.update({
+                        "mode": "mode_select", 
+                        "pending_words": ordered_words, 
+                        "pending_start": 0, 
+                        "pending_end": 60,
+                        "pending_title": f"{name} (Top 60)"
+                    })
                     st.rerun()
                     
                 # 2. Nút Xem trật tự ngẫu nhiên (Mới)
@@ -608,14 +627,85 @@ if st.session_state.mode == "manage":
                                 st.markdown(f"<style>button[key='{btn_k}']{{background:{color}!important; color:white!important; min-height:4rem;}}</style>", unsafe_allow_html=True)
                                 
                                 if cols[c_idx].button(f"Set {s_idx+1}\n({start_i+1}-{end_i})\n✅ {mastered}/{len(subset)}", key=btn_k, use_container_width=True):
-                                    quiz = get_smart_quiz(ordered_words, start_i, end_i)
                                     st.session_state.update({
-                                        "qs": quiz, 
-                                        "curr_nb": f"{name} ({start_i} -> {end_i})", 
-                                        "mode": "study", "idx": 0, "answered": False
+                                        "mode": "mode_select",
+                                        "pending_words": ordered_words,
+                                        "pending_start": start_i,
+                                        "pending_end": end_i,
+                                        "pending_title": f"{name} ({start_i+1} -> {end_i})"
                                     })
-                                    save_resume_state()
                                     st.rerun()
+                                    
+# --- UI CHỌN LOẠI BÀI HỌC (MODE SELECT) ---
+elif st.session_state.mode == "mode_select":
+    # Hiển thị giao diện chọn mode
+    st.markdown("""
+        <style>
+        .mode-selector-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .mode-btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    col_back, col_title = st.columns([1, 4])
+    with col_back:
+        if st.button("⬅️ Quay lại"):
+            st.session_state.mode = "manage"
+            st.rerun()
+    with col_title:
+        st.markdown(f"### 📚 {st.session_state.get('pending_title', 'Bài học')}")
+    
+    st.divider()
+    st.markdown("### Chọn chế độ học tập:")
+    
+    mode_options = {
+        "1️⃣ 1 lần Việt": {
+            "value": "vn1",
+            "desc": "Mỗi từ xuất hiện 1 lần (dịch sang Việt)"
+        },
+        "2️⃣ 2 lần Việt": {
+            "value": "vn2", 
+            "desc": "Mỗi từ xuất hiện 2 lần (dịch sang Việt) - MẶC ĐỊNH"
+        },
+        "🌏 Hán↔Việt": {
+            "value": "vn_zh",
+            "desc": "Mỗi từ: 1 lần Hán->Việt + 1 lần Việt->Hán (xáo trộn)"
+        }
+    }
+    
+    for option_label, option_data in mode_options.items():
+        col_icon, col_desc, col_btn = st.columns([0.5, 3, 1])
+        with col_desc:
+            st.write(f"**{option_label}**")
+            st.caption(option_data['desc'])
+        with col_btn:
+            if st.button("Chọn", key=f"mode_{option_data['value']}", use_container_width=True, type="primary"):
+                # Tạo quiz với mode đã chọn
+                quiz = get_smart_quiz(
+                    st.session_state.pending_words,
+                    st.session_state.pending_start,
+                    st.session_state.pending_end,
+                    mode=option_data['value']
+                )
+                st.session_state.update({
+                    "qs": quiz,
+                    "curr_nb": st.session_state.pending_title,
+                    "mode": "study",
+                    "idx": 0,
+                    "answered": False,
+                    "quiz_mode": option_data['value']
+                })
+                save_resume_state()
+                st.rerun()
                                     
 # --- UI ÔN TẬP (MOBI-OPTIMIZED) ---
 elif st.session_state.mode == "study":
